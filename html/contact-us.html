@@ -1,0 +1,183 @@
+@@include('./templates/head.html', {
+'title': 'Contact Us | Zion Auto Gallery Pte Ltd',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+
+    <!--- Search -->
+    <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+    <div class="wrapper">
+        <div class="search-data">
+            <input type="text" placeholder="Type to search..">
+            <div class="line"></div>
+            <button></button>
+        </div>
+    </div>
+    <!--- /Search -->
+
+    <!--- Car Menu -->
+    @@include('./templates/car-menu.html', {
+        'path': './all-cars',
+        'imgPath': ''
+        })
+    <!--- /Car Menu -->
+
+    <div id="wrapper">
+
+        <!--- Header -->
+        @@include('./templates/header.html', {
+        'page': 'contact',
+        'path': ''
+        })
+        <!--- /Header -->
+
+        <div id="middle" class="mobile-pad">
+
+            <!--- Location -->
+            <div class="location-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+                            <div class="map"><img src="images/map.jpg" alt="" /></div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+                            <div class="location-box-right">
+                                <div class="location-title">Locate Us</div>
+                                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Location -->
+
+            <!--- Book An Appointment -->
+            <div class="appointment-section bottom-pad" data-aos="zoom-in-right">
+                <div class="container">
+                    <div class="appointment-container">
+                        <div class="appointment-left">
+                            <div class="appointment-image"><img src="images/appointment-image.jpg" alt="" /></div>
+                            <div class="appointment-left-container">
+                                <h4>Drop us a message</h4>
+                                <p>We will revert back all enquiries at the shortest possible time, alternatively you
+                                    may call or
+                                    whatsapp with the button below.</p>
+                                <div class="btn-row"> <a href="tel: +65 6455 2535" onclick="fbq('track', 'Contact');"
+                                        class="btn-call">Call Us</a>
+                                    <a onclick="fbq('track', 'Contact');" href="https://wa.link/bmt738" target="_blank"
+                                        class="btn-whatsapp">Whatsapp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="appointment-right" id="book-appointment">
+                            <h3>Book An Appointment</h3>
+                            <div class="appointment-form">
+                                <form name="appointment" id="appointment" method="post">
+                                    <div class="alert alert-success d-none" role="alert"> We've received your
+                                        information, we will get
+                                        back to you shortly. </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" id="first_name" name="first_name" class="form-control"
+                                                placeholder="First name">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" id="last_name" name="last_name" class="form-control"
+                                                placeholder="Last name">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <select class="wide" name="enquiry_type" id="enquiry_type"
+                                                data-error-container="enquiry_type-error">
+                                                <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                                                <option value="Book Appointment">Book Appointment</option>
+                                                <option value="Request Call">Request Call</option>
+                                                <option value="Financing">Financing</option>
+                                                <option value="Packages">Packages</option>
+                                                <option value="Bespoke Cars">Bespoke Cars</option>
+                                                <option value="General">General</option>
+                                            </select>
+                                            <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                                        </div>
+                                        <div class="col-lg-12 form-group">
+                                            <input type="email" id="email" name="email" class="form-control"
+                                                placeholder="Email Address">
+                                        </div>
+                                        <div class="col-lg-12 form-group">
+                                            <div class="checkbox">
+                                                <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                                                    data-error-container="terms_accepted-error">
+                                                <label for="terms_accepted" class="checkbox-label">By submitting this
+                                                    form, you agree to our
+                                                    Privacy Policy and agree to receive sales and marketing
+
+                                                    communication from ZionAuto Gallery Pte Ltd</label>
+                                            </div>
+                                            <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                                        </div>
+                                        <div class="col-lg-12 form-group text-center-xs">
+                                            <div class="submit-btn">
+                                                <button type="submit" name="submit" id="button"
+                                                    class="ready fancy btn btn-primary" value="Book Now">
+                                                    <div class="message submitMessage"> <span class="button-text">Book
+                                                            Now</span> </div>
+                                                    <div class="message loadingMessage">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                                                            <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                                                            <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                                                            <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="message successMessage">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                                                            <polyline stroke="currentColor"
+                                                                points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                                                        </svg>
+                                                        <span class="button-text">Success</span>
+                                                    </div>
+                                                </button>
+                                                <canvas id="canvas"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Book An Appointment -->
+
+        </div>
+
+        <!--- Footer -->
+        @@include('./templates/footer.html', {
+            'path': ''
+          })
+        <!--- /Footer -->
+
+    </div>
+    <script src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/minified/aos.js"></script>
+    <script src="js/minified/pushy.js"></script>
+    <script src="js/jquery/jquery.nice-select.min.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/minified/app.js"></script>
+    <script src="js/minified/jquery.menu-aim.js"></script>
+    <script src="js/minified/mobile-menu.js"></script>
+    <script src="js/minified/fancy-button.js"></script>
+    @@include('./templates/linkedIn.html')
+</body>
+
+</html>

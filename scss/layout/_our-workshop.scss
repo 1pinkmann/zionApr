@@ -1,0 +1,439 @@
+.workshop-middle{
+	background: $black-color;
+	color: $white-color;
+}
+
+.workshop-top{
+	width: 100%;
+	float: left;
+	padding: 60px 0;
+	
+	.left-side{
+		width: 100%;
+		float: left;
+		
+		.btn-row{
+			width: 100%;
+			float: left;
+			
+			.btn-box{
+				width: 219px;
+				float: left;
+				position: relative;
+			}
+			
+			.btn-box-2{
+				width: 260px;
+				float: left;
+				position: relative;
+				margin: 0 0 0 30px;
+			}
+		}
+		
+		h1{
+			color: $red-color;
+			font-size: 30px;
+			font-family: $secondary-font-3;
+			font-weight: 500;
+		}
+		
+		p{
+			width: 100%;
+			float: left;
+			font-family: $secondary-font-3;
+			font-size: 18px;
+			padding: 20px 0 0 0;
+		}
+	} 
+	
+	.right-side{
+		width: 100%;
+		float: right;
+		padding: 40px 0 0 0;
+		position: relative;
+		z-index: 1;
+		
+		img{
+			position: relative;
+			z-index: 1000;
+		}
+		
+		&:after{
+			position: absolute;
+		  	content: "";
+		  	top: 6%;
+		  	left: -10%;
+		  	right: 0;
+		 	z-index: -1;
+		 	height: 100%;
+		  	width: 120%;
+		  	margin: 0 auto;
+		  	transform: scale(0.65);
+		  	-webkit-filter: blur(18vw);
+		  	-moz-filter: blur(18vw);
+		  	-ms-filter: blur(18vw);
+		  	filter: blur(18vw);
+		  background: linear-gradient(270deg, #0fffc1, #3260e6);
+		  background-size: 200% 100%;
+		  animation: animateGlow 10s ease infinite;
+			z-index: 10;
+		}
+	}
+	
+	
+	
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+	
+	.btn-row{
+		padding: 50px 0 0 0;
+		text-align: center;
+	}
+}
+
+.workshop-btn-mobile{
+	&.btn-row{
+		width: 100%;
+		float: left;
+			
+		.btn-box{
+			width: -webkit-calc(50% - 10px);
+			width: -moz-calc(50% - 10px);
+			width: calc(50% - 10px);
+			float: left;
+			position: relative;
+			margin: 0 5px;
+		}
+			
+		.btn-box-2{
+			width: -webkit-calc(50% - 10px);
+			width: -moz-calc(50% - 10px);
+			width: calc(50% - 10px);
+			float: left;
+			position: relative;
+			margin: 0 0 0 0;
+			margin: 0 5px;
+		}
+	}
+}
+
+.workshop-bullet-section{
+	width: 100%;
+	float: left;
+	padding: 50px 0 30px 0;
+	
+	h2{
+		font-family: $base-font;
+		color: $white-color;
+		font-weight: 400;
+		text-align: center; 
+	}
+	
+	.title-text{
+		width: 100%;
+		float: left;
+		text-align: center;
+		color: $white-color;
+		padding: 15px 0 35px 0;
+		font-family: $base-font;
+		position: relative;
+		
+		&:after{
+			width: 260px;
+			height: 4px;
+			float: left;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			background: linear-gradient(90deg, #FDC830 0.90%, #F37335 100%);
+			background-size: 400% 100%; 
+			animation: gradient 4s ease infinite;
+			content: "";
+			margin: 0 0 0 -130px; 
+			
+		}
+	}
+	
+	.bullet-container{
+		width: 100%;
+		float: left;
+		padding: 60px 0 0 0;
+		
+		ul{
+			
+			li{
+				width: 100%;
+				float: left;
+				padding: 2px 15px 0 20px;
+				position: relative;
+				margin: 12px 0;
+				font-size: 16px;
+				
+				&:after{
+					width: 1px;
+					height: 30px;
+					float: left;
+					background: $white-color;
+					content:"";
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+}
+
+.workshop-text{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	
+	p{
+		width: 100%;
+		float: left;
+		font-size: 16px;
+		padding: 0;
+		line-height: 30px;
+	}
+}
+
+.workshop-location{
+	.btn-row{
+		padding: 40px 0 0;
+	}
+}
+
+.workshop-testimonial{
+	&.testimonial-section{
+		padding-top: 0;
+		
+		h2{
+			color: $red-color;
+		}
+		
+		.title-text{
+			color: $white-color;
+		}
+		
+		.testimonial-box{
+			background: rgba(255, 255, 255, 0.10)
+		}
+	}
+	
+	.backend-btn-link{
+		a{
+			background: rgba(255, 255, 255, 0.10);
+			color: $white-color;
+			
+			&:hover{
+				background: $white-color;
+				color: $black-color;
+			}
+		}
+	}
+}
+
+@media screen and (min-width:768px) {
+	.workshop-top{
+		padding: 80px 0;
+		.left-side{
+			h1{
+				font-size: 40px;
+			}
+			
+			p{
+				font-size: 20px;
+				padding: 30px 0 0 0;
+			}
+		}
+		
+		.right-side{
+			&:after{
+				background-size: 200% 100%;
+				left: 0;
+				width: 100%; 
+				top: -1vw;
+				transform: scale(0.75);
+		  		-webkit-filter: blur(5vw);
+		  		-moz-filter: blur(5vw);
+		  		-ms-filter: blur(5vw);
+		  		filter: blur(5vw);
+			}
+		}
+	}
+	
+	.workshop-bullet-section{
+		padding: 80px 0 50px 0;
+		
+		.title-text{
+			&:after{
+				width: 420px;
+				margin: 0 0 0 -210px; 
+			}
+		}
+		
+		.bullet-container{
+			ul{
+				li{
+					width: 50%; 
+					float: left;
+					margin: 20px 0;
+				}
+			}
+		}
+	}
+	
+	.workshop-text{
+		padding: 0;
+		p{
+			font-size:18px;
+			padding: 50px 0 0 0;
+			line-height: 30px;
+		}
+	}
+	
+	.workshop-location{
+		&.location-section{
+			padding: 100px 0 40px;
+
+			p{
+				padding: 10px 0 0 0;
+			}
+		}
+	}
+	
+	.workshop-testimonial{
+		&.testimonial-section{
+			padding-top: 100px;
+		}
+	}
+}
+
+@media screen and (min-width:992px) {
+	.workshop-top{
+		.left-side{
+			width: 55%;
+			
+			h1{
+				font-size: 50px;
+			}
+			
+			p{
+				font-size: 23px;
+			}
+		}
+
+		.right-side{
+			width: 45%;
+			padding: 0 0 0 50px;
+		}
+		
+		.btn-row{
+			padding: 50px 0 0 0;
+			text-align: left;
+		}
+	}
+	
+	.workshop-bullet-section{
+		padding: 120px 0 100px 0;
+		
+		.bullet-container{
+			ul{
+				li{
+					font-size: 20px;
+					
+					&:after{
+						height: 36px;
+					}
+				}
+			}
+		}
+	}
+	
+	.workshop-text{
+		p{
+			font-size: 20px;
+			padding: 80px 0 0;
+			line-height: 45px;
+		}
+	}
+	
+	.workshop-location{
+		&.location-section{
+			.location-box-right{
+				padding: 50px 0 0 0;
+			}
+		}
+	}
+	
+	.workshop-testimonial{
+		&.testimonial-section{
+			padding-top: 150px;
+		}
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.workshop-top{
+		.left-side{
+			width: 50%;
+		}
+
+		.right-side{
+			width: 50%;
+		}
+		
+		.btn-row{
+			padding: 80px 0 0 0;
+		}
+	}
+	
+	.workshop-text{
+		p{
+			font-size: 20px;
+			padding: 180px 0 0;
+			line-height: 45px;
+		}
+	}
+	
+	.workshop-bullet-section{
+		.bullet-container{
+			ul{
+				li{
+					width: 33.33%;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:1350px) {
+	.workshop-top{
+		.left-side{
+			padding: 90px 0 0 0;
+		}
+		
+		.btn-row{
+			padding: 100px 0 0 0;
+		}
+	}
+	
+	.workshop-location{
+		&.location-section{
+			.location-box-right{
+				padding: 40px 0 0 0;
+			}
+		}
+	}
+}

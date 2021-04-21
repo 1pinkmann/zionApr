@@ -1,0 +1,455 @@
+@@include('../html/templates/head.html', {
+'title': 'Toyota Camry Sport Ascent Hybrid | Zion Auto Gallery',
+'path': '.',
+'description': 'Description Text',
+'keywords': 'Keywords Text'
+})
+
+<body>
+
+  <!--- Search -->
+  <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+  <div class="wrapper">
+    <div class="search-data">
+      <input type="text" placeholder="Type to search..">
+      <div class="line"></div>
+      <button></button>
+    </div>
+  </div>
+  <!--- /Search -->
+
+  <!--- Car Menu -->
+  @@include('../html/templates/car-menu.html', {
+    'path': '.',
+    'imgPath': '.'
+  })
+  <!--- /Car Menu -->
+
+  <div id="wrapper">
+
+    <!--- Header -->
+    @@include('../html/templates/header.html', {
+    'page': 'car',
+    'path': '.'
+    })
+    <!--- /Header -->
+
+    <!--- Banner -->
+    <div class="car-banner">
+      <div class="container">
+        <div class="inner-banner-container">
+          <div class="inner-banner-right">
+            <div class="banner-title-text" data-aos="fade-right">Ascent / Ascent Sport / (G) / (G) Sunroof / SL</div>
+            <h1 data-aos="fade-right">Toyota Camry Hybrid</h1>
+            <div class="banner-bullet" data-aos="fade-right">
+              <ul>
+                <li>POWER (kW) / POWER (HP)<br>
+                  <span>131kW / 176 HP</span>
+                </li>
+                <li>Fuel<br>
+                  <span>4.6L / 100km</span>
+                </li>
+                <li>Engine Capacity<br>
+                  <span>2,487 CC</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-info" data-aos="fade-right">POWER (kW) / POWER (HP)<br>
+              <span>131kW / 176 HP</span>
+            </div>
+          </div>
+          <div class="inner-banner-left"><img src="../images/car/toyota-camry/toyota-camry.png" alt=""
+              data-aos="fade-left" /></div>
+          <div class="mobile-banner-bullet" data-aos="fade-up">
+            <ul>
+              <li>Fuel<br>
+                <span>4.6L / 100km</span>
+              </li>
+              <li>Engine Capacity<br>
+                <span>2,487 CC</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Banner -->
+
+    <div id="middle">
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/toyota-camry/feature-1.jpg" alt="" /></div>
+              <h3>Eco Maximising</h3>
+              <p>Eco for maximising fuel-miserliness, Comfort for general driving duties, and Sport for those looking
+                for more spirited fun. Comfort is the Camry’s – and yours – happy place.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/toyota-camry/feature-2.jpg" alt="" /></div>
+              <h3>Effortless Driving</h3>
+              <p>The seats are supportive and comfortable, and with fore, aft and height adjustment, finding the perfect
+                driving position is a cinch. The steering wheel, too, is manually adjustable for tilt and reach.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/toyota-camry/feature-3.jpg" alt="" /></div>
+              <h3>Modern & Traditional</h3>
+              <p>The cabin remains nicely laid out, with intuitive switchgear that feels pretty nice to the touch,
+                including good old-fashioned dials for climate-control functions. An array of shortcut buttons flanking
+                the touchscreen is a nice touch, too.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Call to Action -->
+      <div class="call-to-cation" data-aos="fade-up">
+        <div class="container">
+          <h2>Toyota Camry Hybrid<br>Exclusive Special Deal Today Only!</h2>
+          <p>Contact our well-versed sales team ensuring your satisfaction</p>
+          <div class="cta-btn-row">
+            <a href="tel: +65 6455 2535" onclick="fbq('track', 'Contact');" class="btn btn-call">Call Us</a>
+            <a href="https://wa.link/k2x5w8" target="_blank" onclick="fbq('track', 'Contact');"
+              class="btn btn-whatsapp bb">Whatsapp <span> <i></i> <i></i> <i></i> <i></i></span></a>
+            <a href="#book-appointment" class="btn btn-email">Email Us</a>
+          </div>
+        </div>
+      </div>
+      <!--- /Call to Action -->
+
+      <div class="accordion-section">
+        <div class="container">
+          <ul class="nav nav-tabs" role="tablist" data-aos="fade-up">
+            <li> <a class="nav-link active" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                aria-controls="technical" aria-selected="true">Technical</a> </li>
+            <li> <a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab"
+                aria-controls="equipment" aria-selected="false">Equipment</a> </li>
+          </ul>
+          <div class="tab-content" data-aos="fade-up">
+
+            <!--- Technical Tab -->
+            <div class="tab-pane fade show active" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="engine">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseEngine" aria-expanded="true"
+                          aria-controls="collapseEngine">Engine</button>
+                      </h5>
+                    </div>
+                    <div id="collapseEngine" class="collapse show" aria-labelledby="headingEngine"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Engine: Dual VVT-iE with Hybrid Synergy Drive</li>
+                          <li>Engine Capacity: 2,487 CC</li>
+                          <li>Max Output: 131kW (176 hp)</li>
+                          <li>Max Torque: 221 Nm</li>
+                          <li>Transmission: e-CVT</li>
+                          <li>Fuel Consumption: 28.4 km/L</li>
+                          <li>Fuel Type: Petrol</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="measurements">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseMeasurements"
+                          aria-expanded="false" aria-controls="collapseMeasurements">Measurements</button>
+                      </h5>
+                    </div>
+                    <div id="collapseMeasurements" class="collapse" aria-labelledby="headingMeasurements"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Vehicle Type: Saloon</li>
+                          <li>Dimensions (L x W x H): 4885 x 1840 x 1445 mm</li>
+                          <li>Wheelbase: 2,825 mm</li>
+                          <li>Min Turning Radius: 5,700 mm</li>
+                          <li>Kerb weight: 1,570 kg</li>
+                          <li>Fuel tank capacity: 50 L</li>
+                          <li>Boot/Cargo Capacity: 524L</li>
+                          <li>Brakes (Front): Ventilated disc</li>
+                          <li>Brakes (Rear): Disc</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Technical Tab -->
+
+            <!--- Equipment Tab -->
+            <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="exterior">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseExterior" aria-expanded="true"
+                          aria-controls="collapseExterior">Exterior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseExterior" class="collapse show" aria-labelledby="headingExterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>17” alloy wheels</li>
+                          <li>Dual exhaust with a diffuser</li>
+                          <li>Electronically adjustable rearview mirrors with side indicators</li>
+                          <li>Sports front grille in Matte</li>
+                          <li>LED Daytime Running Lamps</li>
+                          <li>Front & rear auto power-operated windows</li>
+                          <li>Electric Power Steering</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="interior">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseInterior"
+                          aria-expanded="false" aria-controls="collapseInterior">Interior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseInterior" class="collapse" aria-labelledby="headingInterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>12V power accessory socket</li>
+                          <li>Smart entry and start system</li>
+                          <li>Dual-zone automatic climate control air conditioning</li>
+                          <li>Front USB charging port</li>
+                          <li>Premium steering wheel</li>
+                          <li>Driver’s seat power-adjustable lumbar support</li>
+                          <li>8-way power-adjustable driver’s seat</li>
+                          <li>60/40 split-fold rear seats</li>
+                          <li>Folding rear seat centre armrest</li>
+                          <li>8” multimedia touchscreen display</li>
+                          <li>Mobile Assistant with Siri Eyes Free and Google Now</li>
+                          <li>Voice Recognition, Miracast, Toyota Link</li>
+                          <li>Steering wheel audio controls</li>
+                          <li>Centre console with sliding lid (7.3L)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="safety">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseSafety"
+                          aria-expanded="false" aria-controls="collapseSafety">Safety</button>
+                      </h5>
+                    </div>
+                    <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Anti-lock Braking System with Electronic Brake-force Distribution and Brake Assist</li>
+                          <li>Vehicle Stability Control and Traction Control</li>
+                          <li>Hill-start Assist Control and Brake Hold</li>
+                          <li>Electronically Controlled Brake system</li>
+                          <li>Reversing Camera with moving guidelines</li>
+                          <li>Front and rear clearance sensors</li>
+                          <li>7 SRS airbags (Dual front, Front side, Full length curtain airbags, Driver's knee airbag)
+                          </li>
+                          <li>Toyota Safety Sense +</li>
+                          <li>- Lane Departure Alert</li>
+                          <li>- Pre-Collision Safety System</li>
+                          <li>- Automatic High Beam</li>
+                          <li>- all-speed Active Cruise Control</li>
+                          <li>Maximum 5-Star ANCAP safety rating</li>
+                          <li>Childproof locks – rear</li>
+                          <li>Immobiliser with alarm</li>
+                          <li>Speed-sensing auto door lock</li>
+                          <li>Remote central locking including boot release on remote</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Equipment Tab -->
+
+          </div>
+        </div>
+      </div>
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-4.jpg" alt="" /></div>
+              <h3>After-sales Maintanience Assurance</h3>
+              <p>Make your purchase with confidence and a peace of mind. Providing by our in-house workshop (Star Auto)
+                within your first 10-years or 150,000km whichever comes first.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-5.jpg" alt="" /></div>
+              <h3>24/7 On Stand-by Roadside Assistance</h3>
+              <p>Facing a car breakdown? Fret not! At Zion Auto Gallery Singapore, you can count on our 24 hour
+                emergency Roadside Assistance Services that are readily available for you.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-6.jpg" alt="" /></div>
+              <h3>Flexible Financing Scheme COE/In-house</h3>
+              <p>We are able to provide financial support and flexible loan packages to get you going on your car
+                ownership journey with as little hassles as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Book An Appointment -->
+      <div class="appointment-section" data-aos="zoom-in-right">
+        <div class="container">
+          <div class="appointment-container">
+            <div class="appointment-left">
+              <div class="appointment-image"><img src="../images/appointment-image.jpg" alt="" /></div>
+              <div class="appointment-left-container">
+                <h4>You’re in good hands</h4>
+                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our consumers
+                  satisfaction</p>
+              </div>
+            </div>
+            <div class="appointment-right" id="book-appointment">
+              <h3>Book An Appointment</h3>
+              <div class="appointment-form">
+                <form name="appointment" id="appointment" method="post" class="car-details">
+                  <div class="alert alert-success d-none" role="alert"> We've received your information, we will get
+                    back to you shortly. </div>
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="first_name" name="first_name" class="form-control"
+                        placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="wide" name="enquiry_type" id="enquiry_type"
+                        data-error-container="enquiry_type-error">
+                        <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                        <option value="Book Appointment">Book Appointment</option>
+                        <option value="Request Call">Request Call</option>
+                        <option value="Financing">Financing</option>
+                        <option value="Packages">Packages</option>
+                      </select>
+                      <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="car-modal-box">
+                        <div class="title">Car Model</div>
+                        <div class="text">Toyota Camry Hybrid</div>
+                      </div>
+                      <input type="hidden" name="car_model" id="car_model" value="Toyota Camry Hybrid" />
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="checkbox">
+                        <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                          data-error-container="terms_accepted-error">
+                        <label for="terms_accepted" class="checkbox-label">By submitting this form, you agree to our
+                          Privacy Policy and agree to receive sales and marketing
+
+                          communication from ZionAuto Gallery Pte Ltd</label>
+                      </div>
+                      <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group text-center-xs">
+                      <div class="submit-btn">
+                        <button type="submit" name="submit" id="button" class="ready fancy btn btn-primary"
+                          value="Book Now">
+                          <div class="message submitMessage"> <span class="button-text">Book Now</span> </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Book An Appointment -->
+
+      <!--- Location -->
+      <div class="location-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+              <div class="map"><img src="../images/map.jpg" alt="" /></div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+              <div class="location-box-right">
+                <div class="location-title">Locate Us</div>
+                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Location -->
+
+    </div>
+
+    <!--- Footer -->
+    @@include('../html/templates/footer.html', {
+      'path': '.'
+    })
+    <!--- /Footer -->
+
+  </div>
+  <script src="../js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/minified/aos.js"></script>
+  <script src="../js/minified/pushy.js"></script>
+  <script src="../js/jquery/jquery.nice-select.min.js"></script>
+  <script src="../js/validation/jquery.validate.min.js"></script>
+  <script src="../js/validation/additional-methods.min.js"></script>
+  <script src="../js/minified/app.js"></script>
+  <script src="../js/minified/jquery.menu-aim.js"></script>
+  <script src="../js/minified/mobile-menu.js"></script>
+  <script src="../js/minified/fancy-button.js"></script>
+  <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top + -300
+      }, 1000);
+    });	
+  </script>
+  @@include('../html/templates/linkedIn.html')
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+#banner{
+	width: 100%;
+	float: left;
+	margin: 84px 0 0 0;
+	
+	.banner-slide{
+		width: 100%;
+		float: left;
+		height: 720px;
+		position: relative;
+		
+		&.slide-1{
+			background: url("#{$image-path}/banner-mobile.jpg") no-repeat right center; 
+			background-size: cover;
+		}
+		
+		&.slide-2{
+			background: url("#{$image-path}/banner-mobile2.jpg") no-repeat right center; 
+			background-size: cover;
+		} 
+		
+		&.slide-3{
+			background: url("#{$image-path}/banner-mobile3.jpg") no-repeat right center; 
+			background-size: cover;
+		} 
+	}
+	
+	.banner-slide-container{
+		width: 100%;
+		float: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 80px 0 0 0;
+		height: 100%;
+	}
+	
+	.banner-sub-container{
+		max-width: 600px;
+		float: right;
+	}
+	
+	h1{
+		width: 100%;
+		float: left;
+		color: $white-color;
+		font-family: $secondary-font;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 40px;
+		margin: 0;
+		padding: 0;
+		line-height: 35px;
+			
+		span{
+			font-size: 30px;
+		}
+	}
+	
+	.banner-bullet{
+		width: 100%;
+		float: left;
+		padding: 15px 0 0 0;
+		color: $white-color;
+		font-family: $secondary-font-3;
+		display: none;
+			
+		ul{
+			li{
+				width: auto;
+				float: left;
+				padding: 0 0 0 50px;
+					
+				&:first-child{
+					padding-left: 0;
+				}
+					
+				span{
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	
+	.mobile-info{
+		width: 100%;
+		float: left;
+		color: $white-color;
+		font-family: $secondary-font-3;
+		padding: 10px 0 0 0;
+		span{
+			font-weight: 500;
+		}
+	}
+	
+	.mobile-banner-bullet{
+		width: 100%;
+		float: left;
+		padding: 15px 0 0 0;
+		color: $white-color;
+		font-family: $secondary-font-3;
+		position: absolute;
+		bottom: 100px;
+		
+		ul{
+			li{
+				width: auto;
+				float: left;
+				padding: 0 0 0 50px;
+				
+				&:first-child{
+					padding-left: 0;
+				}
+					
+				span{
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	
+}
+.inner-banner-left{
+	width: 100%;
+	float: left;
+	padding: 50px 0 0 0;
+		
+	img{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.inner-banner-right{
+	width: 100%;
+	float: right;
+	
+	.banner-title-text{
+		width: 100%;
+		float: left;
+		color: $white-color;
+		font-size: 35px;
+		font-family: $secondary-font;
+		font-weight: 500;
+	}
+	
+	h1{
+		width: 100%;
+		float: left;
+		color: $white-color;
+		font-family: $secondary-font;
+		font-weight: 500;
+		font-size: 23px;
+		margin: 0;
+		padding: 0;
+		line-height: 30px;
+	}
+	
+	.banner-bullet{
+		width: 100%;
+		float: left;
+		padding: 15px 0 0 0;
+		color: $white-color;
+		font-family: $secondary-font-3;
+		display: none;
+			
+		ul{
+			li{
+				width: auto;
+				float: left;
+				padding: 0 0 0 50px;
+					
+				&:first-child{
+					padding-left: 0;
+				}
+					
+				span{
+					font-weight: 500;
+				}
+			}
+		}
+	} 
+	
+	.mobile-info{
+		width: 100%;
+		float: left;
+		color: $white-color;
+		font-family: $secondary-font-3;
+		padding: 10px 0 0 0;
+		span{
+			font-weight: 500;
+		}
+	}
+	
+	p{
+		width: 100%;
+		float: left;
+		font-size: 18px;
+		font-family: $secondary-font-3;
+		margin: 0;
+		padding: 30px 0 0;
+		color: $white-color;;
+	}
+}
+
+.car-banner{
+	width: 100%;
+	float: left;
+	position: relative;
+	background: url("#{$image-path}/banner-car.jpg") no-repeat center center; 
+	background-size: cover; 
+	padding: 70px 0;
+	margin: 84px 0 0 0;
+	
+	.mobile-banner-bullet{
+		width: 100%;
+		float: left;
+		padding: 15px 0 0 0;
+		color: $white-color;
+		font-family: $secondary-font-3;
+			
+		ul{
+			li{
+				width: auto;
+				float: left;
+				padding: 0 0 0 50px;
+					
+				&:first-child{
+					padding-left: 0;
+				}
+					
+				span{
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+.promotion-banner{
+	width: 100%;
+	float: left;
+	position: relative; 
+	background: url("#{$image-path}/banner-our-promotion.jpg") no-repeat center center; 
+	background-size: cover; 
+	padding: 70px 0;
+	margin: 84px 0 0 0;
+	
+	.inner-banner-right{
+		h1,
+		.banner-title-text,
+		p{
+			color: $black-color;
+		}
+	}
+	
+}
+
+@media screen and (min-width:768px) {
+	#banner{
+		.banner-slide{
+			height: 690px;
+			
+			&.slide-1{
+				background: url("#{$image-path}/banner.jpg") no-repeat center top; 
+				background-size: cover;
+			}
+			
+			&.slide-2{
+				background: url("#{$image-path}/banner2.jpg") no-repeat center top; 
+				background-size: cover;
+			} 
+			
+			&.slide-3{
+				background: url("#{$image-path}/banner3.jpg") no-repeat center top; 
+				background-size: cover;
+			} 
+		}
+		
+		h1{
+			font-size: 40px;
+			line-height: 45px;
+
+			span{
+				font-size: 50px;
+			}
+		}
+		
+		.banner-bullet{
+			display: inherit;
+		}
+		
+		.mobile-info, 
+		.mobile-banner-bullet{
+			display: none;
+		}
+	}
+	
+	.inner-banner-right{
+		.banner-bullet{
+			display: inherit;
+		}
+		
+		.mobile-info{
+			display: none;
+		}
+		
+		.banner-title-text{
+			font-size: 40px;
+		}
+		
+		h1{
+			font-size: 50px;
+			line-height: 50px;
+		}
+		
+		p{
+			font-size: 22px;
+		}
+	}
+	
+	.car-banner{
+		.mobile-banner-bullet{
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width:992px) {
+	#banner{
+		margin: 0;
+	}
+	
+	.inner-banner-left{
+		width: 48%;
+		padding: 0;
+	}
+	
+	.inner-banner-right{
+		width: 50%;
+		max-width: 600px;
+		
+		.banner-bullet{
+			ul{
+				li{
+					padding: 0 0 0 20px;
+				}
+			}
+		}
+	}
+	
+	.car-banner{
+		margin: 0;
+	}
+	
+	.promotion-banner{
+		margin: 0; 
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.inner-banner-left,
+	.inner-banner-right{
+		top: 50%; 
+		-webkit-transform: translateY(-50%); 
+		-ms-transform: translateY(-50%); 
+		transform: translateY(-50%);
+		position: relative;
+	}
+	
+	.inner-banner-right{
+		.banner-bullet{
+			ul{
+				li{
+					padding: 0 0 0 50px;
+				}
+			}
+		}
+	}
+	
+	.inner-banner-container{
+			width: 100%;
+			float: left;
+			height: 700px;
+	}
+	
+	.promotion-banner,
+	.car-banner{
+		padding: 0;
+	}
+}

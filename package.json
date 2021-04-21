@@ -1,0 +1,29 @@
+{
+  "name": "my_package",
+  "version": "1.0.0",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.6.0"
+  },
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1pinkmann/zion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1pinkmann/zion/issues"
+  },
+  "homepage": "https://github.com/1pinkmann/zion#readme",
+  "description": ""
+}

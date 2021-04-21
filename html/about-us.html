@@ -1,0 +1,399 @@
+@@include('./templates/head.html', {
+'title': 'About Us | Zion Auto Gallery Pte Ltd',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+  <!--- Search -->
+  <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+  <div class="wrapper">
+    <div class="search-data">
+      <input type="text" placeholder="Type to search..">
+      <div class="line"></div>
+      <button></button>
+    </div>
+  </div>
+  <!--- /Search -->
+ 
+  <!--- Car Menu -->
+  @@include('./templates/car-menu.html', {
+    'path': './all-cars',
+    'imgPath': ''
+    })
+  <!--- /Car Menu -->
+
+  <div id="wrapper">
+
+    <!--- Header -->
+    @@include('./templates/header.html', {
+    'page': 'about',
+    'path': ''
+    })
+    <!--- /Header -->
+
+    <div id="middle" class="mobile-pad">
+
+      <!--- About Zion Auto -->
+      <div class="about-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-down-right"><img src="images/about-image.jpg" alt=""
+                class="img-fluid image-border" /></div>
+            <div class="col-lg-6" data-aos="fade-up-left">
+              <div class="about-top-right">
+                <h1>About Zion Auto</h1>
+                <p>Since 2011, Zion Auto Gallery has been the preferred singapore car dealership of choice for new and
+                  pre-owned cars.</p>
+                <div class="mobile-image d-block d-lg-none"><img src="images/about-image.jpg" alt=""
+                    class="img-fluid image-border" /></div>
+                <div class="about-top-right-bottom">
+                  <p>Our brand embodies our values – a genuine commitment to providing the best customer experience and
+                    extensive range of cars, made possible by our customer-centric approach.</p>
+                </div>
+                <div class="about__badges">
+                  <div class="about__badge">
+                    <img src="./images/badges/badge1.jpg" alt="badge" class="about__badge-image">
+                  </div>
+                  <div class="about__badge">
+                    <img src="./images/badges/badge2.jpg" alt="badge" class="about__badge-image">
+                  </div>
+                  <div class="about__badge">
+                    <img src="./images/badges/badge3.jpg" alt="badge" class="about__badge-image">
+                  </div>
+                  <div class="about__badge">
+                    <img src="./images/badges/badge4.jpg" alt="badge" class="about__badge-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /About Zion Auto -->
+
+      <!--- Our Mission. -->
+      <div class="mission-section" data-aos="fade-up">
+        <div class="container">
+          <h2>Our Mission.</h2>
+          <p>It is our belief that customer centric and reputable business practices are the keystone of any
+            long-lasting business in the 21st century. We hope to provide the best automobile experience for you at Zion
+            Auto Gallery.</p>
+          <div class="mission-image">
+            <div class="row">
+              <div class="col-md-4" data-aos="flip-left"><img src="images/mission-image-1.jpg" alt=""
+                  class="img-fluid d-block m-auto" /></div>
+              <div class="col-md-4" data-aos="flip-up"><img src="images/mission-image-2.jpg" alt=""
+                  class="img-fluid d-block m-auto" /></div>
+              <div class="col-md-4" data-aos="flip-right"><img src="images/mission-image-3.jpg" alt=""
+                  class="img-fluid d-block m-auto" /></div>
+            </div>
+          </div>
+          <div class="mission-image-mobile-slider">
+            <ul class="owl-carousel" id="mission-mobile-slider">
+              <li><img src="images/mission-image-1.jpg" alt="" /></li>
+              <li><img src="images/mission-image-2.jpg" alt="" /></li>
+              <li><img src="images/mission-image-3.jpg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--- /Our Mission. -->
+
+      <!--- PURCHASING YOUR PERFECT CAR! -->
+      <div class="about-information-section">
+        <div class="container">
+          <div class="information-top" data-aos="fade-up">
+            <h2>PURCHASING YOUR PERFECT CAR!</h2>
+            <div class="title-text">We offer the best car sales package with competitive interest rates for financing
+              and attractive insurance premiums.</div>
+          </div>
+          <div class="infomation-box-section">
+            <div class="row">
+              <div class="col-md-4" data-aos="zoom-in">
+                <div class="information-box-icon"><img src="images/icon-highly-secured.png" alt="" /></div>
+                <h3>Highly Secured</h3>
+                <p>A Leading Brand Name in the Automobile Industry. 100% Delivery Track Records for 10 years</p>
+              </div>
+              <div class="col-md-4" data-aos="zoom-in">
+                <div class="information-box-icon"><img src="images/icon-financial-services.png" alt="" /></div>
+                <h3>Financial Services</h3>
+                <p>In-house/Bank Financing, Motor Insurance, Corporate Fleet Managament, Sales/Purchase and Consignment
+                </p>
+              </div>
+              <div class="col-md-4" data-aos="zoom-in">
+                <div class="information-box-icon"><img src="images/icon-trusted-agents.png" alt="" /></div>
+                <h3>Trusted Agents</h3>
+                <p>Delicated and Personalised Sales Specialist, always ready to be at your services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /PURCHASING YOUR PERFECT CAR! -->
+
+      <!--- Reviews -->
+      <div class="testimonial-section" data-aos="fade-up">
+        <div class="container">
+          <h2>Reviews</h2>
+          <div class="title-text text-center">From our trusted customers</div>
+          <div class="testimonial-box-row">
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">Kaniksha Suthan <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Thank you very much Ah Hong and Nizam. Very experienced and excellent service work. Had a break issue
+                and was resolved with reasonable charges by Ah Hong. Good effort and very impressive.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">Wang Qiao <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Ong KH is truly a professional and have been giving adequate advises which is helpful. He takes the
+                extra mile to serve his customers and i thank him for the good work and efforts. </p>
+              <p>Highly recommended to everyone that need good services</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">zu xiaolong <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">Jages Feran <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Excellent job on my tyre sensors, which was not able to be installed by the external tyre shop when i
+                changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the rims with improvised
+                ideas. Thank you for your efforts. Nizam is an expert.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Mohamad Izhar <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these technicians are
+                very competent and will give good advice.</p>
+              <p>All work is being done meticulously to give a brand new driving experience. Please do not hesitate to
+                call them and a recommended workshop if you are looking for one. </p>
+              <p> Good Job to Ong and team!</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Bryon Pua <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any concern. Thank
+                Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for the installation.
+              </p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Yap Mee Key <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>professional service with detail and enhance performance after auto transmission repair. highly
+                recommended</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Ng Xin Yi <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or enhancement request
+                will be received and evaluated accordingly.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Bryon Pua <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any concern. Thank
+                Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for the installation.
+              </p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Yap Mee Key <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>professional service with detail and enhance performance after auto transmission repair. highly
+                recommended</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Ng Xin Yi <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or enhancement request
+                will be received and evaluated accordingly.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">zu xiaolong <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">Jages Feran <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Excellent job on my tyre sensors, which was not able to be installed by the external tyre shop when i
+                changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the rims with improvised
+                ideas. Thank you for your efforts. Nizam is an expert.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Mohamad Izhar <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these technicians are
+                very competent and will give good advice.</p>
+              <p>All work is being done meticulously to give a brand new driving experience. Please do not hesitate to
+                call them and a recommended workshop if you are looking for one. </p>
+              <p> Good Job to Ong and team!</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Bryon Pua <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any concern. Thank
+                Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for the installation.
+              </p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Yap Mee Key <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>professional service with detail and enhance performance after auto transmission repair. highly
+                recommended</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Ng Xin Yi <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or enhancement request
+                will be received and evaluated accordingly.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">zu xiaolong <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-up">
+              <div class="name">Jages Feran <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>Excellent job on my tyre sensors, which was not able to be installed by the external tyre shop when i
+                changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the rims with improvised
+                ideas. Thank you for your efforts. Nizam is an expert.</p>
+            </div>
+            <div class="testimonial-box" data-aos="flip-down">
+              <div class="name">Mohamad Izhar <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these technicians are
+                very competent and will give good advice.</p>
+              <p>All work is being done meticulously to give a brand new driving experience. Please do not hesitate to
+                call them and a recommended workshop if you are looking for one. </p>
+              <p> Good Job to Ong and team!</p>
+            </div>
+          </div>
+
+          <!--  <div class="cell">
+		<div class="pl pl-spark"></div>
+	</div>-->
+
+          <!--<div class="backend-btn-link" data-aos="zoom-in"><a href="#">View More</a></div>-->
+        </div>
+      </div>
+      <!--- /Reviews -->
+
+      <!--- Book An Appointment -->
+      <div class="appointment-section" data-aos="zoom-in-right">
+        <div class="container">
+          <div class="appointment-container">
+            <div class="appointment-left">
+              <div class="appointment-image"><img src="images/appointment-image.jpg" alt="" /></div>
+              <div class="appointment-left-container">
+                <h4>You’re in good hands</h4>
+                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our consumers
+                  satisfaction</p>
+              </div>
+            </div>
+            <div class="appointment-right" id="book-appointment">
+              <h3>Book An Appointment</h3>
+              <div class="appointment-form">
+                <form name="appointment" id="appointment" method="post">
+                  <div class="alert alert-success d-none" role="alert"> We've received your information, we will get
+                    back to you shortly. </div>
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="first_name" name="first_name" class="form-control"
+                        placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="wide" name="enquiry_type" id="enquiry_type"
+                        data-error-container="enquiry_type-error">
+                        <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                        <option value="Book Appointment">Book Appointment</option>
+                        <option value="Request Call">Request Call</option>
+                        <option value="Financing">Financing</option>
+                        <option value="Packages">Packages</option>
+                        <option value="Bespoke Cars">Bespoke Cars</option>
+                        <option value="General">General</option>
+                      </select>
+                      <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="checkbox">
+                        <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                          data-error-container="terms_accepted-error">
+                        <label for="terms_accepted" class="checkbox-label">By submitting this form, you agree to our
+                          Privacy Policy and agree to receive sales and marketing
+
+                          communication from ZionAuto Gallery Pte Ltd</label>
+                      </div>
+                      <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group text-center-xs">
+                      <div class="submit-btn">
+                        <button type="submit" name="submit" id="button" class="ready fancy btn btn-primary"
+                          value="Book Now">
+                          <div class="message submitMessage"> <span class="button-text">Book Now</span> </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Book An Appointment -->
+
+      <!--- Location -->
+      <div class="location-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+              <div class="map"><img src="images/map.jpg" alt="" /></div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+              <div class="location-box-right">
+                <div class="location-title">Locate Us</div>
+                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Location -->
+
+    </div>
+
+    <!--- Footer -->
+    @@include('./templates/footer.html', {
+      'path': ''
+    })
+    <!--- /Footer -->
+
+  </div>
+  <script src="js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/minified/aos.js"></script>
+  <script src="js/minified/pushy.js"></script>
+  <script src="js/jquery/jquery.nice-select.min.js"></script>
+  <script src="js/minified/owl.carousel.min.js"></script>
+  <script src="js/minified/jquery.simpleLoadMore.js"></script>
+  <script src="js/validation/jquery.validate.min.js"></script>
+  <script src="js/validation/additional-methods.min.js"></script>
+  <script src="js/minified/app.js"></script>
+  <script src="js/minified/jquery.menu-aim.js"></script>
+  <script src="js/minified/mobile-menu.js"></script>
+  <script src="js/minified/fancy-button.js"></script>
+  @@include('./templates/linkedIn.html')
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+@@include('./templates/head.html', {
+'title': 'Our Promotions | Zion Auto Gallery Pte Ltd',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+
+    <!--- Search -->
+    <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+    <div class="wrapper">
+        <div class="search-data">
+            <input type="text" placeholder="Type to search..">
+            <div class="line"></div>
+            <button></button>
+        </div>
+    </div>
+    <!--- /Search -->
+
+    <!--- Car Menu -->
+    @@include('./templates/car-menu.html', {
+        'path': './all-cars',
+        'imgPath': ''
+        })
+    <!--- /Car Menu -->
+
+    <div id="wrapper">
+
+        <!--- Header -->
+        @@include('./templates/header.html', {
+        'page': 'service',
+        'path': ''
+        })
+        <!--- /Header -->
+
+        <!--- Banner -->
+        <div class="promotion-banner">
+            <div class="container">
+                <div class="inner-banner-container">
+                    <div class="inner-banner-right">
+                        <div class="banner-title-text" data-aos="fade-right">GLB SUV</div>
+                        <h1 data-aos="fade-right">AMG-Line Premium Plus</h1>
+                        <p data-aos="fade-right">The GLB is here. The most versatile compact SUV. Every line and every
+                            detail has a
+                            reason: to give you the greatest possible freedom.</p>
+                    </div>
+                    <div class="inner-banner-left"><img src="images/promotion-banner-car.png" alt=""
+                            data-aos="fade-left" /></div>
+                </div>
+            </div>
+        </div>
+        <!--- /Banner -->
+
+        <div id="middle">
+
+            <!--- GLB AMG-Line Promotion -->
+            <div class="our-promotion-top" data-aos="fade-up">
+                <div class="container">
+                    <h2>GLB AMG-Line Promotion</h2>
+                    <div class="title-text">Other variants available: GLB200 Sport, GLB200 AMG-Line Premium, GLB200
+                        AMG-Line
+                        Premium Plus, GLB35 AMG 4Matic</div>
+                    <div class="text-container">
+                        <p>Discover the new GLB AMG-Line, one of the most flexible compact SUVs with a decent drive,
+                            boxy-cool
+                            styling, seven seat capability, and a whole lot of room. The new GLB is not only tailored to
+                            your needs,
+                            but gives you flexibility you didn’t even know you needed.</p>
+                        <p>Discover irresistible August deals and enjoy Unlimited Mileage, 10 years warranty, 5 years
+                            FREE
+                            servicing, 24hrs Road Assist and High Overtrade.</p>
+                    </div>
+                </div>
+            </div>
+            <!--- /GLB AMG-Line Promotion -->
+
+            <!--- Infomration Box -->
+            <div class="box-info-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 box-column" data-aos="flip-left">
+                            <div class="box-image"><img src="images/feature-1.jpg" alt="" /></div>
+                            <h3>Steering Wheel with Touch Control Buttons</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa
+                                pharetra non id
+                                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+                        </div>
+                        <div class="col-md-4 box-column" data-aos="flip-left">
+                            <div class="box-image"><img src="images/feature-2.jpg" alt="" /></div>
+                            <h3>Steering Wheel with Touch Control Buttons</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa
+                                pharetra non id
+                                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+                        </div>
+                        <div class="col-md-4 box-column" data-aos="flip-left">
+                            <div class="box-image"><img src="images/feature-3.jpg" alt="" /></div>
+                            <h3>Steering Wheel with Touch Control Buttons</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa
+                                pharetra non id
+                                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Infomration Box -->
+
+            <!--- Book An Appointment -->
+            <div class="appointment-section" data-aos="zoom-in-right" id="appointment">
+                <div class="container">
+                    <div class="appointment-container">
+                        <div class="appointment-left">
+                            <div class="appointment-image"><img src="images/appointment-image.jpg" alt="" /></div>
+                            <div class="appointment-left-container">
+                                <h4>You’re in good hands</h4>
+                                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our
+                                    consumers
+                                    satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="appointment-right">
+                            <h3>Book An Appointment</h3>
+                            <div class="appointment-form">
+                                <div class="row">
+                                    <div class="col-lg-6 form-group">
+                                        <input type="text" id="first-name" class="form-control"
+                                            placeholder="First name">
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="text" id="last-name" class="form-control" placeholder="Last name">
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="tel" id="phone" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <select class="wide">
+                                            <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                                            <option value="Book Appointment">Book Appointment</option>
+                                            <option value="Request Call">Request Call</option>
+                                            <option value="Financing">Financing</option>
+                                            <option value="Packages">Packages</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <div class="car-modal-box">
+                                            <div class="title">Car Model</div>
+                                            <div class="text">GLB200 SUV - Promotion</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <div class="checkbox">
+                                            <input id="silver" name="plan-option" type="checkbox">
+                                            <label for="silver" class="checkbox-label">By submitting this form, you
+                                                agree to our Privacy
+                                                Policy and agree to receive sales and marketing
+
+                                                communication from ZionAuto Gallery Pte Ltd</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group text-center-xs">
+                                        <div class="submit-btn">
+                                            <button id="button" class="ready fancy btn btn-primary"
+                                                onclick="clickButton();">
+                                                <div class="message submitMessage"> <span class="button-text">Book
+                                                        Now</span> </div>
+                                                <div class="message loadingMessage">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                                                        <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                                                        <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                                                        <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="message successMessage">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                                                        <polyline stroke="currentColor"
+                                                            points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                                                    </svg>
+                                                    <span class="button-text">Success</span>
+                                                </div>
+                                            </button>
+                                            <canvas id="canvas"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Book An Appointment -->
+
+            <!--- Location -->
+            <div class="location-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+                            <div class="map"><img src="images/map.jpg" alt="" /></div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+                            <div class="location-box-right">
+                                <div class="location-title">Locate Us</div>
+                                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Location -->
+
+        </div>
+
+        <!--- Footer -->
+        @@include('./templates/footer.html', {
+            'path': ''
+          })
+        <!--- /Footer -->
+
+    </div>
+    <script src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/minified/aos.js"></script>
+    <script src="js/minified/pushy.js"></script>
+    <script src="js/jquery/jquery.nice-select.min.js"></script>
+    <script src="js/minified/owl.carousel.min.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/minified/app.js"></script>
+    <script src="js/minified/jquery.menu-aim.js"></script>
+    <script src="js/minified/mobile-menu.js"></script>
+    <script src="js/minified/fancy-button.js"></script>
+    @@include('./templates/linkedIn.html')
+</body>
+
+</html>

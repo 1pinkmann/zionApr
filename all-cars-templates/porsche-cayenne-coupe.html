@@ -1,0 +1,491 @@
+@@include('../html/templates/head.html', {
+'title': 'Porsche Cayenne Coupe | Zion Auto Gallery',
+'path': '.',
+'description': 'Description Text',
+'keywords': 'Keywords Text'
+})
+
+
+<body>
+
+  <!--- Search -->
+  <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+  <div class="wrapper">
+    <div class="search-data">
+      <input type="text" placeholder="Type to search..">
+      <div class="line"></div>
+      <button></button>
+    </div>
+  </div>
+  <!--- /Search -->
+
+  <!--- Car Menu -->
+  @@include('../html/templates/car-menu.html', {
+    'path': '.',
+    'imgPath': '.'
+  })
+  <!--- /Car Menu -->
+
+  <div id="wrapper">
+
+    <!--- Header -->
+    @@include('../html/templates/header.html', {
+    'page': 'car',
+    'path': '.'
+    })
+    <!--- /Header -->
+
+    <!--- Banner -->
+    <div class="car-banner">
+      <div class="container">
+        <div class="inner-banner-container">
+          <div class="inner-banner-right">
+            <div class="banner-title-text" data-aos="fade-right">Standard / (S) / E-Hybrid</div>
+            <h1 data-aos="fade-right">Porsche Cayenne Coupe</h1>
+            <div class="banner-bullet" data-aos="fade-right">
+              <ul>
+                <li>POWER (kW) / POWER (HP)<br>
+                  <span>254 kW / 340 HP</span>
+                </li>
+                <li>0-100 km/h<br>
+                  <span>6.2s</span>
+                </li>
+                <li>Engine Capacity<br>
+                  <span>2,995 CC</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-info" data-aos="fade-right">POWER (kW) / POWER (HP)<br>
+              <span>254 kW / 340 HP</span>
+            </div>
+          </div>
+          <div class="inner-banner-left"><img src="../images/car/porsche-cayenne-coupe/porsche-cayenne-coupe.png" alt=""
+              data-aos="fade-left" /></div>
+          <div class="mobile-banner-bullet" data-aos="fade-up">
+            <ul>
+              <li>0-100 km/h<br>
+                <span>6.2s</span>
+              </li>
+              <li>Engine Capacity<br>
+                <span>2,995 CC</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Banner -->
+
+    <div id="middle">
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/porsche-cayenne-coupe/feature-1.jpg" alt="" /></div>
+              <h3>Most Appeasing</h3>
+              <p>A freakishly deft car for its size and easily one of the most driver-appeasing SUVs on sale. The
+                steering is absurdly communicative for a car of such practicality.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/porsche-cayenne-coupe/feature-2.jpg" alt="" /></div>
+              <h3>Zero Bumps</h3>
+              <p>Switch back to Comfort mode, though, and the Turbo also feels the firmest around town, despite being
+                unique in getting air suspension as standard. The S model feels smoother over bumps.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/porsche-cayenne-coupe/feature-3.jpg" alt="" /></div>
+              <h3>Fits Perfectly</h3>
+              <p>With the fashion for SUVs seemingly showing no signs of slowing, the Coupé fits the brief to
+                perfection. This high-quality, high-tech and superb-to-drive coupe SUV needs to be on your shortlist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Call to Action -->
+      <div class="call-to-cation" data-aos="fade-up">
+        <div class="container">
+          <h2>Porsche Cayenne Coupe<br>Exclusive Special Deal Today Only!</h2>
+          <p>Contact our well-versed sales team ensuring your satisfaction</p>
+          <div class="cta-btn-row">
+            <a href="tel: +65 6455 2535" onclick="fbq('track', 'Contact');" class="btn btn-call">Call Us</a>
+            <a href="https://wa.link/p42fd8" target="_blank" onclick="fbq('track', 'Contact');"
+              class="btn btn-whatsapp bb">Whatsapp <span> <i></i> <i></i> <i></i> <i></i></span></a>
+            <a href="#book-appointment" class="btn btn-email">Email Us</a>
+          </div>
+        </div>
+      </div>
+      <!--- /Call to Action -->
+
+      <div class="accordion-section">
+        <div class="container">
+          <ul class="nav nav-tabs" role="tablist" data-aos="fade-up">
+            <li> <a class="nav-link active" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                aria-controls="technical" aria-selected="true">Technical</a> </li>
+            <li> <a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab"
+                aria-controls="equipment" aria-selected="false">Equipment</a> </li>
+          </ul>
+          <div class="tab-content" data-aos="fade-up">
+
+            <!--- Technical Tab -->
+            <div class="tab-pane fade show active" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="engine">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseEngine" aria-expanded="true"
+                          aria-controls="collapseEngine">Engine</button>
+                      </h5>
+                    </div>
+                    <div id="collapseEngine" class="collapse show" aria-labelledby="headingEngine"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Engine: V6 Twin-scroll Turbocharged</li>
+                          <li>Engine Capacity: 2,995 CC</li>
+                          <li>Max Output: 254kW (340 hp)</li>
+                          <li>Max Torque: 450 Nm</li>
+                          <li>Acceleration: 6.2s (0-100 km/h)</li>
+                          <li>Transmission: 8-speed (A) Tiptronic S</li>
+                          <li>CO2 Emission: 225 g/km (Manufacturer Specs)</li>
+                          <li>Fuel Consumption: 10.1 km/L</li>
+                          <li>Fuel Type: Petrol</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="measurements">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseMeasurements"
+                          aria-expanded="false" aria-controls="collapseMeasurements">Measurements</button>
+                      </h5>
+                    </div>
+                    <div id="collapseMeasurements" class="collapse" aria-labelledby="headingMeasurements"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Vehicle Type: SUV</li>
+                          <li>Dimensions (L x W x H): 4931 x 1983 x 1676 mm</li>
+                          <li>Wheelbase: 2,895 mm</li>
+                          <li>Kerb weight: 2,030 kg</li>
+                          <li>Fuel tank capacity: 90 L</li>
+                          <li>Boot/Cargo Capacity: 625L</li>
+                          <li>Brakes (Front): Ventilated disc</li>
+                          <li>Brakes (Rear): Ventilated disc</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Technical Tab -->
+
+            <!--- Equipment Tab -->
+            <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="exterior">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseExterior" aria-expanded="true"
+                          aria-controls="collapseExterior">Exterior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseExterior" class="collapse show" aria-labelledby="headingExterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Fully galvanised steel / aluminium hybrid lightweight bodyshell. Bonnet, tailgate, doors,
+                            side panels, roof and front wings in aluminium</li>
+                          <li>4 Doors with integrated side impact protection</li>
+                          <li>Tailgate with integrated roof spoiler</li>
+                          <li>Aerodynamic underbody panelling</li>
+                          <li>Front end with integrated air intakes and airblades for the side air intakes</li>
+                          <li>Two exhaust tailpipes, left and right sides, in brushed stainless steel</li>
+                          <li>Porsche Active Aerodynamics (PAA) with adaptive rear spoiler</li>
+                          <li>LED tail lights with three-dimensional lighting graphic including light strip and
+                            integrated four-point brake lights</li>
+                          <li>LED interior lighting concept including switch-off delay function, footwell lighting for
+                            front and rear, ashtray illumination (where specified), glove compartment lighting, ignition
+                            lock illumination, front overhead console with reading lights, rear reading lights</li>
+                          <li>Illuminated vanity mirrors in sun visors for driver and passenger sides</li>
+                          <li>McPherson-strut suspension with anti-roll bar at front</li>
+                          <li>Multi-link suspension with anti-roll bar at rear</li>
+                          <li>Heated rear window with auto-off function</li>
+                          <li>Manually dimming rear view mirror</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="interior">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseInterior"
+                          aria-expanded="false" aria-controls="collapseInterior">Interior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseInterior" class="collapse" aria-labelledby="headingInterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Automatic climate control with separate temperature settings for driver and front
+                            passenger. Functions include automatic air recirculation control including air quality
+                            sensor, AC-Max button and humidity sensor</li>
+                          <li>Active carbon fine dust filter</li>
+                          <li>Front sports seats (8-way electrically adjustable) with integrated headrests</li>
+                          <li>ISports style rear seats with two way headrests, manual backrest angle adjust, 40:20:40
+                            split folding backrests, centre storage tray and deployable centre armrest with two
+                            cupholders</li>
+                          <li>Instrument cluster with two high resolution displays</li>
+                          <li>Central analogue rev counter with black dial face</li>
+                          <li>Partial leather interior in standard colour with smooth-finish leather on front and rear
+                            seats</li>
+                          <li>Multifunction sports steering wheel with gearshift paddles</li>
+                          <li>Interior trim package in black (high-gloss)</li>
+                          <li>Door sill guards in stainless steel with model designation at front</li>
+                          <li>Porsche Communication Management (PCM) including, mobile phone preparation, audio
+                            interface and voice control system</li>
+                          <li>Connect Plus incl. Apple® CarPlay, 4G/LTE communication module with SIM card reader,
+                            wireless internet access.</li>
+                          <li>Two USB charging and connectivity ports in the front centre console storage compartment
+                          </li>
+                          <li>Three 12V power sockets: in front below the glove compartment, in front centre console, at
+                            side of luggage compartment</li>
+                          <li>Storage compartments in the interior (dependent on model and individual options): Glove
+                            compartment (cooled by climate control), storage compartment in front centre console, door
+                            pockets and map pockets on front seat backrests, storage in the sides of luggage •
+                            compartment</li>
+                          <li>B-pillar clothes hooks on driver and passenger's side</li>
+                          <li>Fixed luggage compartment cover</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="safety">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseSafety"
+                          aria-expanded="false" aria-controls="collapseSafety">Safety</button>
+                      </h5>
+                    </div>
+                    <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Remote central locking</li>
+                          <li>Active bonnet</li>
+                          <li>Side impact protection integrated in doors</li>
+                          <li>Bumper system with high-strength cross members and two deformation elements, each with two
+                            receptacles with screw threads for the towing lug included in the on-board tool kit</li>
+                          <li>Full-size airbags for driver and front passenger</li>
+                          <li>Knee airbags for driver and passenger</li>
+                          <li>Front side airbags integrated into seat</li>
+                          <li>Curtain airbags along roof frame and side glazing</li>
+                          <li>Rollover detection for activation of curtain airbags and seat belt pretensioners</li>
+                          <li>3-point automatic seatbelts with pretensioners (front and outer rear seats) and force
+                            limiter (front). In conjunction with 4+1 rear seating only 3-point automatic seatbelt for
+                            rear centre seat</li>
+                          <li>Seat belt height adjust (manual) for driver and front passenger</li>
+                          <li>Seatbelt warning for front and rear seats</li>
+                          <li>ISOFIX fastening system for child seats on outer rear seats</li>
+                          <li>Front passenger airbag deactivation function for mounting of child seat on front seat</li>
+                          <li>Alarm system with ultrasonic interior sensor and two-stage locking (SAFE function)</li>
+                          <li>Instrument cluster with two high resolution displays</li>
+                          <li>Driver-personalisation for climate, audio and communication, assistance systems and other
+                            customisable car systems</li>
+                          <li>ParkAssist front and rear including reversing camera with cleaning function and
+                            superimposed dynamic guidance display</li>
+                          <li>Cruise control with speed limiter</li>
+                          <li>Warn and Brake Assist</li>
+                          <li>Keyless engine start</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Equipment Tab -->
+
+          </div>
+        </div>
+      </div>
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-4.jpg" alt="" /></div>
+              <h3>After-sales Maintanience Assurance</h3>
+              <p>Make your purchase with confidence and a peace of mind. Providing by our in-house workshop (Star Auto)
+                within your first 10-years or 150,000km whichever comes first.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-5.jpg" alt="" /></div>
+              <h3>24/7 On Stand-by Roadside Assistance</h3>
+              <p>Facing a car breakdown? Fret not! At Zion Auto Gallery Singapore, you can count on our 24 hour
+                emergency Roadside Assistance Services that are readily available for you.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-6.jpg" alt="" /></div>
+              <h3>Flexible Financing Scheme COE/In-house</h3>
+              <p>We are able to provide financial support and flexible loan packages to get you going on your car
+                ownership journey with as little hassles as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Book An Appointment -->
+      <div class="appointment-section" data-aos="zoom-in-right">
+        <div class="container">
+          <div class="appointment-container">
+            <div class="appointment-left">
+              <div class="appointment-image"><img src="../images/appointment-image.jpg" alt="" /></div>
+              <div class="appointment-left-container">
+                <h4>You’re in good hands</h4>
+                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our consumers
+                  satisfaction</p>
+              </div>
+            </div>
+            <div class="appointment-right" id="book-appointment">
+              <h3>Book An Appointment</h3>
+              <div class="appointment-form">
+                <form name="appointment" id="appointment" method="post" class="car-details">
+                  <div class="alert alert-success d-none" role="alert"> We've received your information, we will get
+                    back to you shortly. </div>
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="first_name" name="first_name" class="form-control"
+                        placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="wide" name="enquiry_type" id="enquiry_type"
+                        data-error-container="enquiry_type-error">
+                        <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                        <option value="Book Appointment">Book Appointment</option>
+                        <option value="Request Call">Request Call</option>
+                        <option value="Financing">Financing</option>
+                        <option value="Packages">Packages</option>
+                      </select>
+                      <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="car-modal-box">
+                        <div class="title">Car Model</div>
+                        <div class="text">Porsche Cayenne Coupe</div>
+                      </div>
+                      <input type="hidden" name="car_model" id="car_model" value="Porsche Cayenne Coupe" />
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="checkbox">
+                        <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                          data-error-container="terms_accepted-error">
+                        <label for="terms_accepted" class="checkbox-label">By submitting this form, you agree to our
+                          Privacy Policy and agree to receive sales and marketing
+
+                          communication from ZionAuto Gallery Pte Ltd</label>
+                      </div>
+                      <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group text-center-xs">
+                      <div class="submit-btn">
+                        <button type="submit" name="submit" id="button" class="ready fancy btn btn-primary"
+                          value="Book Now">
+                          <div class="message submitMessage"> <span class="button-text">Book Now</span> </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Book An Appointment -->
+
+      <!--- Location -->
+      <div class="location-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+              <div class="map"><img src="../images/map.jpg" alt="" /></div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+              <div class="location-box-right">
+                <div class="location-title">Locate Us</div>
+                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Location -->
+
+    </div>
+
+    <!--- Footer -->
+    @@include('../html/templates/footer.html', {
+      'path': '.'
+    })
+    <!--- /Footer -->
+
+  </div>
+  <script src="../js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/minified/aos.js"></script>
+  <script src="../js/minified/pushy.js"></script>
+  <script src="../js/jquery/jquery.nice-select.min.js"></script>
+  <script src="../js/validation/jquery.validate.min.js"></script>
+  <script src="../js/validation/additional-methods.min.js"></script>
+  <script src="../js/minified/app.js"></script>
+  <script src="../js/minified/jquery.menu-aim.js"></script>
+  <script src="../js/minified/mobile-menu.js"></script>
+  <script src="../js/minified/fancy-button.js"></script>
+  <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top + -300
+      }, 1000);
+    });	
+  </script>
+  @@include('../html/templates/linkedIn.html')
+</body>
+
+</html>

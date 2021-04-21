@@ -1,0 +1,601 @@
+@@include('../html/templates/head.html', {
+'title': 'Zion Auto Gallery Pte Ltd',
+'path': '.'
+})
+
+<body>
+
+  <!--- Search -->
+  <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+  <div class="wrapper">
+    <div class="search-data">
+      <input type="text" placeholder="Type to search..">
+      <div class="line"></div>
+      <button></button>
+    </div>
+  </div>
+  <!--- /Search -->
+
+  <!--- Car Menu -->
+  @@include('../html/templates/car-menu.html', {
+    'path': '.',
+    'imgPath': '.'
+  })
+  <!--- /Car Menu -->
+
+  <div id="wrapper">
+
+    <!--- Header -->
+    @@include('../html/templates/header.html', {
+    'page': 'car',
+    'path': '.'
+    })
+    <!--- /Header -->
+
+    <!--- Banner -->
+    <div class="car-banner">
+      <div class="container">
+        <div class="inner-banner-container">
+          <div class="inner-banner-right">
+            <div class="banner-title-text" data-aos="fade-right">C-Class Saloon</div>
+            <h1 data-aos="fade-right">AMG-Line Night Edition Premium Plus</h1>
+            <div class="banner-bullet" data-aos="fade-right">
+              <ul>
+                <li>POWER (kW) / POWER (HP)<br>
+                  <span>250kW / 340 HP</span>
+                </li>
+                <li>0-100 km/h<br>
+                  <span>6.0s</span>
+                </li>
+                <li>TOP SPEED<br>
+                  <span>243 km / h</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-info" data-aos="fade-right">POWER (kW) / POWER (HP)<br>
+              <span>250kW / 340 HP</span>
+            </div>
+          </div>
+          <div class="inner-banner-left"><img src="../images/car-detail-banner-image.png" alt="" data-aos="fade-left" />
+          </div>
+          <div class="mobile-banner-bullet" data-aos="fade-up">
+            <ul>
+              <li>0-100 km/h<br>
+                <span>6.0s</span>
+              </li>
+              <li>TOP SPEED<br>
+                <span>243 km / h</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Banner -->
+
+    <div id="middle">
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-1.jpg" alt="" /></div>
+              <h3>Steering Wheel with Touch Control Buttons</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa pharetra non id
+                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-2.jpg" alt="" /></div>
+              <h3>Steering Wheel with Touch Control Buttons</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa pharetra non id
+                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-3.jpg" alt="" /></div>
+              <h3>Steering Wheel with Touch Control Buttons</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa pharetra non id
+                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Call to Action -->
+      <div class="call-to-cation" data-aos="fade-up">
+        <div class="container">
+          <h2>Mercedes C200 Saloon - Exclusive Special Deal Today Only!</h2>
+          <p>Contact our well-versed sales team ensuring your satisfaction</p>
+          <div class="cta-btn-row">
+            <a href="tel: +65 6455 2535" onclick="fbq('track', 'Contact');" class="btn btn-call">Call Us</a>
+            <a href="https://wa.link/3oxkp0" target="_blank" onclick="fbq('track', 'Contact');"
+              class="btn btn-whatsapp bb">Whatsapp <span> <i></i> <i></i> <i></i> <i></i></span></a>
+            <a href="#book-appointment" class="btn btn-email">Email Us</a>
+          </div>
+        </div>
+      </div>
+      <!--- /Call to Action -->
+
+      <div class="accordion-section">
+        <div class="container">
+          <ul class="nav nav-tabs" role="tablist" data-aos="fade-up">
+            <li> <a class="nav-link active" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                aria-controls="technical" aria-selected="true">Technical</a> </li>
+            <li> <a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab"
+                aria-controls="equipment" aria-selected="false">Equipment</a> </li>
+          </ul>
+          <div class="tab-content" data-aos="fade-up">
+
+            <!--- Technical Tab -->
+            <div class="tab-pane fade show active" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="comfort">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseComfort" aria-expanded="true"
+                          aria-controls="collapseComfort">Comfort &amp; Convenience</button>
+                      </h5>
+                    </div>
+                    <div id="collapseComfort" class="collapse show" aria-labelledby="headingComfort"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Active Parking Assist including PARKTRONIC</li>
+                          <li>Collision Prevention Assist Plus</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Active Bonnet</li>
+                          <li>ATTENTION ASSIST</li>
+                          <li>Adaptive Brake System with HOLD function</li>
+                          <li>Anti-lock Braking System (ABS)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="exterior">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseExterior"
+                          aria-expanded="false" aria-controls="collapseExterior">Exterior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseExterior" class="collapse" aria-labelledby="headingExterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                        <ul>
+                          <li>Active Parking Assist including PARKTRONIC</li>
+                          <li>Collision Prevention Assist Plus</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Active Bonnet</li>
+                          <li>ATTENTION ASSIST</li>
+                          <li>Adaptive Brake System with HOLD function</li>
+                          <li>Anti-lock Braking System (ABS)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="interior">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseInterior"
+                          aria-expanded="false" aria-controls="collapseInterior">Interior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseInterior" class="collapse" aria-labelledby="headingInterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Active Parking Assist including PARKTRONIC</li>
+                          <li>Collision Prevention Assist Plus</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Active Bonnet</li>
+                          <li>ATTENTION ASSIST</li>
+                          <li>Adaptive Brake System with HOLD function</li>
+                          <li>Anti-lock Braking System (ABS)</li>
+                        </ul>
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="audio">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseAudio"
+                          aria-expanded="false" aria-controls="collapseAudio">Audio &amp; In-Car Entertainment</button>
+                      </h5>
+                    </div>
+                    <div id="collapseAudio" class="collapse" aria-labelledby="headingAudio" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="safety">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseSafety"
+                          aria-expanded="false" aria-controls="collapseSafety">Safety</button>
+                      </h5>
+                    </div>
+                    <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="individual">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseIndividual"
+                          aria-expanded="false" aria-controls="collapseIndividual">Individual Options</button>
+                      </h5>
+                    </div>
+                    <div id="collapseIndividual" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Technical Tab -->
+
+            <!--- Equipment Tab -->
+            <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="comfort2">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseComfort2" aria-expanded="true"
+                          aria-controls="collapseComfort2">Comfort &amp; Convenience</button>
+                      </h5>
+                    </div>
+                    <div id="collapseComfort2" class="collapse show" aria-labelledby="headingComfort2"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Active Parking Assist including PARKTRONIC</li>
+                          <li>Collision Prevention Assist Plus</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Active Bonnet</li>
+                          <li>ATTENTION ASSIST</li>
+                          <li>Adaptive Brake System with HOLD function</li>
+                          <li>Anti-lock Braking System (ABS)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="exterior2">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseExterior2"
+                          aria-expanded="false" aria-controls="collapseExterior2">Exterior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseExterior2" class="collapse" aria-labelledby="headingExterior2"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                        <ul>
+                          <li>Active Parking Assist including PARKTRONIC</li>
+                          <li>Collision Prevention Assist Plus</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Active Bonnet</li>
+                          <li>ATTENTION ASSIST</li>
+                          <li>Adaptive Brake System with HOLD function</li>
+                          <li>Anti-lock Braking System (ABS)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="interior2">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseInterior2"
+                          aria-expanded="false" aria-controls="collapseInterior2">Interior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseInterior2" class="collapse" aria-labelledby="headingInterior2"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Active Parking Assist including PARKTRONIC</li>
+                          <li>Collision Prevention Assist Plus</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Active Bonnet</li>
+                          <li>ATTENTION ASSIST</li>
+                          <li>Adaptive Brake System with HOLD function</li>
+                          <li>Anti-lock Braking System (ABS)</li>
+                        </ul>
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="audio2">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseAudio2"
+                          aria-expanded="false" aria-controls="collapseAudio2">Audio &amp; In-Car Entertainment</button>
+                      </h5>
+                    </div>
+                    <div id="collapseAudio2" class="collapse" aria-labelledby="headingAudio2" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="safety2">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseSafety2"
+                          aria-expanded="false" aria-controls="collapseSafety2">Safety</button>
+                      </h5>
+                    </div>
+                    <div id="collapseSafety2" class="collapse" aria-labelledby="headingSafety2"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="individual2">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseIndividual2"
+                          aria-expanded="false" aria-controls="collapseIndividual2">Individual Options</button>
+                      </h5>
+                    </div>
+                    <div id="collapseIndividual2" class="collapse" aria-labelledby="headingIndividual2"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Equipment Tab -->
+
+          </div>
+        </div>
+      </div>
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-4.jpg" alt="" /></div>
+              <h3>After-sales Maintanience Assurance</h3>
+              <p>Make your purchase with confidence and a peace of mind. Providing by our in-house workshop (Star Auto)
+                within your first 10-years or 150,000km whichever comes first.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-5.jpg" alt="" /></div>
+              <h3>24/7 On Stand-by Roadside Assistance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa pharetra non id
+                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-6.jpg" alt="" /></div>
+              <h3>Flexible Financing Scheme</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet elementum id massa pharetra non id
+                morbi. Donec nulla id massa est eleifend ultricies. Nulla in tortor amet lacinia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Book An Appointment -->
+      <div class="appointment-section" data-aos="zoom-in-right">
+        <div class="container">
+          <div class="appointment-container">
+            <div class="appointment-left">
+              <div class="appointment-image"><img src="../images/appointment-image.jpg" alt="" /></div>
+              <div class="appointment-left-container">
+                <h4>You’re in good hands</h4>
+                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our consumers
+                  satisfaction</p>
+              </div>
+            </div>
+            <div class="appointment-right" id="book-appointment">
+              <h3>Book An Appointment</h3>
+              <div class="appointment-form">
+                <form name="appointment" id="appointment" method="post" class="car-details">
+                  <div class="alert alert-success d-none" role="alert"> We've received your information, we will get
+                    back to you shortly. </div>
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="first_name" name="first_name" class="form-control"
+                        placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="wide" name="enquiry_type" id="enquiry_type"
+                        data-error-container="enquiry_type-error">
+                        <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                        <option value="Book Appointment">Book Appointment</option>
+                        <option value="Request Call">Request Call</option>
+                        <option value="Financing">Financing</option>
+                        <option value="Packages">Packages</option>
+                      </select>
+                      <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="car-modal-box">
+                        <div class="title">Car Model</div>
+                        <div class="text">Mercedes E200 - AMG Line Premium Plus</div>
+                      </div>
+                      <input type="hidden" name="car_model" id="car_model"
+                        value="Mercedes E200 - AMG Line Premium Plus" />
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="checkbox">
+                        <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                          data-error-container="terms_accepted-error">
+                        <label for="terms_accepted" class="checkbox-label">By submitting this form, you agree to our
+                          Privacy Policy and agree to receive sales and marketing
+
+                          communication from ZionAuto Gallery Pte Ltd</label>
+                      </div>
+                      <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group text-center-xs">
+                      <div class="submit-btn">
+                        <button type="submit" name="submit" id="button" class="ready fancy btn btn-primary"
+                          value="Book Now">
+                          <div class="message submitMessage"> <span class="button-text">Book Now</span> </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Book An Appointment -->
+
+      <!--- Location -->
+      <div class="location-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+              <div class="map"><img src="../images/map.jpg" alt="" /></div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+              <div class="location-box-right">
+                <div class="location-title">Locate Us</div>
+                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Location -->
+
+    </div>
+
+    <!--- Footer -->
+    @@include('../html/templates/footer.html', {
+      'path': '.'
+    })
+    <!--- /Footer -->
+
+  </div>
+  <script src="../js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/minified/aos.js"></script>
+  <script src="../js/minified/pushy.js"></script>
+  <script src="../js/jquery/jquery.nice-select.min.js"></script>
+  <script src="../js/validation/jquery.validate.min.js"></script>
+  <script src="../js/validation/additional-methods.min.js"></script>
+  <script src="../js/minified/app.js"></script>
+  <script src="../js/minified/jquery.menu-aim.js"></script>
+  <script src="../js/minified/mobile-menu.js"></script>
+  <script src="../js/minified/fancy-button.js"></script>
+  <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top + -300
+      }, 1000);
+    });	
+  </script>
+  @@include('../html/templates/linkedIn.html')
+</body>
+
+</html>

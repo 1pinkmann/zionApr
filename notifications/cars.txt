@@ -1,0 +1,17 @@
+e200  New Mercedes E200 Saloon
+glc43  Mercedes GLC43 Coupe SUV
+macan  Porsche Macan SUV
+s500  New Mercedes S500 Saloon
+cla250  Mercedes CLA250 Coupe
+bmw-8-series  BMW 8 Series Gran Coupe
+porsche-panamera  Porsche Panamera Saloon
+cla35  Mercedes CLA35 Coupe
+cla45s  Mercedes CLA45s Coupe
+cla180  Mercedes CLA180 Coupe
+GLA35  Mercedes GLA35 SUV
+e200-2021  New Mercedes E200 Saloon
+gla45s  Mercedes GLA45S SUV
+toyota-camry  Toyota Camry 2.5 Hybrid
+toyota-aphard  Toyota Alphard
+porsche-cayenne  Porsche Cayenne SUV
+glc300  Mercedes GLC300 SUV

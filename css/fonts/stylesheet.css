@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/subset-Montserrat-Regular.woff2') format('woff2');
+    src: url('../../fonts/subset-Montserrat-Regular.ttf') format('truetype');        
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/subset-Montserrat-Medium.woff2') format('woff2');
+    src: url('../../fonts/subset-Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/subset-Montserrat-Bold.woff2') format('woff2');
+    src: url('../../fonts/subset-Montserrat-Bold.ttf') format('truetype');   
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corporate A';
+    src: url('../../fonts/subset-CorporateA-Demi.woff2') format('woff2');
+    src: url('../../fonts/subset-CorporateA-Demi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corporate A';
+    src: url('../../fonts/subset-CorporateA-Regular.woff2') format('woff2');
+    src: url('../../fonts/subset-CorporateA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/subset-Roboto-Regular.woff2') format('woff2');
+    src: url('../../fonts/subset-Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/subset-Roboto-Medium.woff2') format('woff2');
+    src: url('../../fonts/subset-Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/subset-Roboto-Bold.woff2') format('woff2');
+    src: url('../../fonts/subset-Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../../fonts/subset-Rubik-Regular.woff2') format('woff2');
+    src: url('../../fonts/subset-Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../../fonts/subset-Rubik-Light.woff2') format('woff2');
+    src: url('../../fonts/subset-Rubik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../../fonts/subset-Rubik-Medium.woff2') format('woff2');
+    src: url('../../fonts/subset-Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../../fonts/subset-Rubik-Bold.woff2') format('woff2');
+    src: url('../../fonts/subset-Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

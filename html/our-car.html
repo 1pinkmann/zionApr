@@ -1,0 +1,998 @@
+@@include('./templates/head.html', {
+'title': 'Our Cars | Zion Auto Gallery Pte Ltd',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+
+    <!--- Search -->
+    <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+    <div class="wrapper">
+        <div class="search-data">
+            <input type="text" placeholder="Type to search..">
+            <div class="line"></div>
+            <button></button>
+        </div>
+    </div>
+    <!--- /Search -->
+
+    <!--- Car Menu -->
+    @@include('./templates/car-menu.html', {
+        'path': './all-cars',
+        'imgPath': ''
+        })
+    <!--- /Car Menu -->
+
+    <div id="wrapper">
+
+        <!--- Header -->
+        @@include('./templates/header.html', {
+        'page': 'car',
+        'path': ''
+        })
+        <!--- /Header -->
+
+        <div id="middle" class="mobile-pad">
+
+            <!--- Our Brands -->
+            <div class="brand-section" data-aos="fade-down">
+                <div class="container">
+                    <h2>Our Brands</h2>
+                    <div class="tab-container">
+                        <nav>
+                            <div class="list-dropdown">
+                                <div class="caption">Mercedes-Benz</div>
+                                <div class="nav nav-tabs list" id="nav-tab" role="tablist">
+
+                                    <a class="nav-link button drive active" id="nav-mercedes-tab" data-toggle="tab"
+                                        href="#nav-mercedes" role="tab" aria-controls="nav-mercedes"
+                                        aria-selected="true">Mercedes-Benz</a>
+
+                                    <a class="nav-link button drive" id="nav-porsche-tab" data-toggle="tab"
+                                        href="#nav-porsche" role="tab" aria-controls="nav-porsche"
+                                        aria-selected="false">Porsche</a>
+
+                                    <a class="nav-link button drive" id="nav-bmw-tab" data-toggle="tab" href="#nav-bmw"
+                                        role="tab" aria-controls="nav-bmw" aria-selected="false">BMW</a>
+
+                                    <a class="nav-link button drive" id="nav-toyota-tab" data-toggle="tab"
+                                        href="#nav-toyota" role="tab" aria-controls="nav-toyota"
+                                        aria-selected="false">Toyota</a>
+
+                                    <a class="nav-link button drive" id="nav-honda-tab" data-toggle="tab"
+                                        href="#nav-honda" role="tab" aria-controls="nav-honda"
+                                        aria-selected="false">Honda</a>
+
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <!--- Tab Mercedes-Benz -->
+                            <div class="tab-pane fade show active" id="nav-mercedes" role="tabpanel"
+                                aria-labelledby="nav-mercedes-tab">
+                                <div class="tab-data">
+                                    <div class="desktop-tab-title" data-aos="fade-up">Models</div>
+                                    <div class="tab-data-container">
+                                        <div class="tab-data-left">
+                                            <div class="nav nav-tabs" role="tablist">
+
+                                                <a class="nav-link active" id="nav-suvs-tab" data-toggle="tab"
+                                                    href="#nav-suvs" role="tab" aria-controls="nav-suvs"
+                                                    aria-selected="true"><span class="car car-3"><i
+                                                            class="wheel cw-3-1"></i> <i
+                                                            class="wheel cw-3-2"></i></span> SUVs</a>
+
+                                                <a class="nav-link" id="nav-coupes-tab" data-toggle="tab"
+                                                    href="#nav-coupes" role="tab" aria-controls="nav-coupes"
+                                                    aria-selected="false"><span class="car car-4"><i
+                                                            class="wheel cw-4-1"></i> <i
+                                                            class="wheel cw-4-2"></i></span> Coupes</a>
+
+                                                <a class="nav-link" id="nav-saloons-tab" data-toggle="tab"
+                                                    href="#nav-saloons" role="tab" aria-controls="nav-saloons"
+                                                    aria-selected="false"><span class="car car-2"><i
+                                                            class="wheel cw-2-1"></i> <i
+                                                            class="wheel cw-2-2"></i></span> Saloons</a>
+
+                                                <!--       <a class="nav-link" id="nav-t-hatchbacks-tab" data-toggle="tab" href="#nav-t-hatchbacks" role="tab" aria-controls="nav-t-hatchbacks" aria-selected="false"><span class="car car-1"><i class="wheel cw-1-1"></i> <i class="wheel cw-1-2"></i></span> Hatchbacks</a>  -->
+                                            </div>
+                                        </div>
+                                        <div class="tab-data-right car-box-row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="nav-suvs" role="tabpanel"
+                                                    aria-labelledby="nav-suvs-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">SUVs</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/mb-maybach.html"> <span class="car-gray-box">
+                                                                    <h2><span style="color:red;">NEW</span> Maybach GLS 600</h2>
+                                                                    <p>4Matic Premium / First Class</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/mb-maybach.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/gla180-2019.html"> <span class="car-gray-box">
+                                                                    <h2>GLA180 2019</h2>
+                                                                    <p>Urban Edition</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/gla180-2019.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/gla200.html"> <span class="car-gray-box">
+                                                                    <h2>GLA200 Sport/AMG</h2>
+                                                                    <p>Standard/Executive/Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/gla200-suv.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/gla35.html"> <span class="car-gray-box">
+                                                                    <h2>GLA35 - 4Matic AMG</h2>
+                                                                    <p>Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/gla35.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/gla45-s.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLA45 S</h2>
+                                                                    <p>4Matic+/4Matic+ Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/gla45-s.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/glb200-7-seater.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLB200 7-Seater AMG</h2>
+                                                                    <p>Standard/Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/glb200-7-seater.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/glb35-7-seater.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLB35 7-Seater</h2>
+                                                                    <p>4Matic/AMG Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/glb35-7-seater.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/glc300-suv.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2>GLC300 - 4Matic AMG</h2>
+                                                                    <p>Standard/Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/glc300-suv.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/glc43-suv.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2>GLC43 - 4Matic AMG</h2>
+                                                                    <p>Premium/Premium Plus/Night Edition</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/glc43-suv.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a
+                                                                href="all-cars/gle450-7-seater.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLE450 7-Seater 4Matic</h2>
+                                                                    <p>AMG Premium/AMG Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/gle450-7-seater.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a
+                                                                href="all-cars/gle53-7-seater.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLE53 7-Seater 4Matic+</h2>
+                                                                    <p>AMG Premium/AMG Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/gle53-7-seater.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/glc63.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLC63 S - 4Matic+</h2>
+                                                                    <p>Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/glc63.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-saloons" role="tabpanel"
+                                                    aria-labelledby="nav-saloons-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Saloons</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/e200-2021.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2><span style="color:red;">NEW</span> E200 2021
+                                                                    </h2>
+                                                                    <p>AMG-Line Premium</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/e200-2021.png" alt="" /></span>
+                                                                    <span class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/s450-2021.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2><span style="color:red;">NEW</span> S450L 2021
+                                                                    </h2>
+                                                                    <p>Grand Edition (L)</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/s450-2021.png" alt="" /></span>
+                                                                    <span class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/s500-2021.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2><span style="color:red;">NEW</span> S500L 2021
+                                                                    </h2>
+                                                                    <p>4Matic (L) AMG</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/s500-2021.png" alt="" /></span>
+                                                                    <span class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/glc63.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <!--             <h2><span style="color:red;">NEW</span> C-Class 2022</h2>
+                            <p>Mercedes-Benz</p>
+                            <span class="box-image"><img src="images/gle53-7-seater.png" alt=""/></span> <span class="modal-tag">Saloon</span> </span> </a> </div>
+                          <div class="col-md-6 d-sm-none d-md-block" data-aos="flip-right"> <a href="all-cars/glc63.html"> <span class="car-gray-box"> -->
+                                                                    <h2>S500L</h2>
+                                                                    <p>4-Matic AMG-Line Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/s500l.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-coupes" role="tabpanel"
+                                                    aria-labelledby="nav-coupes-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Coupes</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/cla180.html"> <span class="car-gray-box">
+                                                                    <h2>CLA180 AMG</h2>
+                                                                    <p>Standard/Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/cla180.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/cla200.html"> <span class="car-gray-box">
+                                                                    <h2>CLA200 AMG</h2>
+                                                                    <p>Standard/Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/cla200.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/cla250.html"> <span class="car-gray-box">
+                                                                    <h2>CLA250 AMG</h2>
+                                                                    <p>Standard/Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/cla250.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/cla35.html"> <span class="car-gray-box">
+                                                                    <h2>CLA35 - 4Matic</h2>
+                                                                    <p>Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img src="images/cla35.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/cla45-s.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>CLA45 S AMG</h2>
+                                                                    <p>4-Matic+/4Matic+ Plus</p>
+                                                                    <span class="box-image"><img src="images/cla45s.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/glc300-coupe.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2>GLC300 4Matic AMG</h2>
+                                                                    <p>Standard/Premium/Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/glc300-coupe.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="all-cars/glc43-coupe.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2>GLC43 4Matic AMG</h2>
+                                                                    <p>Premium/Premium Plus/Night Edition</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/glc43-coupe.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <!--hidden     <div class="tab-pane fade" id="nav-t-hatchbacks" role="tabpanel" aria-labelledby="nav-hatchbacks-tab">
+                        <div class="mobile-tab-title" data-aos="fade-up">Hatchbacks</div>
+                        <div class="row row-flex row-flex-wrap">
+                          <div class="col-md-6" data-aos="flip-left"> <a href="all-cars/toyota-alphard.html"> <span class="car-gray-box">
+                            <h2><span style="color:red;">NEW</span> C-Class 2022</h2>
+                            <p>Mercedes-Benz</p>
+                            <span class="box-image"><img src="images/gle53-7-seater.png" alt=""/></span> <span class="modal-tag">Wagon</span> </span> </a> </div>
+                        </div>
+                      </div>  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--- /Tab Mercedes-Benz -->
+
+                            <!--- Tab Porsche -->
+                            <div class="tab-pane fade" id="nav-porsche" role="tabpanel"
+                                aria-labelledby="nav-porsche-tab">
+                                <div class="tab-data">
+                                    <div class="desktop-tab-title" data-aos="fade-up">Models</div>
+                                    <div class="tab-data-container">
+                                        <div class="tab-data-left">
+                                            <div class="nav nav-tabs" role="tablist">
+
+                                                <a class="nav-link active" id="nav-p-suvs-tab" data-toggle="tab"
+                                                    href="#nav-p-suvs" role="tab" aria-controls="nav-suvs"
+                                                    aria-selected="true"><span class="car car-3"><i
+                                                            class="wheel cw-3-1"></i> <i
+                                                            class="wheel cw-3-2"></i></span> SUVs</a>
+
+                                                <a class="nav-link" id="nav-p-coupes-tab" data-toggle="tab"
+                                                    href="#nav-p-coupes" role="tab" aria-controls="nav-coupes"
+                                                    aria-selected="false"><span class="car car-4"><i
+                                                            class="wheel cw-4-1"></i> <i
+                                                            class="wheel cw-4-2"></i></span> Coupes</a>
+
+                                                <a class="nav-link" id="nav-p-saloons-tab" data-toggle="tab"
+                                                    href="#nav-p-saloons" role="tab" aria-controls="nav-saloons"
+                                                    aria-selected="false"><span class="car car-2"><i
+                                                            class="wheel cw-2-1"></i> <i
+                                                            class="wheel cw-2-2"></i></span> Saloons</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-data-right car-box-row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="nav-p-suvs" role="tabpanel"
+                                                    aria-labelledby="nav-suvs-tab">
+                                                    <div class="mobile-tab-title">SUV</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/porsche-macan.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Porsche Macan</h2>
+                                                                    <p>(S)/GTS/Turbo</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/porsche-macan.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/porsche-cayenne.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Porsche Cayenne</h2>
+                                                                    <p>Standard/(S)/E-Hybrid</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/porsche-cayenne-suv.png"
+                                                                            alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-p-saloons" role="tabpanel"
+                                                    aria-labelledby="nav-saloons-tab">
+                                                    <div class="mobile-tab-title">Saloons</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/porsche-panamera.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Porsche Panamera</h2>
+                                                                    <p>Standard/4S/E-Hybrid/GTS/Sport</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/porsche-panamera.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-p-coupes" role="tabpanel"
+                                                    aria-labelledby="nav-coupes-tab">
+                                                    <div class="mobile-tab-title">Coupes</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/porsche-911.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Porsche 911 Carrera</h2>
+                                                                    <p>Standard/4/(S)/4S/Cabriolet</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/porsche-911-carrera.png"
+                                                                            alt="" /></span>
+                                                                    <span class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/porsche-cayenne-coupe.html">
+                                                                <span class="car-gray-box">
+                                                                    <h2>Porsche Cayenne</h2>
+                                                                    <p>Standard/(S)/E-Hybrid</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/posrche-cayenne-coupe.png"
+                                                                            alt="" /></span>
+                                                                    <span class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- /Tab Porsche -->
+
+                            <!--- Tab BMW -->
+
+                            <div class="tab-pane fade" id="nav-bmw" role="tabpanel" aria-labelledby="nav-bmw-tab">
+                                <div class="tab-data">
+                                    <div class="desktop-tab-title" data-aos="fade-up">Models</div>
+                                    <div class="tab-data-container">
+                                        <div class="tab-data-left">
+                                            <div class="nav nav-tabs" role="tablist">
+
+                                                <a class="nav-link active" id="nav-b-saloons-tab" data-toggle="tab"
+                                                    href="#nav-b-saloons" role="tab" aria-controls="nav-b-saloons"
+                                                    aria-selected="true"><span class="car car-2"><i
+                                                            class="wheel cw-2-1"></i> <i
+                                                            class="wheel cw-2-2"></i></span> Saloons</a>
+
+                                                <a class="nav-link" id="nav-b-coupes-tab" data-toggle="tab"
+                                                    href="#nav-b-coupes" role="tab" aria-controls="nav-coupes"
+                                                    aria-selected="false"><span class="car car-4"><i
+                                                            class="wheel cw-4-1"></i> <i
+                                                            class="wheel cw-4-2"></i></span> Coupes</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-data-right car-box-row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="nav-b-saloons"
+                                                    role="tabpanel" aria-labelledby="nav-saloons-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Saloons</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/bmw-320i.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>BMW 3-Series</h2>
+                                                                    <p>SE/Sport/M-Sport</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/bmw-320i.png" alt="" /></span>
+                                                                    <span class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a
+                                                                href="all-cars/bmw-520i.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>BMW 5-Series</h2>
+                                                                    <p>SE/M-Sport/M-Sport Edition</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/bmw-520i.png" alt="" /></span>
+                                                                    <span class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/bmw-7-series.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>BMW 7-Series 740i/740Li</h2>
+                                                                    <p>M-Sport/xDrive/sDrive M-Sport</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/bmw-7-series.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-b-suvs" role="tabpanel"
+                                                    aria-labelledby="nav-suvs-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">BMW 3</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>E-Class Saloon</h2>
+                                                                    <p>ANG Line Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image.png" alt="" /></span>
+                                                                    <span class="modal-tag">GLA200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>E-Class Saloon</h2>
+                                                                    <p>ANG Line Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image.png" alt="" /></span>
+                                                                    <span class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLE SUV</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span class="modal-tag">63
+                                                                        S</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-b-coupes" role="tabpanel"
+                                                    aria-labelledby="nav-coupes-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Coupes</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/bmw-8-series.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>BMW 8-Series 840i/850i</h2>
+                                                                    <p>M-Sport/xDrive/sDrive M-Sport</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/bmw-8-series.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Coupe</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- /Tab BMW -->
+
+                            <!--- Tab Toyota -->
+
+                            <div class="tab-pane fade" id="nav-toyota" role="tabpanel" aria-labelledby="nav-toyota-tab">
+                                <div class="tab-data">
+                                    <div class="desktop-tab-title" data-aos="fade-up">Models</div>
+                                    <div class="tab-data-container">
+                                        <div class="tab-data-left">
+                                            <div class="nav nav-tabs" role="tablist">
+
+                                                <a class="nav-link active" id="nav-t-saloons-tab" data-toggle="tab"
+                                                    href="#nav-t-saloons" role="tab" aria-controls="nav-t-saloons"
+                                                    aria-selected="false"><span class="car car-2"><i
+                                                            class="wheel cw-2-1"></i> <i
+                                                            class="wheel cw-2-2"></i></span> Saloons</a>
+
+                                                <a class="nav-link" id="nav-t-suvs-tab" data-toggle="tab"
+                                                    href="#nav-t-suvs" role="tab" aria-controls="nav-t-suvs"
+                                                    aria-selected="true"><span class="car car-3"><i
+                                                            class="wheel cw-3-1"></i> <i
+                                                            class="wheel cw-3-2"></i></span> SUVs/MPV</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-data-right car-box-row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="nav-t-saloons" role="tabpanel"
+                                                    aria-labelledby="nav-saloons-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Saloons</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/toyota-camry.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Toyota Camry</h2>
+                                                                    <p>Ascent/Ascent Sport/(G)/(G) Sunroof/SL</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/toyota-camry.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">Saloon</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-t-suvs" role="tabpanel"
+                                                    aria-labelledby="nav-suvs-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">SUVs/MPV</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="all-cars/toyota-raize.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Toyota Raize</h2>
+                                                                    <p>(X) / (X) "S" / (G)</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/toyota-raize.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="all-cars/toyota-harrier.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Toyota Harrier</h2>
+                                                                    <p>2.5G Hybrid</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/toyota-harrier.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="all-cars/toyota-alphard.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Toyota Alphard 7/8-Seater</h2>
+                                                                    <p>X (A)/S (A)/<br>S A-Package (A)/S C-Package(A)</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/toyota-alphard.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">MPV</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-t-coupes" role="tabpanel"
+                                                    aria-labelledby="nav-coupes-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Coupes</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>E-Class Saloon</h2>
+                                                                    <p>ANG Line Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image.png" alt="" /></span>
+                                                                    <span class="modal-tag">GLA200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>E-Class Saloon</h2>
+                                                                    <p>ANG Line Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image.png" alt="" /></span>
+                                                                    <span class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLE SUV</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span class="modal-tag">63
+                                                                        S</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- /Tab Toyota -->
+
+                            <!--- Tab Honda -->
+
+                            <div class="tab-pane fade" id="nav-honda" role="tabpanel" aria-labelledby="nav-honda-tab">
+                                <div class="tab-data">
+                                    <div class="desktop-tab-title" data-aos="fade-up">Models</div>
+                                    <div class="tab-data-container">
+                                        <div class="tab-data-left">
+                                            <div class="nav nav-tabs" role="tablist">
+
+                                                <a class="nav-link active" id="nav-h-suvs-tab" data-toggle="tab"
+                                                    href="#nav-h-suvs" role="tab" aria-controls="nav-h-suvs"
+                                                    aria-selected="true"><span class="car car-3"><i
+                                                            class="wheel cw-3-1"></i> <i
+                                                            class="wheel cw-3-2"></i></span> SUVs/MPV</a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-data-right car-box-row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="nav-h-suvs" role="tabpanel"
+                                                    aria-labelledby="nav-suvs-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">SUVs/MPV</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="all-cars/honda-vezel.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>1.5 X</h2>
+                                                                    <p>New Honda Vezel</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/honda-vezel.png" alt="" /></span>
+                                                                    <span class="modal-tag">SUV</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a
+                                                                href="all-cars/honda-shuttle.html"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>Honda Shuttle 1.5G (A)</h2>
+                                                                    <p>Sensing/Led Sensing/<br>Keyless-Navi Sensing</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/honda-shuttle.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">MPV</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-t-coupes" role="tabpanel"
+                                                    aria-labelledby="nav-coupes-tab">
+                                                    <div class="mobile-tab-title" data-aos="fade-up">Coupes</div>
+                                                    <div class="row row-flex row-flex-wrap">
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>E-Class Saloon</h2>
+                                                                    <p>ANG Line Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image.png" alt="" /></span>
+                                                                    <span class="modal-tag">GLA200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>E-Class Saloon</h2>
+                                                                    <p>ANG Line Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image.png" alt="" /></span>
+                                                                    <span class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>GLE SUV</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span class="modal-tag">63
+                                                                        S</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6" data-aos="flip-left"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                        <div class="col-md-6 d-sm-none d-md-block"
+                                                            data-aos="flip-right"> <a href="#"> <span
+                                                                    class="car-gray-box">
+                                                                    <h2>C-Class Saloon</h2>
+                                                                    <p>AMG Line Night Edition Premium Plus</p>
+                                                                    <span class="box-image"><img
+                                                                            src="images/car-image-2.png"
+                                                                            alt="" /></span> <span
+                                                                        class="modal-tag">E200</span>
+                                                                </span> </a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- /Tab Honda -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--- /Our Brands -->
+
+            <!--- Book An Appointment -->
+            <div class="appointment-section" data-aos="zoom-in-right">
+                <div class="container">
+                    <div class="appointment-container">
+                        <div class="appointment-left">
+                            <div class="appointment-image"><img src="images/appointment-image.jpg" alt="" /></div>
+                            <div class="appointment-left-container">
+                                <h4>You’re in good hands</h4>
+                                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our
+                                    consumers
+                                    satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="appointment-right" id="book-appointment">
+                            <h3>Book An Appointment</h3>
+                            <div class="appointment-form">
+                                <form name="appointment" id="appointment" method="post">
+                                    <div class="alert alert-success d-none" role="alert"> We've received your
+                                        information, we will get
+                                        back to you shortly. </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" id="first_name" name="first_name" class="form-control"
+                                                placeholder="First name">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" id="last_name" name="last_name" class="form-control"
+                                                placeholder="Last name">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <select class="wide" name="enquiry_type" id="enquiry_type"
+                                                data-error-container="enquiry_type-error">
+                                                <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                                                <option value="Book Appointment">Book Appointment</option>
+                                                <option value="Request Call">Request Call</option>
+                                                <option value="Financing">Financing</option>
+                                                <option value="Packages">Packages</option>
+                                                <option value="Bespoke Cars">Bespoke Cars</option>
+                                                <option value="General">General</option>
+                                            </select>
+                                            <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                                        </div>
+                                        <div class="col-lg-12 form-group">
+                                            <input type="email" id="email" name="email" class="form-control"
+                                                placeholder="Email Address">
+                                        </div>
+                                        <div class="col-lg-12 form-group">
+                                            <div class="checkbox">
+                                                <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                                                    data-error-container="terms_accepted-error">
+                                                <label for="terms_accepted" class="checkbox-label">By submitting this
+                                                    form, you agree to our
+                                                    Privacy Policy and agree to receive sales and marketing
+
+                                                    communication from ZionAuto Gallery Pte Ltd</label>
+                                            </div>
+                                            <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                                        </div>
+                                        <div class="col-lg-12 form-group text-center-xs">
+                                            <div class="submit-btn">
+                                                <button type="submit" name="submit" id="button"
+                                                    class="ready fancy btn btn-primary" value="Book Now">
+                                                    <div class="message submitMessage"> <span class="button-text">Book
+                                                            Now</span> </div>
+                                                    <div class="message loadingMessage">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                                                            <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                                                            <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                                                            <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="message successMessage">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                                                            <polyline stroke="currentColor"
+                                                                points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                                                        </svg>
+                                                        <span class="button-text">Success</span>
+                                                    </div>
+                                                </button>
+                                                <canvas id="canvas"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Book An Appointment -->
+
+            <!--- Location -->
+            <div class="location-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+                            <div class="map"><img src="images/map.jpg" alt="" /></div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+                            <div class="location-box-right">
+                                <div class="location-title">Locate Us</div>
+                                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Location -->
+
+        </div>
+
+        <!--- Footer -->
+        @@include('./templates/footer.html', {
+            'path': ''
+          })
+        <!--- /Footer -->
+
+    </div>
+    <script src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/minified/aos.js"></script>
+    <script src="js/minified/pushy.js"></script>
+    <script src="js/jquery/jquery.nice-select.min.js"></script>
+    <script src="js/minified/owl.carousel.min.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/minified/app.js"></script>
+    <script src="js/minified/jquery.menu-aim.js"></script>
+    <script src="js/minified/mobile-menu.js"></script>
+    <script src="js/minified/fancy-button.js"></script>
+    @@include('./templates/linkedIn.html')
+</body>
+
+</html>

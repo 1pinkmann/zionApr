@@ -1,0 +1,58 @@
+.our-promotion-top{
+	width: 100%;
+	float: left;
+	padding: 70px 0 0 0; 
+	
+	h2{
+		color: #302B63;
+	}
+	
+	.title-text{
+		font-size: 20px;
+		color: $black-color;
+		padding: 20px 0 15px;
+	}
+	
+	.text-container{
+		max-width: 1250px;
+		margin: 0 auto;
+	}
+	
+	p{
+		width: 100%;
+		float: left;
+		font-size: 18px;
+		text-align: center;
+		font-family: $secondary-font-2;
+		color: #898989;
+		padding: 25px 0 0 0;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.our-promotion-top{
+		padding: 100px 0 0 0; 
+		
+		h2{
+			text-align: center;
+		}
+	
+		.title-text{
+			text-align: center;
+		}
+		
+		p{
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (min-width:992px) {
+	.our-promotion-top{
+		padding: 140px 0 0 0; 
+		
+		p{
+			font-size: 24px;
+		}
+	}
+}

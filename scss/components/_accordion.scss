@@ -1,0 +1,145 @@
+.card{
+	border: none;
+	width: 100%;
+	float: left;
+	padding: 5px 0;
+	
+	.card-header{
+		background: none;
+		border: none;
+		padding: 10px 0;
+		width: 100%;
+		float: left;
+		
+		button{
+			background: none;
+			width: 100%;
+			float: left;
+			border: none;
+			padding: 0;
+			font-weight: 500;
+			font-family: $secondary-font;
+			text-align: left;
+			font-size: 20px;
+			position: relative;
+			padding-right: 30px;
+			
+			&:after{
+				position: absolute;
+				right: 0;
+				top: 0;
+				content: "-";
+				font-weight: 500;
+				font-size: 20px;
+				font-family: $secondary-font;
+			}
+			
+			&.collapsed{
+				&:after{
+					content: "+";
+				}
+			}
+		}
+	}
+	
+	.card-body{
+		padding: 0;
+		
+		p{
+			width: 100%;
+			float: left;
+			color: #898989;
+			font-family: $secondary-font-2;
+			font-size: 16px; 
+		}
+		
+		ul{
+			width: 100%;
+			float: left;
+			padding-bottom: 20px;
+			
+			li{
+				width: 100%;
+				float: left;
+				position: relative;
+				color: #898989;
+				font-family: $secondary-font-2;
+				font-size: 16px; 
+				padding: 0 0 0 20px;
+				margin: 4px 0;
+				
+				&:after{
+					width: 5px;
+					height: 5px;
+					background: #898989;;
+					float: left;
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 10px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:768px) {
+	.card{
+		.card-header{
+			button{
+				font-size: 30px;
+				
+				&:after{
+					font-size: 30px; 
+				}
+			}
+		}
+		
+		.card-body{
+			p{
+				font-size: 20px; 
+			}
+
+			ul{
+				li{
+					font-size: 20px; 
+					
+					&:after{
+						top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:992px) {
+	.card{
+		.card-header{
+			button{
+				font-size: 40px;
+				
+				&:after{
+					font-size: 40px;
+				}
+			}
+		}
+		
+		.card-body{
+			p{
+				font-size: 24px; 
+			}
+
+			ul{
+				li{
+					font-size: 24px; 
+					
+					&:after{
+						top: 13px;
+					}
+				}
+			}
+		}
+	}
+}

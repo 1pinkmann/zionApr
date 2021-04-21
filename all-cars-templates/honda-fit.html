@@ -1,0 +1,444 @@
+@@include('../html/templates/head.html', {
+'title': '2020 Honda Fit 1.3 (A) | Zion Auto Gallery',
+'path': '.',
+'description': 'Description Text',
+'keywords': 'Keywords Text'
+})
+
+<body>
+
+  <!--- Search -->
+  <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+  <div class="wrapper">
+    <div class="search-data">
+      <input type="text" placeholder="Type to search..">
+      <div class="line"></div>
+      <button></button>
+    </div>
+  </div>
+  <!--- /Search -->
+
+  <!--- Car Menu -->
+  @@include('../html/templates/car-menu.html', {
+    'path': '.',
+    'imgPath': '.'
+  })
+  <!--- /Car Menu -->
+
+  <div id="wrapper">
+
+    <!--- Header -->
+    @@include('../html/templates/header.html', {
+    'page': 'car',
+    'path': '.'
+    })
+    <!--- /Header -->
+
+    <!--- Banner -->
+    <div class="car-banner">
+      <div class="container">
+        <div class="inner-banner-container">
+          <div class="inner-banner-right">
+            <div class="banner-title-text" data-aos="fade-right">Standard / Sensing / Home Sensing / Led Sensing</div>
+            <h1 data-aos="fade-right">2020 Honda Fit 1.3 (A)</h1>
+            <div class="banner-bullet" data-aos="fade-right">
+              <ul>
+                <li>POWER (kW) / POWER (HP)<br>
+                  <span>72kW / 97 HP</span>
+                </li>
+                <li>Fuel<br>
+                  <span>5.1L / 100km</span>
+                </li>
+                <li>Engine Capacity<br>
+                  <span>1,317 CC</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-info" data-aos="fade-right">POWER (kW) / POWER (HP)<br>
+              <span>72kW / 97 HP</span>
+            </div>
+          </div>
+          <div class="inner-banner-left"><img src="../images/car/honda-fit/honda-fit.png" alt="" data-aos="fade-left" />
+          </div>
+          <div class="mobile-banner-bullet" data-aos="fade-up">
+            <ul>
+              <li>Fuel<br>
+                <span>5.1L / 100km</span>
+              </li>
+              <li>Engine Capacity<br>
+                <span>1,317 CC</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Banner -->
+
+    <div id="middle">
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/honda-fit/feature-1.jpg" alt="" /></div>
+              <h3>Smooth Driving</h3>
+              <p>Honda's newly launched Body Stabilising Seat for the driver, powerful and smooth driving, and
+                convenient storage solutions! All these makes the Brand New Honda Fit Petrol 2020 Facelift model a
+                must-have!</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/honda-fit/feature-2.jpg" alt="" /></div>
+              <h3>Efficient At Best</h3>
+              <p>The new Honda Fit Petrol 2020 comes with an efficient new 1.3L engine. With a fuel consumption of up to
+                19.6km/l*, the Honda Fit Petrol is surely an economical and functionable yet stylish choice!</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/honda-fit/feature-3.jpg" alt="" /></div>
+              <h3>Multi-Information</h3>
+              <p>Honda has finally furnished the basic trim level Fit with the new digital display. All information you
+                need is well laid out on the screen and displayed clearly with proper contrast.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Call to Action -->
+      <div class="call-to-cation" data-aos="fade-up">
+        <div class="container">
+          <h2>2020 Honda Fit 1.3 (A)<br>Exclusive Special Deal Today Only!</h2>
+          <p>Contact our well-versed sales team ensuring your satisfaction</p>
+          <div class="cta-btn-row">
+            <a href="tel: +65 6455 2535" onclick="fbq('track', 'Contact');" class="btn btn-call">Call Us</a>
+            <a href="https://wa.link/tj4i1x" target="_blank" onclick="fbq('track', 'Contact');"
+              class="btn btn-whatsapp bb">Whatsapp <span> <i></i> <i></i> <i></i> <i></i></span></a>
+            <a href="#book-appointment" class="btn btn-email">Email Us</a>
+          </div>
+        </div>
+      </div>
+      <!--- /Call to Action -->
+
+      <div class="accordion-section">
+        <div class="container">
+          <ul class="nav nav-tabs" role="tablist" data-aos="fade-up">
+            <li> <a class="nav-link active" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                aria-controls="technical" aria-selected="true">Technical</a> </li>
+            <li> <a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab"
+                aria-controls="equipment" aria-selected="false">Equipment</a> </li>
+          </ul>
+          <div class="tab-content" data-aos="fade-up">
+
+            <!--- Technical Tab -->
+            <div class="tab-pane fade show active" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="engine">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseEngine" aria-expanded="true"
+                          aria-controls="collapseEngine">Engine</button>
+                      </h5>
+                    </div>
+                    <div id="collapseEngine" class="collapse show" aria-labelledby="headingEngine"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Engine: 4-Cyclinder in-line</li>
+                          <li>Engine Capacity: 1,317 CC</li>
+                          <li>Max Output: 72kW (96 hp)</li>
+                          <li>Max Torque: 118 Nm</li>
+                          <li>Transmission: CVT (A)</li>
+                          <li>Fuel Consumption: 20.4 km/L</li>
+                          <li>Fuel Type: Petrol</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="measurements">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseMeasurements"
+                          aria-expanded="false" aria-controls="collapseMeasurements">Measurements</button>
+                      </h5>
+                    </div>
+                    <div id="collapseMeasurements" class="collapse" aria-labelledby="headingMeasurements"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Vehicle Type: Hatchback</li>
+                          <li>Dimensions (L x W x H): 3995 x 1695 x 1515 mm</li>
+                          <li>Wheelbase: 2,530 mm</li>
+                          <li>Min Turning radius: 4,900 mm</li>
+                          <li>Kerb Weight: 1,070kg</li>
+                          <li>Fuel tank capacity: 40 L</li>
+                          <li>Brakes (Front): Ventilated disc</li>
+                          <li>Brakes (Rear): Disc</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Technical Tab -->
+
+            <!--- Equipment Tab -->
+            <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="exterior">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseExterior" aria-expanded="true"
+                          aria-controls="collapseExterior">Exterior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseExterior" class="collapse show" aria-labelledby="headingExterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>15-inch steel wheels + full wheel cap</li>
+                          <li>Body-colored electric retractable remote control door mirrors (with LED turn signal)</li>
+                          <li>High-mounted LED stop lamp</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="interior">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseInterior"
+                          aria-expanded="false" aria-controls="collapseInterior">Interior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseInterior" class="collapse" aria-labelledby="headingInterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Speakers</li>
+                          <li>Tachometer</li>
+                          <li>Manual air conditioner</li>
+                          <li>Multi-Information Display</li>
+                          <li>Honda Smart key system</li>
+                          <li>Push the Start button</li>
+                          <li>Headlight auto-off function</li>
+                          <li>Telescopic & tilt steering</li>
+                          <li>One-touch turn signal</li>
+                          <li>Seats – Leather seat (Included)</li>
+                          <li>Electrically Adjustable Middle-row Seats </li>
+                          <li>Smartphone tray</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="safety">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseSafety"
+                          aria-expanded="false" aria-controls="collapseSafety">Safety</button>
+                      </h5>
+                    </div>
+                    <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Parking sensor system (Included)</li>
+                          <li>Multi-reflector halogen headlights (With manual leveling/auto light control mechanism)
+                          </li>
+                          <li>Driver’s seat and front passenger seat i-SRS front airbag system – Front seat i- Side
+                            airbag system + side curtain airbag system</li>
+                          <li>Vehicle Stability Assist (VSA) System</li>
+                          <li>ABS with EBD (Electronically Controlled Braking Force Distribution System)</li>
+                          <li>Emergency stop signal</li>
+                          <li>Hill-start assist function</li>
+                          <li>Auto brake hold function</li>
+                          <li>Idling stop system</li>
+                          <li>Child seat support ISOFIX – lower mounting bracket (rear left and right seat) + top tether
+                            mounting bracket (rear left and right seat)</li>
+                          <li>Eco Assist ( ECON Mode, teaching function)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Equipment Tab -->
+
+          </div>
+        </div>
+      </div>
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-4.jpg" alt="" /></div>
+              <h3>After-sales Maintanience Assurance</h3>
+              <p>Make your purchase with confidence and a peace of mind. Providing by our in-house workshop (Star Auto)
+                within your first 10-years or 150,000km whichever comes first.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-5.jpg" alt="" /></div>
+              <h3>24/7 On Stand-by Roadside Assistance</h3>
+              <p>Facing a car breakdown? Fret not! At Zion Auto Gallery Singapore, you can count on our 24 hour
+                emergency Roadside Assistance Services that are readily available for you.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-6.jpg" alt="" /></div>
+              <h3>Flexible Financing Scheme COE/In-house</h3>
+              <p>We are able to provide financial support and flexible loan packages to get you going on your car
+                ownership journey with as little hassles as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Book An Appointment -->
+      <div class="appointment-section" data-aos="zoom-in-right">
+        <div class="container">
+          <div class="appointment-container">
+            <div class="appointment-left">
+              <div class="appointment-image"><img src="../images/appointment-image.jpg" alt="" /></div>
+              <div class="appointment-left-container">
+                <h4>You’re in good hands</h4>
+                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our consumers
+                  satisfaction</p>
+              </div>
+            </div>
+            <div class="appointment-right" id="book-appointment">
+              <h3>Book An Appointment</h3>
+              <div class="appointment-form">
+                <form name="appointment" id="appointment" method="post" class="car-details">
+                  <div class="alert alert-success d-none" role="alert"> We've received your information, we will get
+                    back to you shortly. </div>
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="first_name" name="first_name" class="form-control"
+                        placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="wide" name="enquiry_type" id="enquiry_type"
+                        data-error-container="enquiry_type-error">
+                        <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                        <option value="Book Appointment">Book Appointment</option>
+                        <option value="Request Call">Request Call</option>
+                        <option value="Financing">Financing</option>
+                        <option value="Packages">Packages</option>
+                      </select>
+                      <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="car-modal-box">
+                        <div class="title">Car Model</div>
+                        <div class="text">2020 Honda Fit 1.3 (A)</div>
+                      </div>
+                      <input type="hidden" name="car_model" id="car_model" value="2020 Honda Fit 1.3 (A)" />
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="checkbox">
+                        <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                          data-error-container="terms_accepted-error">
+                        <label for="terms_accepted" class="checkbox-label">By submitting this form, you agree to our
+                          Privacy Policy and agree to receive sales and marketing
+
+                          communication from ZionAuto Gallery Pte Ltd</label>
+                      </div>
+                      <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group text-center-xs">
+                      <div class="submit-btn">
+                        <button type="submit" name="submit" id="button" class="ready fancy btn btn-primary"
+                          value="Book Now">
+                          <div class="message submitMessage"> <span class="button-text">Book Now</span> </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Book An Appointment -->
+
+      <!--- Location -->
+      <div class="location-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+              <div class="map"><img src="../images/map.jpg" alt="" /></div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+              <div class="location-box-right">
+                <div class="location-title">Locate Us</div>
+                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Location -->
+
+    </div>
+
+    <!--- Footer -->
+    @@include('../html/templates/footer.html', {
+      'path': '.'
+    })
+    <!--- /Footer -->
+
+  </div>
+  <script src="../js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/minified/aos.js"></script>
+  <script src="../js/minified/pushy.js"></script>
+  <script src="../js/jquery/jquery.nice-select.min.js"></script>
+  <script src="../js/validation/jquery.validate.min.js"></script>
+  <script src="../js/validation/additional-methods.min.js"></script>
+  <script src="../js/minified/app.js"></script>
+  <script src="../js/minified/jquery.menu-aim.js"></script>
+  <script src="../js/minified/mobile-menu.js"></script>
+  <script src="../js/minified/fancy-button.js"></script>
+  <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top + -300
+      }, 1000);
+    });	
+  </script>
+  @@include('../html/templates/linkedIn.html')
+</body>
+
+</html>

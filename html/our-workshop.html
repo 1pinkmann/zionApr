@@ -1,0 +1,374 @@
+@@include('./templates/head.html', {
+'title': 'Our Workshop | Star Auto Performance',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+
+    <!--- Search -->
+    <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+    <div class="wrapper">
+        <div class="search-data">
+            <input type="text" placeholder="Type to search..">
+            <div class="line"></div>
+            <button></button>
+        </div>
+    </div>
+    <!--- /Search -->
+
+    <!--- Car Menu -->
+    @@include('./templates/car-menu.html', {
+        'path': './all-cars',
+        'imgPath': ''
+        })
+    <!--- /Car Menu -->
+
+    <div id="wrapper">
+
+        <!--- Header -->
+        @@include('./templates/header.html', {
+        'page': 'service',
+        'path': '',
+        'workshop': 'Mon-Sat (9am - 6pm): +65 6452 5155'
+        })
+        <!--- /Header -->
+
+        <div id="middle" class="workshop-middle mobile-pad">
+
+            <!--- Workshop Top -->
+            <div class="workshop-top">
+                <div class="container">
+                    <div class="left-side" data-aos="fade-right">
+                        <h1>Highly Skilled Certified Technician</h1>
+                        <p>We believe in providing top quality workmanship and are so confident in our level of service
+                            that we back
+                            it up with good quality.</p>
+                        <div class="btn-row d-none d-lg-block" data-aos="fade-up">
+                            <div class="btn-box"><a href="tel: +65 6452 5155" class="button-bird"><span
+                                        class="button-bird__text"><i class="tel"></i>Call 6452 5155</span><span
+                                        class="bird"></span><span class="bird--1"></span><span
+                                        class="bird--2"></span><span class="bird--3"></span><span
+                                        class="bird--4"></span><span class="bird--5"></span><span
+                                        class="bird--6"></span><span class="bird--28"></span><span
+                                        class="bird--29"></span><span class="bird--30"></span></a></div>
+                            <div class="btn-box-2"><a href="https://starauto.paperform.co/"
+                                    class="button-bird button-bird-1"><span class="button-bird__text"><i
+                                            class="appointment"></i>Book Appointment</span><span
+                                        class="bird"></span><span class="bird--1"></span><span
+                                        class="bird--2"></span><span class="bird--3"></span><span
+                                        class="bird--4"></span><span class="bird--5"></span><span
+                                        class="bird--6"></span><span class="bird--28"></span><span
+                                        class="bird--29"></span><span class="bird--30"></span></a></div>
+                        </div>
+                    </div>
+                    <div class="right-side" data-aos="fade-left"><img src="images/banner-workshop.png" alt=""
+                            class="img-fluid d-block m-auto" /></div>
+                    <div class="btn-row workshop-btn-mobile d-block d-lg-none" data-aos="fade-up">
+                        <div class="btn-box"><a href="javascript:;" class="button-bird"><span
+                                    class="button-bird__text"><i class="tel"></i>Call 6452 5155</span><span
+                                    class="bird"></span><span class="bird--1"></span><span class="bird--2"></span><span
+                                    class="bird--3"></span><span class="bird--4"></span><span
+                                    class="bird--5"></span><span class="bird--6"></span><span
+                                    class="bird--28"></span><span class="bird--29"></span><span
+                                    class="bird--30"></span></a></div>
+                        <div class="btn-box-2"><a href="javascript:;" class="button-bird button-bird-1"><span
+                                    class="button-bird__text"><i class="appointment"></i>Book Appointment</span><span
+                                    class="bird"></span><span class="bird--1"></span><span class="bird--2"></span><span
+                                    class="bird--3"></span><span class="bird--4"></span><span
+                                    class="bird--5"></span><span class="bird--6"></span><span
+                                    class="bird--28"></span><span class="bird--29"></span><span
+                                    class="bird--30"></span></a></div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Workshop Top -->
+
+            <!--- Expertise & Excellence Services -->
+            <div class="workshop-bullet-section" data-aos="fade-up">
+                <div class="container">
+                    <h2>Expertise &amp; Excellence Services</h2>
+                    <div class="title-text" data-aos="fade-up"> Experienced certified experts are at your service to
+                        repair the
+                        vehicle.<br>
+                        Qualified service staff to assist you on any issue. </div>
+                    <div class="bullet-container" data-aos="fade-down">
+                        <ul>
+                            <li>Services &amp; Maintanience</li>
+                            <li>Aircon Repair &amp; Servicing</li>
+                            <li>Diagnostic test</li>
+                            <li>Performance tuning</li>
+                            <li>Racing &amp; Motorsports Equipment </li>
+                            <li>Transmission &amp; Engine overhaul</li>
+                            <li>Spray painting &amp; Panel beating</li>
+                            <li>Accident claim consultancy &amp; repair</li>
+                            <li>Tyre replacement &amp; wheel balancing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--- /Expertise & Excellence Services -->
+
+            <!--- Text -->
+            <div class="workshop-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-right"><img src="images/workshop-car.png" alt=""
+                                class="img-fluid" />
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left">
+                            <p>Star Auto Performance Pte Ltd pledges to offer you the best car servicing and maintenance
+                                experience
+                                through effective communication, excellence craftsmanship and utmost professionalism. We
+                                build trust by
+                                listening and evaluating your needs and provide a customised solution with a detailed
+                                walkthrough on
+                                every completed job. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Text -->
+
+            <!--- Location -->
+            <div class="location-section workshop-location">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+                            <div class="map"><img src="images/map.jpg" alt="" /></div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+                            <div class="location-box-right">
+                                <div class="location-title">Welcome to our workshop</div>
+                                <div class="location-address">We are located at 176 Sin Ming Drive</div>
+                                <div class="location-address-2">#04-05 Sin Ming Autocare, Singapore 575721</div>
+                                <p>Our team of mechanics in Singapore are experienced in all makes and models,
+                                    guaranteeing a reliable
+                                    visit every time. Pop in for a quick chat at no cost and we’ll even help you with
+                                    the servicing of
+                                    your car.</p>
+                                <div class="btn-row"> <a href="tel: +65 6452 5155" class="btn btn-white"><span
+                                            class="tel"></span>Call
+                                        6452 5155</a><a href="https://starauto.paperform.co/"
+                                        class="btn btn-white"><span class="appointment"></span>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- /Location -->
+
+            <!--- Reviews -->
+            <div class="testimonial-section workshop-testimonial" data-aos="fade-up">
+                <div class="container">
+                    <h2>Reviews</h2>
+                    <div class="title-text text-center">From our trusted customers</div>
+                    <div class="testimonial-box-row">
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">Kaniksha Suthan <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>Thank you very much Ah Hong and Nizam. Very experienced and excellent service work. Had a
+                                break issue
+                                and was resolved with reasonable charges by Ah Hong. Good effort and very impressive.
+                            </p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">Wang Qiao <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Ong KH is truly a professional and have been giving adequate advises which is helpful. He
+                                takes the
+                                extra mile to serve his customers and i thank him for the good work and efforts. </p>
+                            <p>Highly recommended to everyone that need good services</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">zu xiaolong <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">Jages Feran <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>Excellent job on my tyre sensors, which was not able to be installed by the external tyre
+                                shop when i
+                                changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the rims
+                                with improvised
+                                ideas. Thank you for your efforts. Nizam is an expert.</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Mohamad Izhar <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these
+                                technicians are
+                                very competent and will give good advice.</p>
+                            <p>All work is being done meticulously to give a brand new driving experience. Please do not
+                                hesitate to
+                                call them and a recommended workshop if you are looking for one. </p>
+                            <p> Good Job to Ong and team!</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Bryon Pua <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any
+                                concern. Thank
+                                Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for the
+                                installation.
+                            </p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Yap Mee Key <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>professional service with detail and enhance performance after auto transmission repair.
+                                highly
+                                recommended</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Ng Xin Yi <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or
+                                enhancement request
+                                will be received and evaluated accordingly.</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Bryon Pua <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any
+                                concern. Thank
+                                Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for the
+                                installation.
+                            </p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Yap Mee Key <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>professional service with detail and enhance performance after auto transmission repair.
+                                highly
+                                recommended</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Ng Xin Yi <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or
+                                enhancement request
+                                will be received and evaluated accordingly.</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">zu xiaolong <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">Jages Feran <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>Excellent job on my tyre sensors, which was not able to be installed by the external tyre
+                                shop when i
+                                changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the rims
+                                with improvised
+                                ideas. Thank you for your efforts. Nizam is an expert.</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Mohamad Izhar <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these
+                                technicians are
+                                very competent and will give good advice.</p>
+                            <p>All work is being done meticulously to give a brand new driving experience. Please do not
+                                hesitate to
+                                call them and a recommended workshop if you are looking for one. </p>
+                            <p> Good Job to Ong and team!</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Bryon Pua <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Go the workshop installed Auto Tailgate. Everything are fine, work properly. No any
+                                concern. Thank
+                                Jackie's explaination in patience. Thanks AhQiang(not very sure the technician) for the
+                                installation.
+                            </p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Yap Mee Key <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>professional service with detail and enhance performance after auto transmission repair.
+                                highly
+                                recommended</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Ng Xin Yi <span class="ratings"><i></i><i></i><i></i><i></i><i></i></span>
+                            </div>
+                            <p>Look for Ah Hong to enquire on car needs and servicing. Your vehicle maintenance or
+                                enhancement request
+                                will be received and evaluated accordingly.</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">zu xiaolong <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>I fully support star auto performance. Kudos to ah hong and his team</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-up">
+                            <div class="name">Jages Feran <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>Excellent job on my tyre sensors, which was not able to be installed by the external tyre
+                                shop when i
+                                changed my rims. Nizam assessed my sensors and retrofitted my sensors back to the rims
+                                with improvised
+                                ideas. Thank you for your efforts. Nizam is an expert.</p>
+                        </div>
+                        <div class="testimonial-box" data-aos="flip-down">
+                            <div class="name">Mohamad Izhar <span
+                                    class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <p>A 1 stop place for all your car needs. From minor servicing to major overhaul, these
+                                technicians are
+                                very competent and will give good advice.</p>
+                            <p>All work is being done meticulously to give a brand new driving experience. Please do not
+                                hesitate to
+                                call them and a recommended workshop if you are looking for one. </p>
+                            <p> Good Job to Ong and team!</p>
+                        </div>
+                    </div>
+                    <!--  <div class="cell">
+		<div class="pl pl-spark"></div>
+	</div>-->
+
+                    <!--<div class="backend-btn-link" data-aos="fade-up"><a href="#">View More</a></div>-->
+                </div>
+            </div>
+            <!--- /Reviews -->
+
+        </div>
+
+        <!--- Footer -->
+        @@include('./templates/footer.html', {
+            'path': ''
+          })
+        <!--- /Footer -->
+
+    </div>
+    <script src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/minified/aos.js"></script>
+    <script src="js/minified/pushy.js"></script>
+    <script src="js/jquery/jquery.nice-select.min.js"></script>
+    <script src="js/minified/jquery.simpleLoadMore.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/minified/app.js"></script>
+    <script src="js/minified/jquery.menu-aim.js"></script>
+    <script src="js/minified/mobile-menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var el = document.querySelector(".button-bird");
+            el.addEventListener('click', function () {
+                el.classList.toggle('active');
+            });
+            var el1 = document.querySelector(".button-bird-1");
+            el1.addEventListener('click', function () {
+                el1.classList.toggle('active');
+            });
+        });
+    </script>
+    @@include('./templates/linkedIn.html')
+</body>
+
+</html>

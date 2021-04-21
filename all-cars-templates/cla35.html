@@ -1,0 +1,456 @@
+@@include('../html/templates/head.html', {
+'title': 'Mercedes-Benz CLA35 Coupe | Zion Auto Gallery',
+'path': '.',
+'description': 'Description Text',
+'keywords': 'Keywords Text'
+})
+
+
+<body>
+
+  <!--- Search -->
+  <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+  <div class="wrapper">
+    <div class="search-data">
+      <input type="text" placeholder="Type to search..">
+      <div class="line"></div>
+      <button></button>
+    </div>
+  </div>
+  <!--- /Search -->
+
+  <!--- Car Menu -->
+  @@include('../html/templates/car-menu.html', {
+    'path': '.',
+    'imgPath': '.'
+  })
+  <!--- /Car Menu -->
+
+  <div id="wrapper">
+
+    <!--- Header -->
+    @@include('../html/templates/header.html', {
+      'page': 'car',
+      'path': '.'
+      })
+    <!--- /Header -->
+
+    <!--- Banner -->
+    <div class="car-banner">
+      <div class="container">
+        <div class="inner-banner-container">
+          <div class="inner-banner-right">
+            <div class="banner-title-text" data-aos="fade-right">4Matic Premium / Premium Plus</div>
+            <h1 data-aos="fade-right">Mercedes CLA35 Coupe</h1>
+            <div class="banner-bullet" data-aos="fade-right">
+              <ul>
+                <li>POWER (kW) / POWER (HP)<br>
+                  <span>225kW / 306 HP</span>
+                </li>
+                <li>0-100 km/h<br>
+                  <span>4.9s</span>
+                </li>
+                <li>Engine Capacity<br>
+                  <span>1,991 CC</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-info" data-aos="fade-right">POWER (kW) / POWER (HP)<br>
+              <span>225kW / 306 HP</span>
+            </div>
+          </div>
+          <div class="inner-banner-left"><img src="../images/car/cla-35/cla35.png" alt="" data-aos="fade-left" /></div>
+          <div class="mobile-banner-bullet" data-aos="fade-up">
+            <ul>
+              <li>0-100 km/h<br>
+                <span>4.9s</span>
+              </li>
+              <li>Engine Capacity<br>
+                <span>1,991 CC</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Banner -->
+
+    <div id="middle">
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/cla-35/feature-1.jpg" alt="" /></div>
+              <h3>Channeled Agression</h3>
+              <p>The signature twin-blade pin star grille remains but is now flanked by angrier full-LED headlights,
+                while the rear sees a new diffuser that houses two chrome exhaust tips.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/cla-35/feature-2.jpg" alt="" /></div>
+              <h3>Extraordinary Interior</h3>
+              <p>Mercedes-AMG approaches the entry-level AMG with very little frugality and delivers an extraordinary
+                interior for the CLA35. The iconic Merc interior is carried by the CLA along with plenty of features -
+                tech and safety-focused.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/car/cla-35/feature-3.jpg" alt="" /></div>
+              <h3>Immense Comfort</h3>
+              <p>Multiway power-adjustable seats allow the driver to find a comfortable seating position with good
+                visibility, while ingress and egress are as simple and pain-free as a coupe in this segment can manage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Call to Action -->
+      <div class="call-to-cation" data-aos="fade-up">
+        <div class="container">
+          <h2>Mercedes CLA35 Coupe<br>Exclusive Special Deal Today Only!</h2>
+          <p>Contact our well-versed sales team ensuring your satisfaction</p>
+          <div class="cta-btn-row">
+            <a href="tel: +65 6455 2535" onclick="fbq('track', 'Contact');" class="btn btn-call">Call Us</a>
+            <a href="https://wa.link/krdku3" target="_blank" onclick="fbq('track', 'Contact');"
+              class="btn btn-whatsapp bb">Whatsapp <span> <i></i> <i></i> <i></i> <i></i></span></a>
+            <a href="#book-appointment" class="btn btn-email">Email Us</a>
+          </div>
+        </div>
+      </div>
+      <!--- /Call to Action -->
+
+      <div class="accordion-section">
+        <div class="container">
+          <ul class="nav nav-tabs" role="tablist" data-aos="fade-up">
+            <li> <a class="nav-link active" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                aria-controls="technical" aria-selected="true">Technical</a> </li>
+            <li> <a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab"
+                aria-controls="equipment" aria-selected="false">Equipment</a> </li>
+          </ul>
+          <div class="tab-content" data-aos="fade-up">
+
+            <!--- Technical Tab -->
+            <div class="tab-pane fade show active" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="engine">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseEngine" aria-expanded="true"
+                          aria-controls="collapseEngine">Engine</button>
+                      </h5>
+                    </div>
+                    <div id="collapseEngine" class="collapse show" aria-labelledby="headingEngine"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Engine: 4-cylinder In-line, 16 Valves</li>
+                          <li>Engine Capacity: 1,991 CC</li>
+                          <li>Max Output: 225kW (306 hp)/5,800 rpm</li>
+                          <li>Max Torque: 306 Nm / 3,000 – 4,000 rpm</li>
+                          <li>Acceleration: 4.9s (0-100 km/h)</li>
+                          <li>Transmission: 7G-DCT (A)</li>
+                          <li>Fuel Type: Petrol</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="measurements">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseMeasurements"
+                          aria-expanded="false" aria-controls="collapseMeasurements">Measurements</button>
+                      </h5>
+                    </div>
+                    <div id="collapseMeasurements" class="collapse" aria-labelledby="headingMeasurements"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Vehicle Type: Sports</li>
+                          <li>Dimensions (L x W x H): 4688 x 1830 x 1439 mm</li>
+                          <li>Wheelbase: 2,729 mm</li>
+                          <li>Fuel tank capacity: 43 L</li>
+                          <li>Boot/Cargo Capacity: 460L</li>
+                          <li>Brakes (Front): Ventilated disc</li>
+                          <li>Brakes (Rear): Ventilated disc</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Technical Tab -->
+
+            <!--- Equipment Tab -->
+            <div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">
+              <div class="acco-data">
+                <div class="accordion" id="accordion">
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="exterior">
+                      <h5 class="mb-0">
+                        <button data-toggle="collapse" data-target="#collapseExterior" aria-expanded="true"
+                          aria-controls="collapseExterior">Exterior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseExterior" class="collapse show" aria-labelledby="headingExterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Mirror package</li>
+                          <li>AMG bodystyling</li>
+                          <li>Front brake calipers with ‘AMG’ lettering</li>
+                          <li>AMG sports exhaust system with two round tailpipes attached to the rear apron</li>
+                          <li>Front splitter and trim elements on the louvres in the outer air inlets in silver chrome
+                          </li>
+                          <li>AMG radiator grille with twin-blade lamella and ‘AMG’ lettering</li>
+                          <li>Rear apron with specific diffuser look with four vertical fins and two round chrome-plated
+                            tailpipe trim elements</li>
+                          <li>Parking package</li>
+                          <li>- 180° reversing camera</li>
+                          <li>- Active Parking Assist with PARKTRONIC</li>
+                          <li>- Front and rear parking sensors</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="interior">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseInterior"
+                          aria-expanded="false" aria-controls="collapseInterior">Interior</button>
+                      </h5>
+                    </div>
+                    <div id="collapseInterior" class="collapse" aria-labelledby="headingInterior"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Air vents with surround in silver chrome</li>
+                          <li>THERMOTRONIC luxury automatic climate control, two-zone, with display</li>
+                          <li>Cup holders – twin, front</li>
+                          <li>KEYLESS-GO starting function</li>
+                          <li>Brushed stainless-steel sports pedals with rubber studs</li>
+                          <li>Touchpad on centre console</li>
+                          <li>AMG Performance steering wheel in Nappa leather</li>
+                          <li>Silver-coloured aluminum gearshift paddles</li>
+                          <li>DAB digital radio tuner</li>
+                          <li>Media display – 10.25-inch touchscreen</li>
+                          <li>Smartphone integration2 including Apple CarPlayTM and Android AutoTM</li>
+                          <li>Seat Comfort package</li>
+                          <li>- Seat height adjusters and seat cushion angle adjustment on front seats</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="safety">
+                      <h5 class="mb-0">
+                        <button class="collapsed" data-toggle="collapse" data-target="#collapseSafety"
+                          aria-expanded="false" aria-controls="collapseSafety">Safety</button>
+                      </h5>
+                    </div>
+                    <div id="collapseSafety" class="collapse" aria-labelledby="headingSafety" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Adaptive Brake Assist with HOLD function and Hill Start Assist</li>
+                          <li>Anti-lock braking system (ABS) with Brake Assist (BAS)</li>
+                          <li>Brake pad wear warning indicator</li>
+                          <li>Crash-responsive emergency lighting</li>
+                          <li>Electronic Stability Programme (ESP) with Acceleration Skid Control (ASR)</li>
+                          <li>ESP Curve Dynamic Assist</li>
+                          <li>Headlamp Assist – automatic headlamp activation</li>
+                          <li>ISOFIX and top-tether child seat fixing points in rear (two outer seats)</li>
+                          <li>Tyre pressure monitoring system</li>
+                          <li>Airbags</li>
+                          <li>- Dual-stage, driver and front passenger</li>
+                          <li>- Head and sidebags, driver and front passenger</li>
+                          <li>- Window bags, driver and front passenger</li>
+                          <li>- Kneebag for driver</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--- /Equipment Tab -->
+
+          </div>
+        </div>
+      </div>
+
+      <!--- Infomration Box -->
+      <div class="box-info-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-4.jpg" alt="" /></div>
+              <h3>After-sales Maintanience Assurance</h3>
+              <p>Make your purchase with confidence and a peace of mind. Providing by our in-house workshop (Star Auto)
+                within your first 10-years or 150,000km whichever comes first.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-5.jpg" alt="" /></div>
+              <h3>24/7 On Stand-by Roadside Assistance</h3>
+              <p>Facing a car breakdown? Fret not! At Zion Auto Gallery Singapore, you can count on our 24 hour
+                emergency Roadside Assistance Services that are readily available for you.</p>
+            </div>
+            <div class="col-md-4 box-column" data-aos="flip-left">
+              <div class="box-image"><img src="../images/feature-6.jpg" alt="" /></div>
+              <h3>Flexible Financing Scheme COE/In-house</h3>
+              <p>We are able to provide financial support and flexible loan packages to get you going on your car
+                ownership journey with as little hassles as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Infomration Box -->
+
+      <!--- Book An Appointment -->
+      <div class="appointment-section" data-aos="zoom-in-right">
+        <div class="container">
+          <div class="appointment-container">
+            <div class="appointment-left">
+              <div class="appointment-image"><img src="../images/appointment-image.jpg" alt="" /></div>
+              <div class="appointment-left-container">
+                <h4>You’re in good hands</h4>
+                <p>Buy with trust and confidence. Our well-versed team takes pride in ensuring our consumers
+                  satisfaction</p>
+              </div>
+            </div>
+            <div class="appointment-right" id="book-appointment">
+              <h3>Book An Appointment</h3>
+              <div class="appointment-form">
+                <form name="appointment" id="appointment" method="post" class="car-details">
+                  <div class="alert alert-success d-none" role="alert"> We've received your information, we will get
+                    back to you shortly. </div>
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="first_name" name="first_name" class="form-control"
+                        placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="wide" name="enquiry_type" id="enquiry_type"
+                        data-error-container="enquiry_type-error">
+                        <option value="" data-display="Enquiry Type">Enquiry Type</option>
+                        <option value="Book Appointment">Book Appointment</option>
+                        <option value="Request Call">Request Call</option>
+                        <option value="Financing">Financing</option>
+                        <option value="Packages">Packages</option>
+                      </select>
+                      <span id="enquiry_type-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="car-modal-box">
+                        <div class="title">Car Model</div>
+                        <div class="text">Mercedes CLA35 Coupe</div>
+                      </div>
+                      <input type="hidden" name="car_model" id="car_model"
+                        value="Mercedes CLA35 Coupe" />
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-12 form-group">
+                      <div class="checkbox">
+                        <input id="terms_accepted" name="terms_accepted" type="checkbox"
+                          data-error-container="terms_accepted-error">
+                        <label for="terms_accepted" class="checkbox-label">By submitting this form, you agree to our
+                          Privacy Policy and agree to receive sales and marketing
+
+                          communication from ZionAuto Gallery Pte Ltd</label>
+                      </div>
+                      <span id="terms_accepted-error" class="help-block help-block-error"></span>
+                    </div>
+                    <div class="col-lg-12 form-group text-center-xs">
+                      <div class="submit-btn">
+                        <button type="submit" name="submit" id="button" class="ready fancy btn btn-primary"
+                          value="Book Now">
+                          <div class="message submitMessage"> <span class="button-text">Book Now</span> </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Book An Appointment -->
+
+      <!--- Location -->
+      <div class="location-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-5" data-aos="fade-down-right">
+              <div class="map"><img src="../images/map.jpg" alt="" /></div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-7" data-aos="fade-up-left">
+              <div class="location-box-right">
+                <div class="location-title">Locate Us</div>
+                <div class="location-address">We are located at 159 Sin Ming Road</div>
+                <div class="location-address-2">#01-04 Amtech Building S575625</div>
+                <p>Opposite Thomson Plaza (8 mins walk from bus stop)</p>
+                <p>Buses Available: 162, 166, 163, 52, 167, 132, 855, 980, 410W, 165, 162M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Location -->
+
+    </div>
+
+    <!--- Footer -->
+    @@include('../html/templates/footer.html', {
+      'path': '.'
+    })
+    <!--- /Footer -->
+
+  </div>
+  <script src="../js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/minified/aos.js"></script>
+  <script src="../js/minified/pushy.js"></script>
+  <script src="../js/jquery/jquery.nice-select.min.js"></script>
+  <script src="../js/validation/jquery.validate.min.js"></script>
+  <script src="../js/validation/additional-methods.min.js"></script>
+  <script src="../js/minified/app.js"></script>
+  <script src="../js/minified/jquery.menu-aim.js"></script>
+  <script src="../js/minified/mobile-menu.js"></script>
+  <script src="../js/minified/fancy-button.js"></script>
+  <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top + -300
+      }, 1000);
+    });	
+  </script>
+  @@include('../html/templates/linkedIn.html')
+</body>
+
+</html>

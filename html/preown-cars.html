@@ -1,0 +1,604 @@
+@@include('./templates/head.html', {
+'title': 'Pre-Own Cars | Zion Auto Gallery Pte Ltd',
+'path': '',
+'description': '',
+'keywords': ''
+})
+
+<body>
+    <!--- Search -->
+    <div class="close-btn"> <span class="fas fa-times">X</span> </div>
+    <div class="wrapper">
+        <div class="search-data">
+            <input type="text" placeholder="Type to search..">
+            <div class="line"></div>
+            <button></button>
+        </div>
+    </div>
+    <!--- /Search -->
+
+    <!--- Car Menu -->
+    @@include('./templates/car-menu.html', {
+    'path': './all-cars',
+    'imgPath': ''
+    })
+    <!--- /Car Menu -->
+
+    <div id="wrapper">
+
+        <!--- Header -->
+        @@include('./templates/header.html', {
+        'page': 'about',
+        'path': ''
+        })
+        <!--- /Header -->
+
+        <div id="middle" class="mobile-pad mobile-pad--pb">
+
+            <div class="container">
+
+                <!--- Page-banner. -->
+                <div class="page-banner page-banner--v3" data-aos="fade-up">
+                    <h2 class="page-banner__title">Certified Pre-Owned Cars By Zion Auto Gallery</h2>
+                    <div class="" data-aos="flip-left">
+                        <img src="images/models/preown-banner.webp" alt="" class="img-fluid" />
+                    </div>
+                    <p class="page-banner__text">
+                        It is our belief that customer centric and reputable business practices are the keystone of any long-lasting business in the 21st century. We hope to provide the best automobile experience for you at Zion Auto Gallery.
+                    </p>
+                </div>
+                <!--- /Page-banner. -->
+
+                <!--- Tabs. -->
+                <div class="tabs" id="tabs">
+                    <h2 class="tabs__title">Brands & Models Selections</h2>
+                    <div class="list-dropdown tabs__list-dropdown">
+                        <button class="tabs__mobile-button caption">Toyota</button>
+                        <ul class="tabs__menu">
+                            <li class="tabs__menu-item">
+                                <button class="tabs__menu-button active" data-tab-button="1">Toyota</button>
+                            </li>
+                            <li class="tabs__menu-item">
+                                <button class="tabs__menu-button" data-tab-button="2">BMW</button>
+                            </li>
+                            <li class="tabs__menu-item">
+                                <button class="tabs__menu-button" data-tab-button="3">Porsche</button>
+                            </li>
+                            <li class="tabs__menu-item">
+                                <button class="tabs__menu-button" data-tab-button="4">Peugeot</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="tabs__wrapper" data-tab-wrapper>
+                        <li class="tabs__item active" data-tab-item="1">
+                            <ul class="cards-list">
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=978519&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/toyota-corolla.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Corolla Altis 1.6A</span>
+                                            <span class="card__price">$22,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">N/A KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">11-Apr-2012</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,598 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Apr-2022</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">3</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$15,30/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=956504&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/toyota-sienta.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Sienta 1.5A G</span>
+                                            <span class="card__price">$67,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">53,638 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Aug-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,496 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Aug-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$9,520/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=964294&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/toyota-wish.png" alt="" class="card__image">
+                                            <div class="card__badge">TOYOTA</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Toyota Wish 1.8A X</span>
+                                            <span class="card__price">$81,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">82,852 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">22-Oct-2015</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,797 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Oct-2025</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$16,180/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tabs__item" data-tab-item="2">
+                            <ul class="cards-list">
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=948605&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/bmw-730li.png" alt="" class="card__image">
+                                            <div class="card__badge">BMW</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">BMW 7 Series 730Li Sunroof</span>
+                                            <span class="card__price">$175,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">54,672 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">30-Sep-2016</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,998 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Sep-2026</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$22,770/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=954588&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/bmw-528i.png" alt="" class="card__image">
+                                            <div class="card__badge">BMW</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">BMW 5 Series 528i Sunroof</span>
+                                            <span class="card__price">$55,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">74,374 KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">12-Oct-2012</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,997 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Oct-2022</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$21,360/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=943498&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/bmw-840i.png" alt="" class="card__image">
+                                            <div class="card__badge">BMW</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">BMW 8 Series 840i Gran Coupe</span>
+                                            <span class="card__price">$359,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">N/A KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">28-Sep-2020</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2,998 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">New 10-Yr COE</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">0</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">N/A</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=981811&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/bmw-740li.png" alt="" class="card__image">
+                                            <div class="card__badge">BMW</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">BMW 7-Series 740Li Sunroof</span>
+                                            <span class="card__price">$348,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">N/A KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">17-Jan-2020</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2,998 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">N/A</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">0</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">N/A</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tabs__item" data-tab-item="3">
+                            <ul class="cards-list">
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=981879&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/porsche cayenne.png" alt="" class="card__image">
+                                            <div class="card__badge">Porsche</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Porsche Cayenne Coupe 3.0A</span>
+                                            <span class="card__price">$348,999</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">N/A KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">28-Dec-2020</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">2,995 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">New 10-Yr COE</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">0</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">N/A</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=981847&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/porsche-macan.png" alt="" class="card__image">
+                                            <div class="card__badge">Porsche</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Porsche Macan 2.0A PDK</span>
+                                            <span class="card__price">$265,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">N/A KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">18-Dec-2020</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,984 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">N/A</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">0</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">N/A</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tabs__item" data-tab-item="4">
+                            <ul class="cards-list">
+                                <li class="cards-list__item">
+                                    <a href="https://www.sgcarmart.com/used_cars/info.php?ID=971479&DL=2290" class="card card--product" target="_blank">
+                                        <div class="card__image-wrapper">
+                                            <img src="./images/models/peugeot-5008.png" alt="" class="card__image">
+                                            <div class="card__badge">Peugeot</div>
+                                        </div>
+                                        <div class="card__row">
+                                            <span class="card__title">Peugeot 5008 Diesel 1.6A BlueHDi EAT6</span>
+                                            <span class="card__price">$59,800</span>
+                                        </div>
+                                        <ul class="card__feature">
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/car.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">N/A KM</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Registration:</h4>
+                                                <p class="card__feature-text">03-Apr-2017</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/engine.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1,560 CC</span>
+                                                </div>
+                                                <h4 class="card__feature-title">COE Ending:</h4>
+                                                <p class="card__feature-text">Apr-2027</p>
+                                            </li>
+                                            <li class="card__feature-item">
+                                                <div class="card__feature-row">
+                                                    <img src="./images/icon/user.jpg" alt="" class="card__feature-icon">
+                                                    <span class="card__feature-text card__feature-text--black">1</span>
+                                                </div>
+                                                <h4 class="card__feature-title">Depreciation:</h4>
+                                                <p class="card__feature-text">$8,780/YR</p>
+                                            </li>
+                                        </ul>
+                                        <button class="card__button">Click to view</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--- /Tabs. -->
+
+                <!--- Reviews -->
+                <div class="testimonial-section" data-aos="fade-up">
+                    <div class="container">
+                        <h2>Reviews</h2>
+                        <div class="title-text text-center">From our trusted customers</div>
+                        <div class="testimonial-box-row">
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Jeanette Lee <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>I bought my car through Wai Sin.  He is very professional and trustworthy.
+                                He only recommend those add-on which is required and he is not pushy.
+                                He delivered the promised package with quality products and expediate the delivery of the car after COE confirmation.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Kelvin Goh <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Li Li, the assistant manager was very helpful and professional in her advice towards my car purchase. She followed up very diligently and gave me the information I need whenever I asked for it.
+                                Lawrence (the boss) was Super nice, helpful and professional in his dealing with me as well!</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-up">
+                                <div class="name">Alvin Choo <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Collected my vehicle today, was served by Wai Sin, a soft spoken gentleman.
+
+                                The whole process was transparent with no hardselling. Price was competitive with reasonably good after sales service package.
+
+                                Am delighted with the overall services and experience.</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Kalil Sudimaji <span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Li Li, the assistant manager has been very helpful, patience and constantly updating in the process of getting a new car.
+                                I would highly recommended to anyone who is looking to purchase a new car. Thank you so much Li Li and Zion Auto!
+                                </p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Kelvin Tan<span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Zion Auto Ms Lili our Wonderful Sales Manager despite of the high COE pricing now, they still offer us our car at All that was Promised. Wonderful deal and we are very delighted that to deal with them. Will recommend more friends to them!</p>
+                            </div>
+                            <div class="testimonial-box" data-aos="flip-down">
+                                <div class="name">Justin Ong<span
+                                        class="ratings"><i></i><i></i><i></i><i></i><i></i></span></div>
+                                <p>Great thanks to lawrence and team from zion auto gallery. Car was delivered less than 2 weeks after deposit. Great experience in dealing with lawrence for the car. Friendly team and appreciate the great service.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--- /Reviews -->
+
+                <!--- PURCHASING YOUR PERFECT CAR! -->
+                <div class="about-information-section">
+                    <div class="information-top" data-aos="fade-up">
+                        <h2>PURCHASING YOUR PERFECT CAR!</h2>
+                        <div class="title-text">We offer the best car sales package with competitive interest rates
+                            for
+                            financing
+                            and attractive insurance premiums.</div>
+                    </div>
+                    <div class="infomation-box-section">
+                        <div class="row">
+                            <div class="col-md-4" data-aos="zoom-in">
+                                <div class="information-box-icon"><img src="images/icon-highly-secured.png" alt="" />
+                                </div>
+                                <h3>Highly Secured</h3>
+                                <p>A Leading Brand Name in the Automobile Industry. 100% Delivery Track Records for
+                                    10
+                                    years</p>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in">
+                                <div class="information-box-icon"><img src="images/icon-financial-services.png"
+                                        alt="" /></div>
+                                <h3>Financial Services</h3>
+                                <p>In-house/Bank Financing,Motor Insurance, Corporate Fleet Managament,
+                                    Sales/Purchase
+                                    and Consignement
+                                </p>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in">
+                                <div class="information-box-icon"><img src="images/icon-trusted-agents.png" alt="" />
+                                </div>
+                                <h3>Trusted Agents</h3>
+                                <p>Delicates and Personalised Sales Individual, always ready to be at your services
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- /PURCHASING YOUR PERFECT CAR! -->
+
+            </div>
+
+        </div>
+
+        <!--- Footer -->
+        @@include('./templates/footer.html', {
+        'path': ''
+        })
+        <!--- /Footer -->
+    </div>
+    <script src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/minified/aos.js"></script>
+    <script src="js/minified/pushy.js"></script>
+    <script src="js/jquery/jquery.nice-select.min.js"></script>
+    <script src="js/minified/jquery.simpleLoadMore.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/additional-methods.min.js"></script>
+    <script src="js/minified/app.js"></script>
+    <script src="js/minified/jquery.menu-aim.js"></script>
+    <script src="js/minified/mobile-menu.js"></script>
+    <script src="js/minified/tabs.js"></script>
+    <script>
+        new Tabs({
+            wrapperID: 'tabs',
+        })
+    </script>
+    @@include('./templates/linkedIn.html')
+</body>
+
+</html>
