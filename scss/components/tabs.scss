@@ -180,6 +180,53 @@
     }
 }
 
+.tabs {
+
+    &--product {
+        margin-top: 90px;
+    }
+
+    &--product &__menu {
+        display: flex;
+        height: 80px;
+        margin-top: 50px;
+    }
+
+    &--product &__menu-item {
+        width: 16.666%;
+        height: 100%;
+    }
+
+    &--product &__menu-item:not(:first-child) {
+        border-left: 3px solid #ffffff;
+    }
+
+    &--product &__menu-button {
+        height: 100%;
+        width: 100%;
+        padding: 0 10px;
+        background: #F2F2F2;     
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1;
+        color: #000000;
+        transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    }
+
+    &--product &__menu-button:hover, &--product &__menu-button.active {
+        background-color: $red-color;
+        color: #ffffff;
+    }
+
+    &--product &__list-dropdown {
+        width: 100%;
+    }
+
+    &--product &__wrapper {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1219px) {
     .tabs {
         &__menu-button {

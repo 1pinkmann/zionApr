@@ -1,0 +1,92 @@
+.product {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background: #F2F2F2;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left-column {
+        width: 55%;
+    }
+
+    &__right-column {
+        width: 45%;
+        padding-left: 53px;
+        padding-top: 20px;
+        font-size: 26px;
+    }
+
+    &__name, &__model, &__price {
+        font-family: $secondary-font;
+    }
+
+    &__model, &__price {
+        font-weight: 700;
+    }
+
+    &__price {
+        margin-top: 5px;
+    }
+
+    &__row {
+        display: flex; 
+    }
+
+    &__row--top {
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(196, 196, 196, 0.6);
+    }
+
+    &__row--v2 {
+        padding-left: 30px;
+        margin-top: 38px;
+    }
+
+    &__feature {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;     
+    }
+
+    &__feature-title {
+        font-weight: 700;
+    }
+
+    &__feature-name {
+        margin-top: 4px;
+    }
+
+    &__info {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    &__info--mt {
+        margin-top: 5px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__text--bold {
+        font-weight: 700;
+    }
+
+    &__button {
+        width: 151px;
+        height: 56px;
+        flex-shrink: 0;
+        margin-left: 29px;
+        background-color: $red-color;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 14px;
+        border: none;
+    }
+}

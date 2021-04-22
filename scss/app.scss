@@ -34,6 +34,14 @@
 /* Font */
 @import 'font';  
 
+@import './swiper/swiper-vars.scss'; 
+
+@import './swiper/swiper.scss'; 
+
+@import './layout/_product.scss'; 
+
+@import 'components/feature.scss';
+
 /* Common */
 @import 'global'; 
 

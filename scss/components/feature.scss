@@ -1,0 +1,35 @@
+.feature {
+    padding-top: 84px;
+
+    &__item {
+        display: flex;
+        border-bottom: 1px solid rgba(196, 196, 196, 0.6);
+        padding-bottom: 80px;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 80px;    
+    }
+
+    &__title {
+        width: 40%;
+        float: none;
+        font-family: $secondary-font-2;
+        font-size: 20px;
+        text-align: center;
+        color: #868686;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    &__list-item {
+        width: 50%;
+        font-size: 20px;
+        font-family: $secondary-font-2;
+        margin-bottom: 8px;
+    }
+}

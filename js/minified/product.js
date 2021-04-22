@@ -1,0 +1,1 @@
+const swiper=new Swiper("#product-slider",{direction:"horizontal",loop:!0,pagination:{el:"[data-swiper-pagination]"},navigation:{nextEl:'[data-swiper-button="next"]',prevEl:'[data-swiper-button="prev"]'}});
