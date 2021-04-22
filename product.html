@@ -662,17 +662,7 @@
 
                         <div class="swiper">
                             <div class="swiper-container" id="product-slider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./images/products/car.png" alt="" class="swiper-slide__image">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./images/products/car.png" alt="" class="swiper-slide__image">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./images/products/car.png" alt="" class="swiper-slide__image">
-                                    </div>
-                                </div>
+                                <ul class="swiper-wrapper" id="swiper-wrapper"></ul>
                                 <button class="swiper__enlarge">
                                     <svg class="swiper-enlarge__icon">
                                         <use xlink:href="./sprite.svg#enlarge">
@@ -690,45 +680,28 @@
 
                     <div class="product__right-column">
 
-                        <div class="product__name">BMW X6 M</div>
+                        <div class="product__name" id="product-name">BMW X6 M</div>
 
                         <div class="product__row product__row--top">
-                            <div class="product__model">X6 M Competition</div>
+                            <div class="product__model" id="product-model">X6 M Competition</div>
                             <div class="product__row-inner">
                                 <div class="product__info">Inclusive of COE</div>
-                                <div class="product__price">S$382,839</div>
+                                <div class="product__price" id="product-price">S$382,839</div>
                             </div>
                         </div>
 
-                        <ul class="product__feature">
-                            <li class="product__feature-item">
-                                <div class="product__feature-title">Oct 2019</div>
-                                <div class="product__feature-name product__info">Original Registration</div>
-                            </li>
-                            <li class="product__feature-item">
-                                <div class="product__feature-title">54,382</div>
-                                <div class="product__feature-name product__info">Mileage (KM)</div>
-                            </li>
-                            <li class="product__feature-item">
-                                <div class="product__feature-title">2,999</div>
-                                <div class="product__feature-name product__info">Engine (CC)</div>
-                            </li>
-                            <li class="product__feature-item">
-                                <div class="product__feature-title">S$54,382</div>
-                                <div class="product__feature-name product__info">Estimate OMV</div>
-                            </li>
-                        </ul>
+                        <ul class="product__feature" id="product-feature"></ul>
 
                         <div class="product__row product__row--v2">
                             <div class="product__row-inner">
-                                <div class="product__text">Mineral Grey</div>
+                                <div class="product__text" id="product-exterior">Mineral Grey</div>
                                 <div class="product__info">Exterior</div>
                             </div>
                         </div>
 
                         <div class="product__row product__row--v2">
                             <div class="product__row-inner">
-                                <div class="product__text product__text--bold">Black Extended Merino Leather High
+                                <div class="product__text product__text--bold" id="product-interior">Black Extended Merino Leather High
                                     Piority Servicing</div>
                                 <div class="product__info product__info--mt">Interior</div>
                             </div>
@@ -1159,12 +1132,13 @@
     <script src="js/minified/fancy-button.js"></script>
     <script src="js/swiper/swiper-bundle.min.js"></script>
     <script src="js/minified/tabs.js"></script>
+    <script src="js/minified/product.js" type="module"></script>
     <script>
         new Tabs({
             wrapperID: 'tabs',
-        })
+        }) 
     </script>
-    <script src="js/minified/product.js"></script>
+    
     <script type="text/javascript">
     _linkedin_partner_id = "3008228";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
