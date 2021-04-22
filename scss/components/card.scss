@@ -6,17 +6,59 @@
         width: calc(33% - 29px);
     }
 
-    &__item:not(:nth-child(3n+1)) {
+    &__item:not(:nth-child(3n + 1)) {
         margin-left: 50px;
     }
 
-    &__item:nth-child(n+4) {
+    &__item:nth-child(n + 4) {
         margin-top: 65px;
     }
 }
 
-.card {
+.cards-list {
+    &--v2 &__item {
+        width: 100%;
+    }
 
+    &--v2 &__item:nth-child(n) {
+        margin: 0;
+    }
+
+    &--v2 &__item:not(:first-child) {
+        margin-top: 33px;
+    }
+}
+
+.card {
+    &__image-wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__image-wrapper:before {
+        content: "";
+        padding-top: 59%;
+        display: block;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &:hover &__image {
+        transform: scale(1.05);
+    }
+}
+
+.card {
     &--product {
         color: #000000;
         border-radius: 0;
@@ -30,18 +72,7 @@
     }
 
     &--product &__image-wrapper {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        border-radius: 25px;
-        overflow: hidden;
-    }
-
-    &--product &__image-wrapper:before {
-        content: '';
-        padding-top: 59%;
-        display: block;
+        border-radius: 25px;     
     }
 
     &--product &__badge {
@@ -50,7 +81,7 @@
         font-size: 12px;
         font-weight: bold;
 
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 7px;
         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
 
@@ -112,7 +143,7 @@
         font-weight: bold;
         font-size: 18px;
 
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
         border: none;
         border-radius: 14px;
@@ -134,37 +165,150 @@
         font-family: $secondary-font;
         font-weight: bold;
         font-size: 32px;
+    }  
+}
+
+.card {
+    &--product-import {
+        min-height: 452px;
+        padding: 50px 26px;
+
+        flex-direction: row;
+        align-items: center;
+
+        background: #f2f2f2;
+
+        color: #000000;
+
+        font-size: 26px;
+        font-family: $secondary-font-2;
     }
 
-    &--product &__image {
+    &--product-import:hover {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    &--product-import &__image-wrapper {
+        width: 44%;
+    }
+
+    &--product-import &__column {
+        width: 56%;
+        padding-left: 36px;
+    }
+
+    &--product-import &__badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        width: 60px;
+        height: 33px;
+
+        font-family: $base-font;
+        font-weight: 500;
+        color: #FFFFFF;
+        font-size: 12px;
+
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.2s ease-in-out;
+        background-color: $red-color;
     }
 
-    &--product:hover &__image {
-        transform: scale(1.05);
+    &--product-import &__badge-icon {
+        $size: 19px;
+        width: $size;
+        height: $size;
+
+        margin-right: 5px;
+    }
+
+    &--product-import &__title {
+        margin-bottom: 10px;
+        
+        font-size: 28px;
+        text-align: center;
+    }
+
+    &--product-import &__model {
+        font-family: $secondary-font;
+        font-size: 28px;
+        color: $red-color;
+        text-align: center;
+    }
+
+    &--product-import &__feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 43px;
+        margin-bottom: 15px;
+
+        border-bottom: 1px solid rgba(196, 196, 196, 0.6);
+    }
+
+    &--product-import &__feature-item {
+        font-size: 15px;
+    }
+
+    &--product-import &__price {
+        line-height: 1;
+        font-weight: 700;
+        font-family: $secondary-font;
+    }
+
+    &--product-import &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--product-import &__row--mt {
+        margin-top: 25px;
+    }
+
+    &--product-import &__info {
+        margin-top: 8px;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    &--product-import &__text {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: right;
+    }
+
+    &--product-import &__row-inner:nth-child(2) {
+        text-align: right;
+    }
+
+    &--product-import &__button {
+        height: 56px;
+        padding: 0 30px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: $red-color;
+        border: none;
     }
 }
 
 @media (max-width: 1399px) {
-
     .cards-list {
-
         &__item {
             width: calc(33% - 23px);
         }
 
-        &__item:not(:nth-child(3n+1)) {
+        &__item:not(:nth-child(3n + 1)) {
             margin-left: 40px;
         }
     }
 
     .card {
-
         &--product &__title {
             font-size: 1.7vw;
         }
@@ -176,24 +320,21 @@
 }
 
 @media (max-width: 1219px) {
-
     .cards-list {
-
         &__item {
             width: calc(33% - 17px);
         }
 
-        &__item:not(:nth-child(3n+1)) {
+        &__item:not(:nth-child(3n + 1)) {
             margin-left: 30px;
         }
 
-        &__item:nth-child(n+4) {
+        &__item:nth-child(n + 4) {
             margin-top: 40px;
         }
     }
 
     .card {
-
         &--product &__feature {
             margin-top: 30px;
         }
@@ -209,9 +350,7 @@
 }
 
 @media (max-width: 1099px) {
-
     .card {
-
         &--product &__feature-item {
             font-size: 1.2vw;
         }
@@ -231,7 +370,6 @@
 }
 
 @media (max-width: 989px) {
-
     .cards-list {
         justify-content: space-between;
 
@@ -243,13 +381,12 @@
             margin: 0;
         }
 
-        &__item:nth-child(n+3) {
+        &__item:nth-child(n + 3) {
             margin-top: 30px;
         }
     }
 
     .card {
-
         &--product &__title {
             font-size: 2.4vw;
         }
@@ -265,9 +402,7 @@
 }
 
 @media (max-width: 767px) {
-
     .card {
-
         &--product &__button {
             height: 36px;
             font-size: 16px;
@@ -276,9 +411,7 @@
 }
 
 @media (max-width: 619px) {
-
     .cards-list {
-
         &__item {
             width: 100%;
         }
@@ -293,7 +426,6 @@
     }
 
     .card {
-
         &--product &__title {
             font-size: 5vw;
         }

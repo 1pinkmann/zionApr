@@ -26,8 +26,6 @@
 
 @import 'components/tabs';
 
-@import 'components/card';
-
 /* accordion */
 @import 'components/accordion'; 
 
@@ -38,6 +36,8 @@
 
 /* Common */
 @import 'global'; 
+
+@import 'components/card';
 
 /* Layout */
 @import 'layout';  

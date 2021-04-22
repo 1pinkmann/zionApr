@@ -4,6 +4,21 @@ const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const pipeline = require('readable-stream').pipeline;
+const svg = require('gulp-svg-sprite');
+
+ 
+gulp.task('svg', function () {
+    return gulp.src('./images/svg/*.svg')
+        .pipe(svg({
+                mode: {
+                    stack: {
+                        sprite: "../sprite.svg"
+                    }
+                },
+            }
+        ))
+        .pipe(gulp.dest('./'));
+    });
 
 gulp.task('sass-compile', function () {
     return gulp.src('./scss/style.scss')

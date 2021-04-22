@@ -14,6 +14,10 @@
         line-height: 1.2;
     }
 
+    &__text--mt {
+        margin-top: 120px;
+    }
+
     &__wrapper {
         padding: 0 90px;
     }
@@ -24,20 +28,20 @@
         margin-bottom: 87px;
     }
 
-    .mission-image, .mission-image-mobile-slider {
+    .mission-image,
+    .mission-image-mobile-slider {
         margin-bottom: 87px;
         padding-top: 0;
     }
 
     &__image {
         width: calc(33% - 10px);
-    }
+    }  
 }
 
 .page-banner {
-
     &--v2 {
-        margin-bottom: 110px;  
+        margin-bottom: 110px;
     }
 
     &--v2:nth-child(1) {
@@ -48,35 +52,36 @@
         padding-top: 0;
     }
 
-    &--v2  &__text--mb-1 {
+    &--v2 &__text--mb-1 {
         margin-bottom: 54px;
     }
 
-    &--v2  &__text--mb-2 {
+    &--v2 &__text--mb-2 {
         margin-bottom: 100px;
     }
 }
 
 .page-banner {
-
     &--v3 {
-        margin-bottom: 80px;  
+        margin-bottom: 80px;
     }
 
     &--v3 &__title {
         margin-bottom: 55px;
     }
+
+    &--mb0 {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 1399px) {
-
     .page-banner {
-
         &:not(&--v3) {
             padding-top: 120px;
             margin-bottom: 120px;
         }
-        
+
         &__wrapper {
             padding: 0 50px;
         }
@@ -84,7 +89,6 @@
 }
 
 @media (max-width: 1099px) {
-
     .page-banner {
         padding-top: 90px;
 
@@ -100,15 +104,13 @@
     }
 
     .page-banner {
-
         &--v3 &__title {
             margin-bottom: 30px;
         }
     }
 }
-   
-@media (max-width: 991px) {
 
+@media (max-width: 991px) {
     .page-banner {
         padding-top: 70px;
         margin-bottom: 70px;
@@ -131,18 +133,18 @@
             margin-bottom: 50px;
         }
 
-        &__images{
+        &__images {
             margin-bottom: 50px;
         }
 
-        .mission-image, .mission-image-mobile-slider {
+        .mission-image,
+        .mission-image-mobile-slider {
             margin-bottom: 50px;
         }
     }
-}  
+}
 
 @media (max-width: 767px) {
-
     .page-banner {
         padding-top: 50px;
 
@@ -157,23 +159,21 @@
     }
 
     .page-banner {
-
         &--v3 &__title {
             margin-bottom: 20px;
         }
     }
 }
 
-@media (max-width: 619px)  {
-
+@media (max-width: 619px) {
     .page-banner {
-
         &__images {
             flex-direction: column;
             margin-bottom: 30px;
         }
 
-        .mission-image, .mission-image-mobile-slider {
+        .mission-image,
+        .mission-image-mobile-slider {
             margin-bottom: 30px;
         }
 
@@ -185,7 +185,8 @@
             margin-top: 20px;
         }
 
-        &--v2 &__text--mb-2, &--v2 &__text--mb-1 {
+        &--v2 &__text--mb-2,
+        &--v2 &__text--mb-1 {
             margin-bottom: 30px;
         }
 
@@ -196,19 +197,15 @@
 }
 
 @media (max-width: 479px) {
-
     .page-banner {
-
         &__title {
             font-size: 24px;
         }
     }
 }
 
-@media (max-width: 359px)  {
-
+@media (max-width: 359px) {
     .page-banner {
-
         &__title {
             font-size: 22px;
         }
