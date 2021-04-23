@@ -32,7 +32,6 @@
 }
 
 .tabs {
-
     &--v1 &__menu-list {
         display: flex;
         height: 71px;
@@ -59,7 +58,7 @@
         padding: 0 47px;
         font-weight: bold;
         font-size: 25px;
-        color: #cecece;  
+        color: #cecece;
         border-radius: 35px;
 
         transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -78,8 +77,7 @@
 }
 
 .tabs {
-
-    &--sticky  {
+    &--sticky {
         flex-direction: row;
         align-items: stretch;
         margin-top: 130px;
@@ -90,7 +88,7 @@
     }
 
     &--sticky &__menu {
-        background: #F2F2F2;
+        background: #f2f2f2;
         padding: 20px 24px 39px 24px;
         position: sticky;
         top: 100px;
@@ -117,8 +115,8 @@
     }
 
     &--sticky &__menu-button:before {
-        content: '';
-  
+        content: "";
+
         $size: 12px;
         width: $size;
         height: $size;
@@ -182,7 +180,6 @@
 }
 
 .tabs {
-
     &--product {
         margin-top: 90px;
     }
@@ -206,7 +203,7 @@
         height: 100%;
         width: 100%;
         padding: 0 10px;
-        background: #F2F2F2;     
+        background: #f2f2f2;
         font-weight: 500;
         font-size: 20px;
         line-height: 1;
@@ -214,7 +211,8 @@
         transition: background-color 0.2s ease-out, color 0.2s ease-out;
     }
 
-    &--product &__menu-button:hover, &--product &__menu-button.active {
+    &--product &__menu-button:hover,
+    &--product &__menu-button.active {
         background-color: $red-color;
         color: #ffffff;
     }
@@ -241,7 +239,6 @@
     }
 
     .tabs {
-
         &--sticky {
             margin-top: 70px;
         }
@@ -285,6 +282,21 @@
             margin-top: 40px;
         }
     }
+
+    .tabs {
+        &--product &__wrapper {
+            margin-top: 0;
+        }
+
+        &--product &__menu-list {
+            height: 60px;
+            margin-top: 30px;
+        }
+
+        &--product &__menu-button {
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width: 989px) {
@@ -318,7 +330,6 @@
     }
 
     .tabs {
-
         &--sticky {
             margin-top: 40px;
         }
@@ -336,7 +347,6 @@
 
 @media (max-width: 767px) {
     .tabs {
-
         &--mobile &__menu-list {
             flex-direction: column;
             height: unset;
@@ -378,6 +388,11 @@
             margin: 0;
         }
 
+        &--mobile &__list-dropdown {
+            position: sticky;
+            top: 84px;
+        }
+
         &__list-dropdown {
             margin-top: 20px;
         }
@@ -396,7 +411,6 @@
     }
 
     .tabs {
-
         &--sticky {
             flex-direction: column;
             position: relative;
@@ -443,9 +457,30 @@
 
         &--sticky &__list-dropdown {
             margin-top: 0;
-            position: sticky;
-            top: 84px;
             z-index: 6;
+        }
+    }
+
+    .tabs {
+
+        &--product &__menu-item:not(:first-child) {
+            border-left: none;
+        }
+
+        &--product &__menu-button {
+            background-color: transparent;
+        }
+
+        &--product &__menu-button.active, &--product &__menu-button:hover {
+            color: #ffffff;
+        }
+
+        &--product .list-dropdown .caption {
+            font-size: 18px;
+        }
+
+        &--product &__menu-button {
+            font-size: 18px;
         }
     }
 }
