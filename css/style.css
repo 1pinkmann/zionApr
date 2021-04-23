@@ -10724,6 +10724,22 @@ button.complete .successMessage svg {
   z-index: 10;
   right: 0; }
 
+.swiper--gallery {
+  margin-top: 15px; }
+
+.swiper--gallery .swiper-slide {
+  cursor: pointer;
+  border: 1px solid transparent; }
+
+.swiper--gallery .swiper-container-thumbs {
+  overflow: hidden; }
+
+.swiper--gallery .swiper-slide-thumb-active {
+  border: 1px solid #ED2724; }
+
+.modal-window .swiper__enlarge {
+  display: none; }
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -10746,6 +10762,9 @@ button.complete .successMessage svg {
   display: flex;
   transition-property: transform;
   box-sizing: content-box; }
+
+.swiper-container-thumbs .swiper-wrapper {
+  justify-content: center; }
 
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
@@ -12052,6 +12071,71 @@ ul {
   .card--product-import .card__text {
     line-height: 1;
     font-size: 3.6vw; } }
+
+.modal-window {
+  width: 60%;
+  border-radius: 20px;
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffff;
+  transition: opacity 0.3s ease-out; }
+  .modal-window.opened {
+    visibility: visible;
+    opacity: 1;
+    z-index: 101; }
+  .modal-window__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    background-color: transparent;
+    border: none; }
+  .modal-window__close:before, .modal-window__close:after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    transition: background-color 0.2s ease-out; }
+  .modal-window__close:before {
+    transform: rotateZ(45deg); }
+  .modal-window__close:after {
+    transform: rotateZ(-45deg); }
+  .modal-window__close:hover:before, .modal-window__close:hover:after {
+    background-color: #ED2724; }
+
+@media (max-width: 1099px) {
+  .modal-window {
+    width: 80%;
+    padding: 30px; } }
+
+@media (max-width: 767px) {
+  .modal-window {
+    width: 96%; } }
+
+@media (max-width: 479px) {
+  .modal-window {
+    padding: 15px;
+    border-radius: 0; }
+    .modal-window__close {
+      background-color: #000000;
+      top: 10px;
+      right: 10px; }
+    .modal-window__close::before, .modal-window__close::after {
+      background-color: #ffffff;
+      width: 2px;
+      height: 90%; } }
 
 /* Layout */
 /* Header */

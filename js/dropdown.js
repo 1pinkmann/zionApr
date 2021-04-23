@@ -16,6 +16,7 @@ class Dropdown {
             item.classList.remove('opened');
         })
         
+        this.background.style.zIndex = null;
         document.body.style.overflow = null;
         document.body.style.marginRight = null;
         document.body.classList.remove('pushy-active');
@@ -24,7 +25,7 @@ class Dropdown {
     handleWrapperClick (e) {
         e.preventDefault;
         let link = e.target.closest('[data-link]');
-        
+
         if (link) {
             let item = e.target.closest('[data-item]');
             let dropdown = item.querySelector(' [data-item] > [data-dropdown]');
@@ -58,6 +59,7 @@ class Dropdown {
         if (close) {
             let wrapper = close.closest('[data-dropdown]');
             this.background.classList.remove('opened');
+            this.background.style.zIndex = null;
             wrapper.classList.remove('opened');
             this.headerOuter.classList.remove('index');
             document.body.style.overflow = null;

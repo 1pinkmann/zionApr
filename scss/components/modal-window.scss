@@ -1,0 +1,95 @@
+.modal-window {
+    width: 60%;
+    border-radius: 20px;
+    
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ffffff;
+    transition: opacity 0.3s ease-out;
+
+    &.opened {
+        visibility: visible;
+        opacity: 1;
+        z-index: 101;
+    }
+
+    &__close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 10;
+
+        background-color: transparent;
+        border: none;
+    }
+
+    &__close:before, &__close:after {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: #000000;
+        position: absolute;
+
+        transition: background-color 0.2s ease-out;
+    }
+
+    &__close:before {
+        transform: rotateZ(45deg);
+    }
+
+    &__close:after {
+        transform: rotateZ(-45deg);
+    }
+
+    &__close:hover:before, &__close:hover:after {
+        background-color: $red-color;
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .modal-window {
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .modal-window {
+        width: 96%;
+    }
+}
+
+@media (max-width: 479px) {
+
+    .modal-window {
+        padding: 15px;
+        border-radius: 0;
+
+        &__close {
+            background-color: #000000;
+            top: 10px;
+            right: 10px;
+        }
+
+        &__close::before, &__close::after {
+            background-color: #ffffff;
+            width: 2px;
+            height: 90%;
+        }
+    }
+}

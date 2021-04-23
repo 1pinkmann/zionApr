@@ -29,6 +29,30 @@
     }
 }
 
+.swiper {
+
+    &--gallery {
+        margin-top: 15px;
+    }
+
+    &--gallery .swiper-slide {
+        cursor: pointer;
+        border: 1px solid transparent;
+    }
+    
+    &--gallery .swiper-container-thumbs {
+        overflow: hidden;
+    }
+    
+    &--gallery .swiper-slide-thumb-active {
+        border: 1px solid $red-color;
+    }
+}
+
+.modal-window .swiper__enlarge {
+    display: none;
+}
+
 .swiper-container {
     margin-left: auto;
     margin-right: auto;
@@ -52,6 +76,11 @@
     transition-property: transform;
     box-sizing: content-box;
 }
+
+.swiper-container-thumbs .swiper-wrapper {
+    justify-content: center;
+}
+
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
     transform: translate3d(0px, 0, 0);

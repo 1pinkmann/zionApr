@@ -658,7 +658,7 @@
             <div class="product">
                 <div class="product__wrapper container">
 
-                    <div class="product__left-column">
+                    <div class="product__left-column" id="product-left-column">
 
                         <div class="swiper">
                             <div class="swiper-container" id="product-slider">
@@ -701,11 +701,12 @@
 
                         <div class="product__row product__row--v2">
                             <div class="product__row-inner">
-                                <div class="product__text product__text--bold" id="product-interior">Black Extended Merino Leather High
+                                <div class="product__text product__text--bold" id="product-interior">Black Extended
+                                    Merino Leather High
                                     Piority Servicing</div>
                                 <div class="product__info product__info--mt">Interior</div>
                             </div>
-                            <button class="product__button">Enquie Now</button>
+                            <button class="product__button" id="product-button">Enquie Now</button>
                         </div>
 
                     </div>
@@ -721,183 +722,13 @@
                     <h2 class="tabs__title">Specifications</h2>
                     <div class="list-dropdown tabs__list-dropdown">
                         <button class="tabs__mobile-button caption">INTERIOR</button>
-                        <ul class="tabs__menu-list">
-                            <li class="tabs__menu-item">
-                                <button class="tabs__menu-button active" data-tab-button="1">INTERIOR</button>
-                            </li>
-                            <li class="tabs__menu-item">
-                                <button class="tabs__menu-button" data-tab-button="2">EXTERIOR</button>
-                            </li>
-                            <li class="tabs__menu-item">
-                                <button class="tabs__menu-button" data-tab-button="3">STERRING AND CHASIS</button>
-                            </li>
-                            <li class="tabs__menu-item">
-                                <button class="tabs__menu-button" data-tab-button="4">SAFETY AND TECHNOLOGY</button>
-                            </li>
-                            <li class="tabs__menu-item">
-                                <button class="tabs__menu-button" data-tab-button="5">PACKAGES</button>
-                            </li>
-                            <li class="tabs__menu-item">
-                                <button class="tabs__menu-button" data-tab-button="6">OTHERS</button>
-                            </li>
-                        </ul>
+                        <ul class="tabs__menu-list" id="tabs-menu"></ul>
                     </div>
-                    <ul class="tabs__wrapper" data-tab-wrapper>
-                        <li class="tabs__item active" data-tab-item="1">
-                            <ul class="feature">
-                                <li class="feature__item">
-                                    <h1 class="feature__title">STANDARD FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Additional interior lighting</li>
-                                        <li class="feature__list-item">Front armrest with sliding adjustment</li>
-                                        <li class="feature__list-item">Anthracite headlining</li>
-                                        <li class="feature__list-item">Front lumbar support</li>
-                                        <li class="feature__list-item">Automatic air conditioning</li>
-                                        <li class="feature__list-item">Heated front seats</li>
-                                        <li class="feature__list-item">Backrest width adjustment</li>
-                                        <li class="feature__list-item">Rde exhaust emissions standard</li>
-                                        <li class="feature__list-item">Electric memory seats</li>
-                                        <li class="feature__list-item">Rear-view mirror with auto dimming</li>
-                                    </ul>
-                                </li>
-                                <li class="feature__item">
-                                    <h1 class="feature__title">ADDITIONAL FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Carbon fibre interior trim - black chrome</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="tabs__item" data-tab-item="2">
-                            <ul class="feature">
-                                <li class="feature__item">
-                                    <h1 class="feature__title">STANDARD FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Additional interior lighting</li>
-                                        <li class="feature__list-item">Front armrest with sliding adjustment</li>
-                                        <li class="feature__list-item">Anthracite headlining</li>
-                                        <li class="feature__list-item">Front lumbar support</li>
-                                        <li class="feature__list-item">Automatic air conditioning</li>
-                                        <li class="feature__list-item">Heated front seats</li>
-                                        <li class="feature__list-item">Backrest width adjustment</li>
-                                        <li class="feature__list-item">Rde exhaust emissions standard</li>
-                                        <li class="feature__list-item">Electric memory seats</li>
-                                        <li class="feature__list-item">Rear-view mirror with auto dimming</li>
-                                    </ul>
-                                </li>
-                                <li class="feature__item">
-                                    <h1 class="feature__title">ADDITIONAL FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Carbon fibre interior trim - black chrome</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="tabs__item" data-tab-item="3">
-                            <ul class="feature">
-                                <li class="feature__item">
-                                    <h1 class="feature__title">STANDARD FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Additional interior lighting</li>
-                                        <li class="feature__list-item">Front armrest with sliding adjustment</li>
-                                        <li class="feature__list-item">Anthracite headlining</li>
-                                        <li class="feature__list-item">Front lumbar support</li>
-                                        <li class="feature__list-item">Automatic air conditioning</li>
-                                        <li class="feature__list-item">Heated front seats</li>
-                                        <li class="feature__list-item">Backrest width adjustment</li>
-                                        <li class="feature__list-item">Rde exhaust emissions standard</li>
-                                        <li class="feature__list-item">Electric memory seats</li>
-                                        <li class="feature__list-item">Rear-view mirror with auto dimming</li>
-                                    </ul>
-                                </li>
-                                <li class="feature__item">
-                                    <h1 class="feature__title">ADDITIONAL FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Carbon fibre interior trim - black chrome</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="tabs__item" data-tab-item="4">
-                            <ul class="feature">
-                                <li class="feature__item">
-                                    <h1 class="feature__title">STANDARD FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Additional interior lighting</li>
-                                        <li class="feature__list-item">Front armrest with sliding adjustment</li>
-                                        <li class="feature__list-item">Anthracite headlining</li>
-                                        <li class="feature__list-item">Front lumbar support</li>
-                                        <li class="feature__list-item">Automatic air conditioning</li>
-                                        <li class="feature__list-item">Heated front seats</li>
-                                        <li class="feature__list-item">Backrest width adjustment</li>
-                                        <li class="feature__list-item">Rde exhaust emissions standard</li>
-                                        <li class="feature__list-item">Electric memory seats</li>
-                                        <li class="feature__list-item">Rear-view mirror with auto dimming</li>
-                                    </ul>
-                                </li>
-                                <li class="feature__item">
-                                    <h1 class="feature__title">ADDITIONAL FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Carbon fibre interior trim - black chrome</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="tabs__item" data-tab-item="5">
-                            <ul class="feature">
-                                <li class="feature__item">
-                                    <h1 class="feature__title">STANDARD FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Additional interior lighting</li>
-                                        <li class="feature__list-item">Front armrest with sliding adjustment</li>
-                                        <li class="feature__list-item">Anthracite headlining</li>
-                                        <li class="feature__list-item">Front lumbar support</li>
-                                        <li class="feature__list-item">Automatic air conditioning</li>
-                                        <li class="feature__list-item">Heated front seats</li>
-                                        <li class="feature__list-item">Backrest width adjustment</li>
-                                        <li class="feature__list-item">Rde exhaust emissions standard</li>
-                                        <li class="feature__list-item">Electric memory seats</li>
-                                        <li class="feature__list-item">Rear-view mirror with auto dimming</li>
-                                    </ul>
-                                </li>
-                                <li class="feature__item">
-                                    <h1 class="feature__title">ADDITIONAL FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Carbon fibre interior trim - black chrome</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="tabs__item" data-tab-item="6">
-                            <ul class="feature">
-                                <li class="feature__item">
-                                    <h1 class="feature__title">STANDARD FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Additional interior lighting</li>
-                                        <li class="feature__list-item">Front armrest with sliding adjustment</li>
-                                        <li class="feature__list-item">Anthracite headlining</li>
-                                        <li class="feature__list-item">Front lumbar support</li>
-                                        <li class="feature__list-item">Automatic air conditioning</li>
-                                        <li class="feature__list-item">Heated front seats</li>
-                                        <li class="feature__list-item">Backrest width adjustment</li>
-                                        <li class="feature__list-item">Rde exhaust emissions standard</li>
-                                        <li class="feature__list-item">Electric memory seats</li>
-                                        <li class="feature__list-item">Rear-view mirror with auto dimming</li>
-                                    </ul>
-                                </li>
-                                <li class="feature__item">
-                                    <h1 class="feature__title">ADDITIONAL FEATURES:</h1>
-                                    <ul class="feature__list">
-                                        <li class="feature__list-item">Carbon fibre interior trim - black chrome</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <ul class="tabs__wrapper" data-tab-wrapper id="tabs-wrapper">
                 </div>
                 <!--- /Tabs. -->
                 <!--- Book An Appointment -->
-                <div class="appointment-section appointment-section--mt-2" data-aos="zoom-in-right">
+                <div class="appointment-section appointment-section--mt-2" data-aos="zoom-in-right" id="book">
                     <div class="container">
                         <div class="appointment-container">
                             <div class="appointment-left">
@@ -946,7 +777,7 @@
                                             <div class="col-lg-12 form-group">
                                                 <div class="car-modal-box">
                                                     <div class="title">Car Model</div>
-                                                    <div class="text">BMW X6 M Competition</div>
+                                                    <div class="text" id="car-model-text">BMW X6 M Competition</div>
                                                 </div>
                                                 <input type="hidden" name="car_model" id="car_model"
                                                     value="BMW X6 M Competition" />
@@ -1047,6 +878,21 @@
                 <!--- /PURCHASING YOUR PERFECT CAR! -->
             </div>
 
+            <div class="modal-window" id="thumbs">
+                <div class="swiper swiper--modal">
+                    <div class="swiper-container" id="swiper-modal">
+                        <ul class="swiper-wrapper" data-swiper-wrapper></ul>
+                    </div>
+                </div>
+                <div class="swiper swiper--gallery">
+                    <div class="swiper-container" id="swiper-gallery">
+                        <ul class="swiper-wrapper" data-swiper-wrapper></ul>
+                    </div>
+                </div>
+
+                <button class="modal-window__close" data-close-modal></button>
+            </div>
+
         </div>
 
         <!--- Footer -->
@@ -1136,9 +982,9 @@
     <script>
         new Tabs({
             wrapperID: 'tabs',
-        }) 
+        })
     </script>
-    
+
     <script type="text/javascript">
     _linkedin_partner_id = "3008228";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
