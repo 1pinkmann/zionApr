@@ -668,7 +668,7 @@
 
             <div class="container">
                 <!--- Tabs. -->
-                <div class="tabs tabs--sticky" id="tabs">
+                <div class="tabs tabs--sticky tabs--mobile" id="tabs">
 
                     <div class="tabs__left-column">
 
@@ -679,7 +679,10 @@
                             <p class="tabs__menu-text tabs__menu-text--gray">HUGE VARIETY AVAILABLE
                             </p>
 
-                            <ul class="tabs__menu-list" id="tabs-menu"></ul>
+                            <div class="list-dropdown tabs__list-dropdown">
+                                <button class="tabs__mobile-button caption">Toyota</button>
+                                <ul class="tabs__menu-list" id="tabs-menu"></ul>
+                            </div>
 
                             <p class="tabs__menu-text tabs__menu-text--big">
                                 Drop us a message at sales@zionauto.sg or contact
@@ -690,7 +693,7 @@
                         </div>
 
                     </div>
-                    <ul class="tabs__wrapper" data-tab-wrapper id="products-tabs"> 
+                    <ul class="tabs__wrapper" data-tab-wrapper id="products-tabs">
                         <li class="tabs__item active" data-tab-item="1">
                             <ul class="cards-list cards-list--v2"></ul>
                         </li>

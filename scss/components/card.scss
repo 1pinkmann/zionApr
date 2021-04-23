@@ -72,7 +72,7 @@
     }
 
     &--product &__image-wrapper {
-        border-radius: 25px;     
+        border-radius: 25px;
     }
 
     &--product &__badge {
@@ -165,7 +165,7 @@
         font-family: $secondary-font;
         font-weight: bold;
         font-size: 32px;
-    }  
+    }
 }
 
 .card {
@@ -203,13 +203,12 @@
         align-items: center;
         justify-content: center;
 
-
         width: 60px;
         height: 33px;
 
         font-family: $base-font;
         font-weight: 500;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 12px;
 
         position: absolute;
@@ -228,7 +227,7 @@
 
     &--product-import &__title {
         margin-bottom: 10px;
-        
+
         font-size: 28px;
         text-align: center;
     }
@@ -253,6 +252,10 @@
 
     &--product-import &__feature-item {
         font-size: 15px;
+    }
+
+    &--product-import &__feature-item:not(:first-child) {
+        margin-left: 5px;
     }
 
     &--product-import &__price {
@@ -334,6 +337,12 @@
         }
     }
 
+    .cards-list {
+        &--v2 &__item:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
     .card {
         &--product &__feature {
             margin-top: 30px;
@@ -345,6 +354,58 @@
 
         &--product &__feature-icon {
             margin-right: 5px;
+        }
+    }
+
+    .card {
+        &--product-import {
+            min-height: 290px;
+            padding: 20px;
+            font-size: 26px;
+        }
+
+        &--product-import &__column {
+            padding-left: 20px;
+        }
+
+        &--product-import &__title {
+            margin-bottom: 6px;
+            font-size: 24px;
+        }
+
+        &--product-import &__model {
+            font-size: 24px;
+        }
+
+        &--product-import &__feature-item {
+            font-size: 14px;
+        }
+
+        &--product-import &__feature {
+            margin-bottom: 10px;
+        }
+
+        &--product-import &__price {
+            font-size: 24px;
+        }
+
+        &--product-import &__info {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        &--product-import &__text {
+            font-size: 14px;
+        }
+
+        &--product-import &__row--mt {
+            margin-top: 15px;
+        }
+
+        &--product-import &__button {
+            height: 40px;
+            padding: 0 20px;
+            font-size: 12px;
         }
     }
 }
@@ -399,6 +460,42 @@
             font-size: 1.7vw;
         }
     }
+
+    .card {
+        &--product-import {
+            flex-direction: column;
+        }
+
+        &--product-import &__image-wrapper {
+            width: 100%;
+        }
+
+        &--product-import &__column {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+        &--product-import &__title {
+            width: 50%;
+            text-align: left;
+        }
+
+        &--product-import &__model {
+            width: 50%;
+            text-align: right;
+        }
+
+        &--product-import &__feature {
+            width: 100%;
+        }
+
+        &--product-import &__row {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -450,6 +547,68 @@
 
         &--product &__badge {
             font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .card {
+        &--product-import {
+            padding: 15px;
+        }
+
+        &--product-import &__column {
+            margin-top: 10px;
+        }
+
+        &--product-import &__title,
+        &--product-import &__model {
+            width: 100%;
+            text-align: center;
+        }
+
+        &--product-import &__feature-item {
+            font-size: 3vw;
+        }
+
+        &--product-import &__feature {
+            width: 100%;
+            height: 30px;
+        }
+
+        &--product-import &__price {
+            font-size: 5vw;
+        }
+
+        &--product-import &__info {
+            margin-top: 1px;
+            font-size: 10px;
+        }
+
+        &--product-import &__button {
+            height: 35px;
+            padding: 0 10px;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        &--product-import &__title {
+            margin-bottom: 3px;
+            font-size: 20px;
+        }
+
+        &--product-import &__model {
+            font-size: 20px;
+        }
+
+        &--product-import &__row-inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--product-import &__text {
+            line-height: 1;
+            font-size: 3.6vw;
         }
     }
 }

@@ -33,7 +33,7 @@
 
 .tabs {
 
-    &--v1 &__menu {
+    &--v1 &__menu-list {
         display: flex;
         height: 71px;
         margin-top: 20px;
@@ -150,6 +150,7 @@
     &--sticky &__wrapper {
         width: 72%;
         padding-left: 38px;
+        margin: 0;
     }
 
     &--sticky &__menu-text {
@@ -186,7 +187,7 @@
         margin-top: 90px;
     }
 
-    &--product &__menu {
+    &--product &__menu-list {
         display: flex;
         height: 80px;
         margin-top: 50px;
@@ -232,6 +233,49 @@
         &__menu-button {
             font-size: 2vw;
         }
+
+        &__text--mt {
+            margin-top: 70px;
+            margin-bottom: 0;
+        }
+    }
+
+    .tabs {
+
+        &--sticky {
+            margin-top: 70px;
+        }
+
+        &--sticky &__wrapper {
+            padding-left: 20px;
+        }
+
+        &--sticky &__menu {
+            padding: 20px;
+        }
+
+        &--sticky &__menu-list {
+            margin-top: 10px;
+        }
+
+        &--sticky &__menu-button.active {
+            padding-left: 18px;
+        }
+
+        &--sticky &__menu-button:before {
+            width: 8px;
+            height: 8px;
+        }
+
+        &--sticky &__menu-button {
+            height: 50px;
+            font-size: 20px;
+        }
+
+        &--sticky &__menu-text--big {
+            margin-top: 20px;
+            font-size: 12px;
+        }
     }
 }
 
@@ -249,7 +293,7 @@
             font-size: 4vw;
         }
 
-        &--v1 &__menu {
+        &--v1 &__menu-list {
             height: 50px;
             width: 100%;
         }
@@ -272,11 +316,28 @@
             padding: 0 20px;
         }
     }
+
+    .tabs {
+
+        &--sticky {
+            margin-top: 40px;
+        }
+
+        &--sticky &__menu-text--big {
+            font-size: 10px;
+        }
+
+        &--sticky &__menu-button {
+            height: 45px;
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
     .tabs {
-        &--v1 &__menu {
+
+        &--mobile &__menu-list {
             flex-direction: column;
             height: unset;
             margin-top: 0;
@@ -285,6 +346,7 @@
             border-radius: 0;
 
             position: absolute;
+            width: 100%;
             top: 100%;
             z-index: 2;
 
@@ -292,9 +354,10 @@
             border-top: 1px solid rgba(222, 226, 230, 0.2);
             opacity: 0;
             visibility: hidden;
+            z-index: 10;
         }
 
-        &--v1 &__menu-button {
+        &--mobile &__menu-button {
             justify-content: flex-start;
             height: 66px;
             padding: 0 15px;
@@ -303,15 +366,15 @@
             color: #ffffff;
         }
 
-        &--v1 &__menu-button.active {
+        &--mobile &__menu-button.active {
             color: #ed2724;
         }
 
-        &--v1 &__menu-item {
+        &--mobile &__menu-item {
             width: 100%;
         }
 
-        &--v1 &__menu-button:nth-child(n) {
+        &--mobile &__menu-button:nth-child(n) {
             margin: 0;
         }
 
@@ -326,9 +389,63 @@
     }
 
     .open {
-        .tabs__menu {
+        .tabs__menu-list {
             opacity: 1;
             visibility: visible;
+        }
+    }
+
+    .tabs {
+
+        &--sticky {
+            flex-direction: column;
+            position: relative;
+        }
+
+        &--sticky &__left-column {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            left: 0;
+        }
+
+        &--sticky &__wrapper {
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 107px;
+        }
+
+        &--sticky &__menu {
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+            top: 0;
+            padding: 0;
+            z-index: 6;
+        }
+
+        &--sticky &__menu-text {
+            text-align: center;
+            font-size: 14px;
+            order: 1;
+            margin-top: 10px;
+        }
+
+        &--sticky &__menu-text--gray {
+            display: none;
+        }
+
+        &--sticky &__menu-text--big {
+            display: none;
+        }
+
+        &--sticky &__list-dropdown {
+            margin-top: 0;
+            position: sticky;
+            top: 84px;
+            z-index: 6;
         }
     }
 }
