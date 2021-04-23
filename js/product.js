@@ -147,7 +147,7 @@ export default class Product {
 
         this.currentProduct.specifications.forEach((spec, i) => {
             content +=
-                `<li class="tabs__item active" data-tab-item="${i + 1}">
+                `<li class="tabs__item ${(i === 0 ? 'active' : '')}" data-tab-item="${i + 1}">
                     <ul class="feature">
                         <li class="feature__item">
                             <h1 class="feature__title">STANDARD FEATURES:</h1>

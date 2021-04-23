@@ -5,7 +5,7 @@ import{products as products}from"../database/products.js";export default class P
                     <div class="product__feature-name product__info">${t.name}</div>
                 </li>`}),e}initFeatures(){this.productFeature.innerHTML=this.renderFeatures()}initSwiper(){this.swiperWrapper.innerHTML=this.renderSwiperSlides();new Swiper("#product-slider",{direction:"horizontal",loop:!0,pagination:{el:"[data-swiper-pagination]"},navigation:{nextEl:'[data-swiper-button="next"]',prevEl:'[data-swiper-button="prev"]'}})}initTabsMenu(){this.tabsMenu.innerHTML=this.renderTabsMenu()}renderTabsMenu(){let r="";return this.currentProduct.specifications.forEach((t,e)=>{r+=`<li class="tabs__menu-item">
                     <button class="tabs__menu-button ${0===e?"active":""}" data-tab-button="${e+1}">${t.name}</button>
-                </li>`}),r}initTabsItems(){this.tabsWrapper.innerHTML=this.renderTabsItems()}renderTabsItems(){let r="";return this.currentProduct.specifications.forEach((t,e)=>{r+=`<li class="tabs__item active" data-tab-item="${e+1}">
+                </li>`}),r}initTabsItems(){this.tabsWrapper.innerHTML=this.renderTabsItems()}renderTabsItems(){let r="";return this.currentProduct.specifications.forEach((t,e)=>{r+=`<li class="tabs__item ${0===e?"active":""}" data-tab-item="${e+1}">
                     <ul class="feature">
                         <li class="feature__item">
                             <h1 class="feature__title">STANDARD FEATURES:</h1>
