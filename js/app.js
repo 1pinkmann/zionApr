@@ -235,12 +235,21 @@ var App = function () {
                 submitButton.addClass('loading');
                 submitButton.removeClass('ready');
 
-                fetch('https://formspree.io/f/xjvpqdzp', {
+                let data = {
+                    'Name': $('#appointment').serializeArray()[0].value,
+                    'Last name': $('#appointment').serializeArray()[1].value,
+                    'Phone': $('#appointment').serializeArray()[2].value,
+                    'Enquiry type': $('#appointment').serializeArray()[3].value,
+                    'Email': $('#appointment').serializeArray()[4].value,
+                    'Terms accepted': $('#appointment').serializeArray()[5].value
+                };
+
+                fetch('https://formspree.io/f/xwkavlev', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify($('#appointment').serializeArray())
+                    body: JSON.stringify(data)
                 }).then((response) => {
                     console.log(response);
                     submitButton.addClass("complete");
@@ -259,29 +268,6 @@ var App = function () {
                     $('.alert-success').removeClass('d-none');
                     $('#appointment').find("input[type=text], input[type=email], input[type=tel], textarea, select").val("");
                 })
-                // $.ajax({
-                //     url: './ajax.php',
-                //     method: 'POST',
-                //     data: $('#appointment').serializeArray(),
-                //     success: function (data) {
-                //         console.log(data);
-                //         submitButton.addClass("complete");
-                //         submitButton.addClass("loading");
-                //         handleFacebookPixels(($('#appointment').hasClass('car-details') ? 'Schedule' : 'Lead'));
-                //         setTimeout(() => {
-                //             window.initBurst();
-                //             setTimeout(() => {
-                //                 // Reset button so user can select it again
-                //                 submitButton.attr('disabled', false);
-                //                 submitButton.removeClass("complete");
-                //                 submitButton.removeClass("loading");
-                //                 submitButton.addClass("ready");
-                //             }, 4000);
-                //         }, 320);
-                //         $('.alert-success').removeClass('d-none');
-                //         $('#appointment').find("input[type=text], input[type=email], input[type=tel], textarea, select").val("");
-                //     }
-                // });
                 return false;
             }
         });

@@ -84,7 +84,7 @@ export default class Calculator {
             if (this.calculated === false) {
                 this.mounthly.textContent = this.calculateMounthly();
             }
-            
+
             this.initError(this.selectCarWrapper, this.selectedValue);
         }
     }
@@ -299,8 +299,6 @@ export default class Calculator {
                 'Phone': this.phone.value
             }
 
-            console.log(this.data);
-
             fetch('https://formspree.io/f/xjvpqdzp', {
                 method: 'post',
                 headers: {
@@ -308,7 +306,6 @@ export default class Calculator {
                 },
                 body: JSON.stringify(this.data)
             }).then(response => {
-                console.log(response);
                 this.submitButton.classList.remove('loading');
                 this.submitButton.classList.add('complete');
                 setTimeout(() => {
