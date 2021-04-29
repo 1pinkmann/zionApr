@@ -19,7 +19,7 @@ export default class Product {
         this.background = document.getElementById('dropdown-background');
         this.thumbs = document.getElementById('thumbs');
         this.modalWrapper = this.thumbs.querySelector('[data-modal-wrapper]');
-
+       
         this.productId = window.location.search.split('=')[1];
 
         this.getCurrentProduct();
@@ -60,6 +60,7 @@ export default class Product {
     getCurrentProduct() {
         products.forEach(product => {
             product.products.forEach(item => {
+
                 if (item.id === Number(this.productId)) {
                     this.currentProduct = item;
                 }

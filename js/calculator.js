@@ -308,6 +308,7 @@ export default class Calculator {
                 },
                 body: JSON.stringify(this.data)
             }).then(response => {
+                console.log(response);
                 this.submitButton.classList.remove('loading');
                 this.submitButton.classList.add('complete');
                 setTimeout(() => {
