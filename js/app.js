@@ -235,21 +235,20 @@ var App = function () {
                 submitButton.addClass('loading');
                 submitButton.removeClass('ready');
 
-                let data = {
-                    'Name': $('#appointment').serializeArray()[0].value,
-                    'Last name': $('#appointment').serializeArray()[1].value,
-                    'Phone': $('#appointment').serializeArray()[2].value,
-                    'Enquiry type': $('#appointment').serializeArray()[3].value,
-                    'Email': $('#appointment').serializeArray()[4].value,
-                    'Terms accepted': $('#appointment').serializeArray()[5].value
-                };
+                let formDataArray = $('#appointment').serializeArray();
+
+                let formData = {};
+
+                formDataArray.forEach(dataItem => {
+                    formData[dataItem.name] = dataItem.value;
+                });
 
                 fetch('https://formspree.io/f/xwkavlev', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(data)
+                    body: JSON.stringify(formData)
                 }).then((response) => {
                     console.log(response);
                     submitButton.addClass("complete");
