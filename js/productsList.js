@@ -48,11 +48,13 @@ export default class ProductsList {
     renderProductsList(products) {
         let content = '';
 
+        let hostName = window.location.host;
+
         products.forEach(product => {
 
             content +=
                 `<li class="cards-list__item">
-                    <a href="http://127.0.0.1:5500/product.html?product=${product.id}" class="card card--product-import">
+                    <a href="http://${hostName}/product.html?product=${product.id}" class="card card--product-import">
                         <div class="card__image-wrapper">
                             <img src="./images/products/${product.images[0]}" alt="" class="card__image" />
                             <div class="card__badge">

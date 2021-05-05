@@ -2,8 +2,8 @@ import{products as products}from"../database/products.js";export default class P
                     <button class="tabs__menu-button ${0===s?"active":""}" data-tab-button=${s+1}>${t.brand}</button>
                 </li>`}),a}renderProductsTabs(){let a="";return products.forEach((t,s)=>{a+=`<li class="tabs__item ${0===s?"active":""}" data-tab-item="${s+1}">
                     <ul class="cards-list cards-list--v2">${this.renderProductsList(t.products)}</ul>
-                </li>`}),a}renderProductsList(t){let s="";return t.forEach(t=>{s+=`<li class="cards-list__item">
-                    <a href="http://127.0.0.1:5500/product.html?product=${t.id}" class="card card--product-import">
+                </li>`}),a}renderProductsList(t){let s="",a=window.location.host;return t.forEach(t=>{s+=`<li class="cards-list__item">
+                    <a href="http://${a}/product.html?product=${t.id}" class="card card--product-import">
                         <div class="card__image-wrapper">
                             <img src="./images/products/${t.images[0]}" alt="" class="card__image" />
                             <div class="card__badge">
