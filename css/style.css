@@ -10134,7 +10134,8 @@ button.complete .successMessage svg {
     border: none; }
   .tabs__list-dropdown.list-dropdown {
     width: unset;
-    float: unset; }
+    float: unset;
+    z-index: 10; }
 
 .tabs--v1 .tabs__menu-list {
   display: flex;
