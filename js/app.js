@@ -111,8 +111,14 @@ var App = function () {
             $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').text($(this).text());
         });
 
-        $('.list-dropdown .tabs__menu-button').on('click', function () {
+        $('.list-dropdown .tabs__menu-button').on('click', function (e) {
             $('.list-dropdown .caption').text($(this).text());
+            let tabWrapper = e.target.closest('.tabs');
+            let position = tabWrapper.getBoundingClientRect().top + document.documentElement.scrollTop;
+            window.scrollTo({
+                top: position,
+                behavior: 'smooth'
+            })
         });
 
         $(document).on('keyup', function (evt) {

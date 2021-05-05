@@ -10174,7 +10174,7 @@ button.complete .successMessage svg {
 .tabs--sticky {
   flex-direction: row;
   align-items: stretch;
-  margin-top: 130px; }
+  padding-top: 130px; }
 
 .tabs--sticky .tabs__left-column {
   width: 28%; }
@@ -10291,7 +10291,7 @@ button.complete .successMessage svg {
     margin-top: 70px;
     margin-bottom: 0; }
   .tabs--sticky {
-    margin-top: 70px; }
+    padding-top: 70px; }
   .tabs--sticky .tabs__wrapper {
     padding-left: 20px; }
   .tabs--sticky .tabs__menu {
@@ -10338,7 +10338,7 @@ button.complete .successMessage svg {
     width: 100%;
     padding: 0 20px; }
   .tabs--sticky {
-    margin-top: 40px; }
+    padding-top: 40px; }
   .tabs--sticky .tabs__menu-text--big {
     font-size: 10px; }
   .tabs--sticky .tabs__menu-button {
