@@ -10404,8 +10404,7 @@ button.complete .successMessage svg {
     position: relative;
     height: 100%;
     top: 0;
-    padding: 0;
-    z-index: 6; }
+    padding: 0; }
   .tabs--sticky .tabs__menu-text {
     text-align: center;
     font-size: 14px;
@@ -10416,8 +10415,7 @@ button.complete .successMessage svg {
   .tabs--sticky .tabs__menu-text--big {
     display: none; }
   .tabs--sticky .tabs__list-dropdown {
-    margin-top: 0;
-    z-index: 6; }
+    margin-top: 0; }
   .tabs--product .tabs__menu-item:not(:first-child) {
     border-left: none; }
   .tabs--product .tabs__menu-button {

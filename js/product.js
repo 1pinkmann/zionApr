@@ -187,7 +187,7 @@ export default class Product {
         this.productExterior.textContent = this.currentProduct.exterior;
         this.productInterior.textContent = this.currentProduct.interior;
         this.carModelText.textContent = this.currentProduct.model;
-        this.carModelInput.value = this.currentProduct.model;
+        this.carModelInput.value = this.currentProduct.name;
     }
 
     showModal() {
