@@ -1,5 +1,9 @@
 .calculator {
 
+    &__text--hide {
+        display: none;
+    }
+
     &__form {
         display: flex;
         min-height: 720px;

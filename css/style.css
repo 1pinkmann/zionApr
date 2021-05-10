@@ -9876,6 +9876,8 @@ button.complete .successMessage svg {
 .calculator {
   /* one item */
   /* two or four items */ }
+  .calculator__text--hide {
+    display: none; }
   .calculator__form {
     display: flex;
     min-height: 720px;

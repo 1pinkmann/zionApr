@@ -186,7 +186,7 @@ export default class Product {
         this.productPrice.textContent = this.currentProduct.price;
         this.productExterior.textContent = this.currentProduct.exterior;
         this.productInterior.textContent = this.currentProduct.interior;
-        this.carModelText.textContent = this.currentProduct.model;
+        this.carModelText.textContent = this.currentProduct.name;
         this.carModelInput.value = this.currentProduct.name;
     }
 
